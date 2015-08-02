@@ -1,0 +1,17 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.8",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ATLASrift",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditor",
+		"XboxOne"
+	]
+}
