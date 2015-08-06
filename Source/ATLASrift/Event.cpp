@@ -84,12 +84,14 @@ void AEvent::SpawnTracks(){
 
 	//for (int x = 0; x < 10; x++)
 	//{
-	//	for (int y = 0; y < 10; y++)
-	//	{
+		//for (int y = 0; y < 10; y++)
+		//{
 			FVector EventSpawnLoc(0.0f, 0.0f, 0.0f);
 			FRotator EventSpawnRotation(0.0f, 0.0f, 0.0f);
-			ATrack* NewTrack = AEvent::GetWorld()->SpawnActor<ATrack>(Track, EventSpawnLoc, EventSpawnRotation, SpawnInfo);
-	//	}
+			//ATrack* idSegment = AEvent::GetWorld()->SpawnActor<ATrack>(ATrack::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+			ATrack* idSegment = AEvent::GetWorld()->SpawnActor<ATrack>(IDSegments[0], EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+			idSegment->SetParameters(123.123, 1231.123, 12.12, 1);
+	/*	}*/
 	//}
 
 }

@@ -69,7 +69,7 @@
 	#define UE_BUILD_SHIPPING 1
 #endif
 #ifndef UE_ENGINE_DIRECTORY
-	#define UE_ENGINE_DIRECTORY ../../../../../../../Program Files/Epic Games/4.8/Engine/
+	#define UE_ENGINE_DIRECTORY ../../../../../Program Files/Epic Games/4.8/Engine/
 #endif
 #ifndef UE_PROJECT_NAME
 	#define UE_PROJECT_NAME ATLASrift

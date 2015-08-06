@@ -27,8 +27,14 @@ class ATLASRIFT_API AEvent : public AActor
 
 public:
 
-	UPROPERTY(EditDefaultsOnly, Category = "Tracks")
-		TSubclassOf<class ATrack> Track;
+	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
+		TArray<TSubclassOf<class ATrack> > IDSegments;
+	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
+		TArray<TSubclassOf<class ATrack> > MuonSegments;
+	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
+		TArray<TSubclassOf<class ATrack> > Clusters;
+	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
+		TArray<TSubclassOf<class ATrack> > Jets;
 
 	UPROPERTY()
 		uint32 RunNr;

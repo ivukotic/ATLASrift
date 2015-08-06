@@ -423,8 +423,9 @@ C:\Program Files\Epic Games\4.8\Engine\Plugins\ScriptGeneratorPlugin\Source\Scri
 C:\Program Files\Epic Games\4.8\Engine\Plugins\ScriptPlugin\Source\ScriptEditorPlugin\ScriptEditorPlugin.Build.cs
 C:\Program Files\Epic Games\4.8\Engine\Plugins\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files\Epic Games\4.8\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-C:\Users\Ilija\Documents\ATLASrift\UProject 4.8\Source\ATLASrift\ATLASrift.Build.cs
+C:\Users\Ilija\ATLASrift\Source\ATLASrift\ATLASrift.Build.cs
 C:\Program Files\Epic Games\4.8\Engine\Source\UE4Editor.Target.cs
 C:\Program Files\Epic Games\4.8\Engine\Source\UE4Game.Target.cs
-C:\Users\Ilija\Documents\ATLASrift\UProject 4.8\Source\ATLASrift.Target.cs
-C:\Users\Ilija\Documents\ATLASrift\UProject 4.8\Source\ATLASriftEditor.Target.cs
+C:\Users\Ilija\ATLASrift\Source\ATLASrift.Target.cs
+C:\Users\Ilija\ATLASrift\Source\ATLASriftEditor.Target.cs
+a\Documents\ATLASrift\UProject 4.8\Source\ATLASriftEditor.Target.cs

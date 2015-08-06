@@ -12,14 +12,14 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 	void ATrack::StaticRegisterNativesATrack()
 	{
 	}
-	IMPLEMENT_CLASS(ATrack, 3904564520);
+	IMPLEMENT_CLASS(ATrack, 1845545418);
 	void AEvent::StaticRegisterNativesAEvent()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"GetEvent",(Native)&AEvent::execGetEvent);
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"SpawnTracks",(Native)&AEvent::execSpawnTracks);
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"ToggleMuons",(Native)&AEvent::execToggleMuons);
 	}
-	IMPLEMENT_CLASS(AEvent, 2239635335);
+	IMPLEMENT_CLASS(AEvent, 3928494214);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
@@ -50,11 +50,30 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 				OuterClass->ClassFlags |= 0x20900080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_y1 = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("y1"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(y1, ATrack), 0x0000000000000000);
+				UProperty* NewProp_x1 = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("x1"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(x1, ATrack), 0x0000000000000000);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(charge, ATrack, bool);
+				UProperty* NewProp_charge = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("charge"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(charge, ATrack), 0x0000000000010001, CPP_BOOL_PROPERTY_BITMASK(charge, ATrack), sizeof(bool), true);
+				UProperty* NewProp_pz = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pz"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(pz, ATrack), 0x0000000000010001);
+				UProperty* NewProp_py = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("py"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(py, ATrack), 0x0000000000010001);
+				UProperty* NewProp_px = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("px"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(px, ATrack), 0x0000000000010001);
+PRAGMA_POP
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Track.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_y1, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_x1, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_charge, TEXT("Category"), TEXT("Track Parameters"));
+				MetaData->SetValue(NewProp_charge, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_pz, TEXT("Category"), TEXT("Track Parameters"));
+				MetaData->SetValue(NewProp_pz, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_py, TEXT("Category"), TEXT("Track Parameters"));
+				MetaData->SetValue(NewProp_py, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_px, TEXT("Category"), TEXT("Track Parameters"));
+				MetaData->SetValue(NewProp_px, TEXT("ModuleRelativePath"), TEXT("Track.h"));
 #endif
 			}
 		}
@@ -138,7 +157,14 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_EventNr = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("EventNr"), RF_Public|RF_Transient|RF_Native) UUInt32Property(CPP_PROPERTY_BASE(EventNr, AEvent), 0x0000000000000000);
 				UProperty* NewProp_RunNr = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RunNr"), RF_Public|RF_Transient|RF_Native) UUInt32Property(CPP_PROPERTY_BASE(RunNr, AEvent), 0x0000000000000000);
-				UProperty* NewProp_Track = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Track"), RF_Public|RF_Transient|RF_Native) UClassProperty(CPP_PROPERTY_BASE(Track, AEvent), 0x0004000000010001, Z_Construct_UClass_ATrack_NoRegister());
+				UProperty* NewProp_Jets = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Jets"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(Jets, AEvent), 0x0004000000010001);
+				UProperty* NewProp_Jets_Inner = new(EC_InternalUseOnlyConstructor, NewProp_Jets, TEXT("Jets"), RF_Public|RF_Transient|RF_Native) UClassProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0004000000000000, Z_Construct_UClass_ATrack_NoRegister());
+				UProperty* NewProp_Clusters = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Clusters"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(Clusters, AEvent), 0x0004000000010001);
+				UProperty* NewProp_Clusters_Inner = new(EC_InternalUseOnlyConstructor, NewProp_Clusters, TEXT("Clusters"), RF_Public|RF_Transient|RF_Native) UClassProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0004000000000000, Z_Construct_UClass_ATrack_NoRegister());
+				UProperty* NewProp_MuonSegments = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MuonSegments"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(MuonSegments, AEvent), 0x0004000000010001);
+				UProperty* NewProp_MuonSegments_Inner = new(EC_InternalUseOnlyConstructor, NewProp_MuonSegments, TEXT("MuonSegments"), RF_Public|RF_Transient|RF_Native) UClassProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0004000000000000, Z_Construct_UClass_ATrack_NoRegister());
+				UProperty* NewProp_IDSegments = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("IDSegments"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(IDSegments, AEvent), 0x0004000000010001);
+				UProperty* NewProp_IDSegments_Inner = new(EC_InternalUseOnlyConstructor, NewProp_IDSegments, TEXT("IDSegments"), RF_Public|RF_Transient|RF_Native) UClassProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0004000000000000, Z_Construct_UClass_ATrack_NoRegister());
 				UProperty* NewProp_TargetHost = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TargetHost"), RF_Public|RF_Transient|RF_Native) UStrProperty(CPP_PROPERTY_BASE(TargetHost, AEvent), 0x0000000000010001);
 PRAGMA_POP
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AEvent_GetEvent()); // 3848012069
@@ -151,8 +177,14 @@ PRAGMA_POP
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Event.h"));
 				MetaData->SetValue(NewProp_EventNr, TEXT("ModuleRelativePath"), TEXT("Event.h"));
 				MetaData->SetValue(NewProp_RunNr, TEXT("ModuleRelativePath"), TEXT("Event.h"));
-				MetaData->SetValue(NewProp_Track, TEXT("Category"), TEXT("Tracks"));
-				MetaData->SetValue(NewProp_Track, TEXT("ModuleRelativePath"), TEXT("Event.h"));
+				MetaData->SetValue(NewProp_Jets, TEXT("Category"), TEXT("Event Visualizations"));
+				MetaData->SetValue(NewProp_Jets, TEXT("ModuleRelativePath"), TEXT("Event.h"));
+				MetaData->SetValue(NewProp_Clusters, TEXT("Category"), TEXT("Event Visualizations"));
+				MetaData->SetValue(NewProp_Clusters, TEXT("ModuleRelativePath"), TEXT("Event.h"));
+				MetaData->SetValue(NewProp_MuonSegments, TEXT("Category"), TEXT("Event Visualizations"));
+				MetaData->SetValue(NewProp_MuonSegments, TEXT("ModuleRelativePath"), TEXT("Event.h"));
+				MetaData->SetValue(NewProp_IDSegments, TEXT("Category"), TEXT("Event Visualizations"));
+				MetaData->SetValue(NewProp_IDSegments, TEXT("ModuleRelativePath"), TEXT("Event.h"));
 				MetaData->SetValue(NewProp_TargetHost, TEXT("Category"), TEXT("EventServer"));
 				MetaData->SetValue(NewProp_TargetHost, TEXT("ModuleRelativePath"), TEXT("Event.h"));
 #endif
@@ -171,7 +203,7 @@ PRAGMA_POP
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ATLASrift")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x5A49BCB9;
+			Guid.A = 0xD1D9498D;
 			Guid.B = 0xDE05D1BD;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
