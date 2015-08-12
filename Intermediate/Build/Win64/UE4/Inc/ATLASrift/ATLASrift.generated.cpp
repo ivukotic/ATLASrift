@@ -12,7 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 	void ATrack::StaticRegisterNativesATrack()
 	{
 	}
-	IMPLEMENT_CLASS(ATrack, 338851546);
+	IMPLEMENT_CLASS(ATrack, 1845545418);
 	void AEvent::StaticRegisterNativesAEvent()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"GetEvent",(Native)&AEvent::execGetEvent);
@@ -51,17 +51,28 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_pz = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pz"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(pz, ATrack), 0x0000000000000000);
-				UProperty* NewProp_py = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("py"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(py, ATrack), 0x0000000000000000);
-				UProperty* NewProp_px = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("px"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(px, ATrack), 0x0000000000000000);
+				UProperty* NewProp_y1 = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("y1"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(y1, ATrack), 0x0000000000000000);
+				UProperty* NewProp_x1 = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("x1"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(x1, ATrack), 0x0000000000000000);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(charge, ATrack, bool);
+				UProperty* NewProp_charge = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("charge"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(charge, ATrack), 0x0000000000010001, CPP_BOOL_PROPERTY_BITMASK(charge, ATrack), sizeof(bool), true);
+				UProperty* NewProp_pz = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pz"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(pz, ATrack), 0x0000000000010001);
+				UProperty* NewProp_py = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("py"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(py, ATrack), 0x0000000000010001);
+				UProperty* NewProp_px = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("px"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(px, ATrack), 0x0000000000010001);
 PRAGMA_POP
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Track.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_y1, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_x1, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_charge, TEXT("Category"), TEXT("Track Parameters"));
+				MetaData->SetValue(NewProp_charge, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_pz, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_pz, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_py, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_py, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_px, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_px, TEXT("ModuleRelativePath"), TEXT("Track.h"));
 #endif
 			}
@@ -192,7 +203,7 @@ PRAGMA_POP
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ATLASrift")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x44B51981;
+			Guid.A = 0xD1D9498D;
 			Guid.B = 0xDE05D1BD;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
