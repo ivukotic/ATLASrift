@@ -107,7 +107,7 @@ public: \
 	ATLASrift_Source_ATLASrift_Event_h_16_INCLASS \
 	ATLASrift_Source_ATLASrift_Event_h_16_STANDARD_CONSTRUCTORS \
 public: \
-PRAGMA_POP
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #define ATLASrift_Source_ATLASrift_Event_h_16_GENERATED_BODY \
@@ -117,7 +117,7 @@ public: \
 	ATLASrift_Source_ATLASrift_Event_h_16_INCLASS_NO_PURE_DECLS \
 	ATLASrift_Source_ATLASrift_Event_h_16_ENHANCED_CONSTRUCTORS \
 private: \
-PRAGMA_POP
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID

@@ -69,7 +69,7 @@
 	#define UE_BUILD_SHIPPING 1
 #endif
 #ifndef UE_ENGINE_DIRECTORY
-	#define UE_ENGINE_DIRECTORY ../../../../../Program Files/Epic Games/4.8/Engine/
+	#define UE_ENGINE_DIRECTORY ../../../../../Program Files/Epic Games/4.9/Engine/
 #endif
 #ifndef UE_PROJECT_NAME
 	#define UE_PROJECT_NAME ATLASrift
@@ -158,6 +158,9 @@
 #ifndef ASSETREGISTRY_API
 	#define ASSETREGISTRY_API 
 #endif
+#ifndef COOKINGSTATS_API
+	#define COOKINGSTATS_API 
+#endif
 #ifndef ENGINEMESSAGES_API
 	#define ENGINEMESSAGES_API 
 #endif
@@ -179,17 +182,32 @@
 #ifndef GAMEPLAYTAGS_API
 	#define GAMEPLAYTAGS_API 
 #endif
+#ifndef GAMEPLAYTASKS_API
+	#define GAMEPLAYTASKS_API 
+#endif
 #ifndef DATABASESUPPORT_API
 	#define DATABASESUPPORT_API 
 #endif
+#ifndef PACKETHANDLER_API
+	#define PACKETHANDLER_API 
+#endif
+#ifndef LIGHTPROPAGATIONVOLUMERUNTIME_API
+	#define LIGHTPROPAGATIONVOLUMERUNTIME_API 
+#endif
 #ifndef CHARACTERAI_API
 	#define CHARACTERAI_API 
+#endif
+#ifndef HTML5NETWORKING_API
+	#define HTML5NETWORKING_API 
 #endif
 #ifndef WMFMEDIA_API
 	#define WMFMEDIA_API 
 #endif
 #ifndef UDPMESSAGING_API
 	#define UDPMESSAGING_API 
+#endif
+#ifndef ARCHVISCHARACTER_API
+	#define ARCHVISCHARACTER_API 
 #endif
 #ifndef CABLECOMPONENT_API
 	#define CABLECOMPONENT_API 
@@ -203,8 +221,17 @@
 #ifndef LEAPMOTIONCONTROLLER_API
 	#define LEAPMOTIONCONTROLLER_API 
 #endif
+#ifndef HEADMOUNTEDDISPLAY_API
+	#define HEADMOUNTEDDISPLAY_API 
+#endif
+#ifndef OCULUSLIBRARY_API
+	#define OCULUSLIBRARY_API 
+#endif
 #ifndef OCULUSRIFT_API
 	#define OCULUSRIFT_API 
+#endif
+#ifndef GEARVR_API
+	#define GEARVR_API 
 #endif
 #ifndef PROCEDURALMESHCOMPONENT_API
 	#define PROCEDURALMESHCOMPONENT_API 
@@ -260,6 +287,15 @@
 #ifndef D3D11RHI_API
 	#define D3D11RHI_API 
 #endif
+#ifndef SUB_ALLOCATED_DEFAULT_ALLOCATIONS
+	#define SUB_ALLOCATED_DEFAULT_ALLOCATIONS 1
+#endif
+#ifndef SUPPORTS_MEMORY_RESIDENCY
+	#define SUPPORTS_MEMORY_RESIDENCY 0
+#endif
+#ifndef D3D12RHI_API
+	#define D3D12RHI_API 
+#endif
 #ifndef WITH_UNREALPNG
 	#define WITH_UNREALPNG 1
 #endif
@@ -274,9 +310,6 @@
 #endif
 #ifndef OPENGLDRV_API
 	#define OPENGLDRV_API 
-#endif
-#ifndef HEADMOUNTEDDISPLAY_API
-	#define HEADMOUNTEDDISPLAY_API 
 #endif
 #ifndef FOLIAGE_API
 	#define FOLIAGE_API 
@@ -305,8 +338,11 @@
 #ifndef LANDSCAPE_API
 	#define LANDSCAPE_API 
 #endif
-#ifndef MOVIESCENECORE_API
-	#define MOVIESCENECORE_API 
+#ifndef MOVIESCENE_API
+	#define MOVIESCENE_API 
+#endif
+#ifndef MOVIESCENETRACKS_API
+	#define MOVIESCENETRACKS_API 
 #endif
 #ifndef SLATERHIRENDERER_API
 	#define SLATERHIRENDERER_API 
@@ -323,11 +359,14 @@
 #ifndef INTERNATIONALIZATION_API
 	#define INTERNATIONALIZATION_API 
 #endif
+#ifndef RELIABILITYHANDLERCOMPONENT_API
+	#define RELIABILITYHANDLERCOMPONENT_API 
+#endif
 #ifndef NAVMESH_API
 	#define NAVMESH_API 
 #endif
-#ifndef MOVIESCENECORETYPES_API
-	#define MOVIESCENECORETYPES_API 
+#ifndef ANIMGRAPHRUNTIME_API
+	#define ANIMGRAPHRUNTIME_API 
 #endif
 #ifndef MOVIEPLAYER_API
 	#define MOVIEPLAYER_API 
@@ -352,6 +391,9 @@
 #endif
 #ifndef IMAGECORE_API
 	#define IMAGECORE_API 
+#endif
+#ifndef JSONUTILITIES_API
+	#define JSONUTILITIES_API 
 #endif
 #ifndef ONLINESUBSYSTEM_PACKAGE
 	#define ONLINESUBSYSTEM_PACKAGE 1
@@ -414,6 +456,8 @@ void UELinkerFixups()
     EmptyLinkFunctionForGeneratedCodeSlateCore();
     extern void EmptyLinkFunctionForGeneratedCodeSlate();
     EmptyLinkFunctionForGeneratedCodeSlate();
+    extern void EmptyLinkFunctionForGeneratedCodeSlateReflector();
+    EmptyLinkFunctionForGeneratedCodeSlateReflector();
     extern void EmptyLinkFunctionForGeneratedCodeEngineMessages();
     EmptyLinkFunctionForGeneratedCodeEngineMessages();
     extern void EmptyLinkFunctionForGeneratedCodeEngineSettings();
@@ -426,24 +470,40 @@ void UELinkerFixups()
     EmptyLinkFunctionForGeneratedCodeMoviePlayer();
     extern void EmptyLinkFunctionForGeneratedCodeSerialization();
     EmptyLinkFunctionForGeneratedCodeSerialization();
+    extern void EmptyLinkFunctionForGeneratedCodeHeadMountedDisplay();
+    EmptyLinkFunctionForGeneratedCodeHeadMountedDisplay();
     extern void EmptyLinkFunctionForGeneratedCodeSessionMessages();
     EmptyLinkFunctionForGeneratedCodeSessionMessages();
     extern void EmptyLinkFunctionForGeneratedCodePaper2D();
     EmptyLinkFunctionForGeneratedCodePaper2D();
     extern void EmptyLinkFunctionForGeneratedCodeGameplayTags();
     EmptyLinkFunctionForGeneratedCodeGameplayTags();
+    extern void EmptyLinkFunctionForGeneratedCodeLightPropagationVolumeRuntime();
+    EmptyLinkFunctionForGeneratedCodeLightPropagationVolumeRuntime();
+    extern void EmptyLinkFunctionForGeneratedCodeGameplayTasks();
+    EmptyLinkFunctionForGeneratedCodeGameplayTasks();
     extern void EmptyLinkFunctionForGeneratedCodeAIModule();
     EmptyLinkFunctionForGeneratedCodeAIModule();
+    extern void EmptyLinkFunctionForGeneratedCodeJsonUtilities();
+    EmptyLinkFunctionForGeneratedCodeJsonUtilities();
+    extern void EmptyLinkFunctionForGeneratedCodeOnlineSubsystem();
+    EmptyLinkFunctionForGeneratedCodeOnlineSubsystem();
+    extern void EmptyLinkFunctionForGeneratedCodeOnlineSubsystemUtils();
+    EmptyLinkFunctionForGeneratedCodeOnlineSubsystemUtils();
+    extern void EmptyLinkFunctionForGeneratedCodeHTML5Networking();
+    EmptyLinkFunctionForGeneratedCodeHTML5Networking();
     extern void EmptyLinkFunctionForGeneratedCodeUdpMessaging();
     EmptyLinkFunctionForGeneratedCodeUdpMessaging();
+    extern void EmptyLinkFunctionForGeneratedCodeArchVisCharacter();
+    EmptyLinkFunctionForGeneratedCodeArchVisCharacter();
     extern void EmptyLinkFunctionForGeneratedCodeCableComponent();
     EmptyLinkFunctionForGeneratedCodeCableComponent();
     extern void EmptyLinkFunctionForGeneratedCodeCustomMeshComponent();
     EmptyLinkFunctionForGeneratedCodeCustomMeshComponent();
     extern void EmptyLinkFunctionForGeneratedCodeLeapMotionController();
     EmptyLinkFunctionForGeneratedCodeLeapMotionController();
-    extern void EmptyLinkFunctionForGeneratedCodeOculusRift();
-    EmptyLinkFunctionForGeneratedCodeOculusRift();
+    extern void EmptyLinkFunctionForGeneratedCodeOculusLibrary();
+    EmptyLinkFunctionForGeneratedCodeOculusLibrary();
     extern void EmptyLinkFunctionForGeneratedCodeProceduralMeshComponent();
     EmptyLinkFunctionForGeneratedCodeProceduralMeshComponent();
     extern void EmptyLinkFunctionForGeneratedCodeSteamVR();
@@ -456,30 +516,36 @@ void UELinkerFixups()
     EmptyLinkFunctionForGeneratedCodeFoliage();
     extern void EmptyLinkFunctionForGeneratedCodeLandscape();
     EmptyLinkFunctionForGeneratedCodeLandscape();
-    extern void EmptyLinkFunctionForGeneratedCodeMovieSceneCore();
-    EmptyLinkFunctionForGeneratedCodeMovieSceneCore();
+    extern void EmptyLinkFunctionForGeneratedCodeMovieScene();
+    EmptyLinkFunctionForGeneratedCodeMovieScene();
+    extern void EmptyLinkFunctionForGeneratedCodeMovieSceneTracks();
+    EmptyLinkFunctionForGeneratedCodeMovieSceneTracks();
     extern void EmptyLinkFunctionForGeneratedCodeUMG();
     EmptyLinkFunctionForGeneratedCodeUMG();
+    extern void EmptyLinkFunctionForGeneratedCodeVectorVM();
+    EmptyLinkFunctionForGeneratedCodeVectorVM();
     extern void EmptyLinkFunctionForGeneratedCodeNiagara();
     EmptyLinkFunctionForGeneratedCodeNiagara();
-    extern void EmptyLinkFunctionForGeneratedCodeMovieSceneCoreTypes();
-    EmptyLinkFunctionForGeneratedCodeMovieSceneCoreTypes();
-    extern void EmptyLinkFunctionForGeneratedCodeOnlineSubsystem();
-    EmptyLinkFunctionForGeneratedCodeOnlineSubsystem();
-    extern void EmptyLinkFunctionForGeneratedCodeOnlineSubsystemUtils();
-    EmptyLinkFunctionForGeneratedCodeOnlineSubsystemUtils();
+    extern void EmptyLinkFunctionForGeneratedCodeAnimGraphRuntime();
+    EmptyLinkFunctionForGeneratedCodeAnimGraphRuntime();
     extern void EmptyLinkFunctionForGeneratedCodeGameLiveStreaming();
     EmptyLinkFunctionForGeneratedCodeGameLiveStreaming();
     extern void EmptyLinkFunctionForStaticInitializationLaunch();
     EmptyLinkFunctionForStaticInitializationLaunch();
     extern void EmptyLinkFunctionForStaticInitializationPaper2D();
     EmptyLinkFunctionForStaticInitializationPaper2D();
+    extern void EmptyLinkFunctionForStaticInitializationLightPropagationVolumeRuntime();
+    EmptyLinkFunctionForStaticInitializationLightPropagationVolumeRuntime();
     extern void EmptyLinkFunctionForStaticInitializationCharacterAI();
     EmptyLinkFunctionForStaticInitializationCharacterAI();
+    extern void EmptyLinkFunctionForStaticInitializationHTML5Networking();
+    EmptyLinkFunctionForStaticInitializationHTML5Networking();
     extern void EmptyLinkFunctionForStaticInitializationWmfMedia();
     EmptyLinkFunctionForStaticInitializationWmfMedia();
     extern void EmptyLinkFunctionForStaticInitializationUdpMessaging();
     EmptyLinkFunctionForStaticInitializationUdpMessaging();
+    extern void EmptyLinkFunctionForStaticInitializationArchVisCharacter();
+    EmptyLinkFunctionForStaticInitializationArchVisCharacter();
     extern void EmptyLinkFunctionForStaticInitializationCableComponent();
     EmptyLinkFunctionForStaticInitializationCableComponent();
     extern void EmptyLinkFunctionForStaticInitializationCustomMeshComponent();
@@ -488,6 +554,8 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationExampleDeviceProfileSelector();
     extern void EmptyLinkFunctionForStaticInitializationLeapMotionController();
     EmptyLinkFunctionForStaticInitializationLeapMotionController();
+    extern void EmptyLinkFunctionForStaticInitializationOculusLibrary();
+    EmptyLinkFunctionForStaticInitializationOculusLibrary();
     extern void EmptyLinkFunctionForStaticInitializationOculusRift();
     EmptyLinkFunctionForStaticInitializationOculusRift();
     extern void EmptyLinkFunctionForStaticInitializationProceduralMeshComponent();
@@ -534,6 +602,8 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationUtilityShaders();
     extern void EmptyLinkFunctionForStaticInitializationD3D11RHI();
     EmptyLinkFunctionForStaticInitializationD3D11RHI();
+    extern void EmptyLinkFunctionForStaticInitializationD3D12RHI();
+    EmptyLinkFunctionForStaticInitializationD3D12RHI();
     extern void EmptyLinkFunctionForStaticInitializationImageWrapper();
     EmptyLinkFunctionForStaticInitializationImageWrapper();
     extern void EmptyLinkFunctionForStaticInitializationOpenGLDrv();
@@ -552,10 +622,12 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationPhysXFormats();
     extern void EmptyLinkFunctionForStaticInitializationLandscape();
     EmptyLinkFunctionForStaticInitializationLandscape();
-    extern void EmptyLinkFunctionForStaticInitializationMovieSceneCore();
-    EmptyLinkFunctionForStaticInitializationMovieSceneCore();
     extern void EmptyLinkFunctionForStaticInitializationHTTP();
     EmptyLinkFunctionForStaticInitializationHTTP();
+    extern void EmptyLinkFunctionForStaticInitializationMovieScene();
+    EmptyLinkFunctionForStaticInitializationMovieScene();
+    extern void EmptyLinkFunctionForStaticInitializationMovieSceneTracks();
+    EmptyLinkFunctionForStaticInitializationMovieSceneTracks();
     extern void EmptyLinkFunctionForStaticInitializationSlateRHIRenderer();
     EmptyLinkFunctionForStaticInitializationSlateRHIRenderer();
     extern void EmptyLinkFunctionForStaticInitializationUMG();
@@ -566,12 +638,18 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationNiagara();
     extern void EmptyLinkFunctionForStaticInitializationInternationalization();
     EmptyLinkFunctionForStaticInitializationInternationalization();
+    extern void EmptyLinkFunctionForStaticInitializationReliabilityHandlerComponent();
+    EmptyLinkFunctionForStaticInitializationReliabilityHandlerComponent();
+    extern void EmptyLinkFunctionForStaticInitializationPacketHandler();
+    EmptyLinkFunctionForStaticInitializationPacketHandler();
     extern void EmptyLinkFunctionForStaticInitializationNavmesh();
     EmptyLinkFunctionForStaticInitializationNavmesh();
     extern void EmptyLinkFunctionForStaticInitializationMessaging();
     EmptyLinkFunctionForStaticInitializationMessaging();
     extern void EmptyLinkFunctionForStaticInitializationAssetRegistry();
     EmptyLinkFunctionForStaticInitializationAssetRegistry();
+    extern void EmptyLinkFunctionForStaticInitializationCookingStats();
+    EmptyLinkFunctionForStaticInitializationCookingStats();
     extern void EmptyLinkFunctionForStaticInitializationEngineMessages();
     EmptyLinkFunctionForStaticInitializationEngineMessages();
     extern void EmptyLinkFunctionForStaticInitializationEngineSettings();
@@ -580,12 +658,14 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationSynthBenchmark();
     extern void EmptyLinkFunctionForStaticInitializationGameplayTags();
     EmptyLinkFunctionForStaticInitializationGameplayTags();
+    extern void EmptyLinkFunctionForStaticInitializationGameplayTasks();
+    EmptyLinkFunctionForStaticInitializationGameplayTasks();
     extern void EmptyLinkFunctionForStaticInitializationAIModule();
     EmptyLinkFunctionForStaticInitializationAIModule();
     extern void EmptyLinkFunctionForStaticInitializationDatabaseSupport();
     EmptyLinkFunctionForStaticInitializationDatabaseSupport();
-    extern void EmptyLinkFunctionForStaticInitializationMovieSceneCoreTypes();
-    EmptyLinkFunctionForStaticInitializationMovieSceneCoreTypes();
+    extern void EmptyLinkFunctionForStaticInitializationAnimGraphRuntime();
+    EmptyLinkFunctionForStaticInitializationAnimGraphRuntime();
     extern void EmptyLinkFunctionForStaticInitializationMoviePlayer();
     EmptyLinkFunctionForStaticInitializationMoviePlayer();
     extern void EmptyLinkFunctionForStaticInitializationStreamingPauseRendering();
@@ -602,6 +682,8 @@ void UELinkerFixups()
     EmptyLinkFunctionForStaticInitializationHttpNetworkReplayStreaming();
     extern void EmptyLinkFunctionForStaticInitializationImageCore();
     EmptyLinkFunctionForStaticInitializationImageCore();
+    extern void EmptyLinkFunctionForStaticInitializationJsonUtilities();
+    EmptyLinkFunctionForStaticInitializationJsonUtilities();
     extern void EmptyLinkFunctionForStaticInitializationOnlineSubsystem();
     EmptyLinkFunctionForStaticInitializationOnlineSubsystem();
     extern void EmptyLinkFunctionForStaticInitializationVoice();

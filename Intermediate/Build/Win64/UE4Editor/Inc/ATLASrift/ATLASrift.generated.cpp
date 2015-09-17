@@ -12,14 +12,14 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 	void ATrack::StaticRegisterNativesATrack()
 	{
 	}
-	IMPLEMENT_CLASS(ATrack, 1845545418);
+	IMPLEMENT_CLASS(ATrack, 1671589099);
 	void AEvent::StaticRegisterNativesAEvent()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"GetEvent",(Native)&AEvent::execGetEvent);
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"SpawnTracks",(Native)&AEvent::execSpawnTracks);
 		FNativeFunctionRegistrar::RegisterFunction(AEvent::StaticClass(),"ToggleMuons",(Native)&AEvent::execToggleMuons);
 	}
-	IMPLEMENT_CLASS(AEvent, 3928494214);
+	IMPLEMENT_CLASS(AEvent, 2398475148);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
@@ -58,7 +58,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_pz = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pz"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(pz, ATrack), 0x0000000000010001);
 				UProperty* NewProp_py = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("py"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(py, ATrack), 0x0000000000010001);
 				UProperty* NewProp_px = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("px"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(px, ATrack), 0x0000000000010001);
-PRAGMA_POP
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -166,7 +166,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_IDSegments = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("IDSegments"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(IDSegments, AEvent), 0x0004000000010001);
 				UProperty* NewProp_IDSegments_Inner = new(EC_InternalUseOnlyConstructor, NewProp_IDSegments, TEXT("IDSegments"), RF_Public|RF_Transient|RF_Native) UClassProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0004000000000000, Z_Construct_UClass_ATrack_NoRegister());
 				UProperty* NewProp_TargetHost = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TargetHost"), RF_Public|RF_Transient|RF_Native) UStrProperty(CPP_PROPERTY_BASE(TargetHost, AEvent), 0x0000000000010001);
-PRAGMA_POP
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AEvent_GetEvent()); // 3848012069
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AEvent_SpawnTracks()); // 1209136393
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AEvent_ToggleMuons()); // 2134651739
@@ -203,7 +203,7 @@ PRAGMA_POP
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ATLASrift")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xD1D9498D;
+			Guid.A = 0x3164B264;
 			Guid.B = 0xDE05D1BD;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

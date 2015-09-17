@@ -67,7 +67,7 @@ public: \
 	ATLASrift_Source_ATLASrift_Track_h_14_INCLASS \
 	ATLASrift_Source_ATLASrift_Track_h_14_STANDARD_CONSTRUCTORS \
 public: \
-PRAGMA_POP
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #define ATLASrift_Source_ATLASrift_Track_h_14_GENERATED_BODY \
@@ -77,7 +77,7 @@ public: \
 	ATLASrift_Source_ATLASrift_Track_h_14_INCLASS_NO_PURE_DECLS \
 	ATLASrift_Source_ATLASrift_Track_h_14_ENHANCED_CONSTRUCTORS \
 private: \
-PRAGMA_POP
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
