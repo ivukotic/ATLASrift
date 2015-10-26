@@ -60,9 +60,9 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
 		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
 		{
-			uint32 runnr = JsonParsed->GetNumberField("run");
-			uint32 eventnr = JsonParsed->GetNumberField("event");
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("{\"run: %d event: %d\"}"), runnr, eventnr));
+			RunNr = JsonParsed->GetNumberField("run");
+			EventNr = JsonParsed->GetNumberField("event");
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr));
 		}
 	}
 	else
@@ -73,7 +73,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 
 void AEvent::SpawnTracks(){
 	FActorSpawnParameters SpawnInfo;
-	SpawnInfo.bNoCollisionFail = true;
+	//SpawnInfo.SpawnCollisionHandlingOverride;
 	SpawnInfo.Owner = this;
 	SpawnInfo.bDeferConstruction = false;
 
@@ -98,3 +98,10 @@ void AEvent::SpawnTracks(){
 
 void AEvent::ToggleMuons(){}
 
+int32 AEvent::GetEventNr(){
+	return EventNr;
+}
+
+int32 AEvent::GetRunNr(){
+	return RunNr;
+}

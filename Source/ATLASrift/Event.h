@@ -37,9 +37,14 @@ public:
 		TArray<TSubclassOf<class ATrack> > Jets;
 
 	UPROPERTY()
-		uint32 RunNr;
+		int32 RunNr;
 	UPROPERTY()
-		uint32 EventNr;
+		int32 EventNr;
+
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		int32 GetEventNr();
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		int32 GetRunNr();
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void SpawnTracks();
