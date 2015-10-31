@@ -17,6 +17,10 @@
 		{
 			"Name": "LeapMotionController",
 			"Enabled": false
+		},
+		{
+			"Name": "OculusAudio",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [

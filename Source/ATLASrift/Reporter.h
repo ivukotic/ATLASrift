@@ -11,26 +11,22 @@
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ATLASRIFT_API UReporter : public UActorComponent
 {
-	
+
+	GENERATED_BODY()
+
 	FHttpModule* Http;
 
-	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
-		FString TargetHost;
-	GENERATED_BODY()
-	
+	UPROPERTY(EditDefaultsOnly, Category = "ReporterSettings")
+	FString TargetHost;
+
+	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 public:	
 	// Sets default values for this component's properties
 	UReporter();
 
-	// Called when the game starts
-	virtual void BeginPlay() override;
-	
-	// Called every frame
-	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
-
 	UFUNCTION(BlueprintCallable, Category = "Report On")
-		void StartWork();
+		void StartWork(FString js);
 	UFUNCTION(BlueprintCallable, Category = "Report On")
 		void StopWork();
 };

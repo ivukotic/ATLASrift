@@ -11,41 +11,43 @@ UReporter::UReporter()
 	Http = &FHttpModule::Get();
 }
 
-
-// Called when the game starts
-void UReporter::BeginPlay()
+void UReporter::StartWork(FString parameters)
 {
-	Super::BeginPlay();
-}
-
-
-// Called every frame
-void UReporter::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
-{
-	// Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
-}
-
-void UReporter::StartWork()
-{
-
+	UE_LOG(LogTemp, Display, TEXT("Sending START message"));
 	if (!Http) return;
 	if (!Http->IsHttpEnabled()) return;
 	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
-	
-	Request->SetVerb("GET");
-	Request->SetURL(TargetHost + "/eventserver");
-	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
+
+	UE_LOG(LogTemp, Display, TEXT("configuration: %s"), *parameters);
+
+	Request->SetVerb("POST");
+	Request->SetURL(TargetHost + "/ATLASriftMonitor");
+	Request->SetHeader("User-Agent", "ATLASriftClient/0.7");
 	Request->SetHeader("Accept", "application/json");
-	Request->SetContentAsString("started");
+	Request->SetHeader("Content-Type", "application/json");
+	Request->SetContentAsString(parameters);
+	Request->OnProcessRequestComplete().BindUObject(this, &UReporter::OnResponseReceived);
 	if (!Request->ProcessRequest())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("ERROR on processing request!"));
+		UE_LOG(LogTemp, Error, TEXT("ERROR on Sending START message"));
+	}
+	
+}
+
+void UReporter::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful){
+	if (!Response.IsValid())
+	{
+		UE_LOG(LogTemp, Error, TEXT("Error in sending data."));
+	}
+	else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
+	{
+		UE_LOG(LogTemp, Display, TEXT("Message sent"));
 	}
 }
 
 void UReporter::StopWork()
 {
-
+	UE_LOG(LogTemp, Display, TEXT("Sending STOP message"));
 	if (!Http) return;
 	if (!Http->IsHttpEnabled()) return;
 	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
@@ -57,6 +59,6 @@ void UReporter::StopWork()
 	Request->SetContentAsString("stopped");
 	if (!Request->ProcessRequest())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("ERROR on processing request!"));
+		UE_LOG(LogTemp, Error, TEXT("ERROR on Sending STOP message"));
 	}
 }
