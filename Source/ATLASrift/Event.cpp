@@ -17,7 +17,6 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 void AEvent::BeginPlay()
 {
 	Super::BeginPlay();
-	GetEvent();
 }
 
 
@@ -40,9 +39,10 @@ void AEvent::GetEvent()
 	Request->OnProcessRequestComplete().BindUObject(this, &AEvent::OnResponseReceived);
 	if (!Request->ProcessRequest())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("ERROR on processing request!"));
+		UE_LOG(LogTemp, Error, TEXT("Error on getting event."));
 	}
 }
+
 void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
 {
 
@@ -50,7 +50,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	// If HTTP fails client-side, this will still be called but with a NULL shared pointer!
 	if (!Response.IsValid())
 	{
-		MessageBody = "{\"success\":\"Error: Unable to get event!\"}";
+		UE_LOG(LogTemp, Error, TEXT("Error on getting event payload."));
 	}
 	else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
 	{
@@ -61,13 +61,14 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
 		{
 			RunNr = JsonParsed->GetNumberField("run");
-			EventNr = JsonParsed->GetNumberField("event");
+			EventNr = JsonParsed->GetNumberField("event"); 
+			UE_LOG(LogTemp, Display, TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr);
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr));
 		}
 	}
 	else
 	{
-		MessageBody = FString::Printf(TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
+		UE_LOG(LogTemp, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
 }
 
