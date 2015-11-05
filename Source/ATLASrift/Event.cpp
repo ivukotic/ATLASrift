@@ -20,7 +20,8 @@ void AEvent::BeginPlay()
 }
 
 
-
+//void AEvent::onEventLoaded(){
+//}
 
 void AEvent::GetEvent()
 {
@@ -63,13 +64,14 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 			RunNr = JsonParsed->GetNumberField("run");
 			EventNr = JsonParsed->GetNumberField("event"); 
 			UE_LOG(LogTemp, Display, TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr));
 		}
 	}
 	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
+	onEventLoaded();
 }
 
 void AEvent::SpawnTracks(){
@@ -97,7 +99,6 @@ void AEvent::SpawnTracks(){
 
 }
 
-void AEvent::ToggleMuons(){}
 
 int32 AEvent::GetEventNr(){
 	return EventNr;

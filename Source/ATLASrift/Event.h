@@ -25,6 +25,11 @@ class ATLASRIFT_API AEvent : public AActor
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
+	UPROPERTY()
+		int32 RunNr;
+	UPROPERTY()
+		int32 EventNr;
+
 public:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
@@ -36,10 +41,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
 		TArray<TSubclassOf<class ATrack> > Jets;
 
-	UPROPERTY()
-		int32 RunNr;
-	UPROPERTY()
-		int32 EventNr;
+	UFUNCTION(BlueprintImplementableEvent, Category = "EventServer")
+		void onEventLoaded();
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetEventNr();
@@ -51,9 +54,5 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void GetEvent();
-
-	UFUNCTION(BlueprintCallable, Category = "Event Functions")
-		void ToggleMuons();
-
-	
+			
 };
