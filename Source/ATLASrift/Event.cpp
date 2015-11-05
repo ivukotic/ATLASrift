@@ -61,8 +61,9 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
 		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
 		{
-			RunNr = JsonParsed->GetNumberField("run");
-			EventNr = JsonParsed->GetNumberField("event"); 
+			RunNr = JsonParsed->GetNumberField("runnr");
+			EventNr = JsonParsed->GetNumberField("eventnr");
+			Description = JsonParsed->GetStringField("description");
 			UE_LOG(LogTemp, Display, TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr);
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::Printf(TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr));
 		}
@@ -93,7 +94,7 @@ void AEvent::SpawnTracks(){
 			FRotator EventSpawnRotation(0.0f, 0.0f, 0.0f);
 			//ATrack* idSegment = AEvent::GetWorld()->SpawnActor<ATrack>(ATrack::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
 			ATrack* idSegment = AEvent::GetWorld()->SpawnActor<ATrack>(IDSegments[0], EventSpawnLoc, EventSpawnRotation, SpawnInfo);
-			idSegment->SetParameters(123.123, 1231.123, 12.12, 1);
+			idSegment->SetParameters(123.123, 1231.123, 12.12, 123,23);
 	/*	}*/
 	//}
 
@@ -106,4 +107,8 @@ int32 AEvent::GetEventNr(){
 
 int32 AEvent::GetRunNr(){
 	return RunNr;
+}
+
+FString AEvent::GetDescription(){
+	return Description;
 }

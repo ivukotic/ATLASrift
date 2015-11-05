@@ -8,10 +8,11 @@ ATrack::ATrack(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 
 }
 
-void ATrack::SetParameters(float x, float y, float z, bool ch){
-	px = x;
-	py = y;
-	pz = z;
-	charge = ch;
+void ATrack::SetParameters(float d0, float z0, float phi, float theta, float qop){
+	this->d0 = d0;
+	this->z0 = z0;
+	this->phi = phi;
+	this->theta = theta;
+	this->qop = qop;
 }
 

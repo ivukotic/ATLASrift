@@ -13,22 +13,26 @@ class ATLASRIFT_API ATrack : public AActor
 {
 	GENERATED_BODY()
 	
-		ATrack(const FObjectInitializer& ObjectInitializer);
+	ATrack(const FObjectInitializer& ObjectInitializer);
 	
 public:
-	UPROPERTY(EditDefaultsOnly, Category = "Track Parameters")
-		float px;
-	UPROPERTY(EditDefaultsOnly, Category = "Track Parameters")
-		float py;
-	UPROPERTY(EditDefaultsOnly, Category = "Track Parameters")
-		float pz;
-	UPROPERTY(EditDefaultsOnly, Category = "Track Parameters")
-		bool charge;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		int32 dof;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		float chi2;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		float d0;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		float z0;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		float phi;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		float theta;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		float qop;
 	UPROPERTY()
-		float x1;
-	UPROPERTY()
-		float y1;
+		TArray<FVector> points;
 
-	void SetParameters(float px, float py, float pz, bool charge);
+	void SetParameters(float d0, float z0, float phi, float theta, float qop);
 	
 };

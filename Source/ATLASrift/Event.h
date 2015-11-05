@@ -25,21 +25,20 @@ class ATLASRIFT_API AEvent : public AActor
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
-	UPROPERTY()
-		int32 RunNr;
-	UPROPERTY()
-		int32 EventNr;
+	int32 RunNr;
+	int32 EventNr;
+	FString Description;
 
 public:
 
-	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
+	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
 		TArray<TSubclassOf<class ATrack> > IDSegments;
-	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
+	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
 		TArray<TSubclassOf<class ATrack> > MuonSegments;
-	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
-		TArray<TSubclassOf<class ATrack> > Clusters;
-	UPROPERTY(EditDefaultsOnly, Category = "Event Visualizations")
-		TArray<TSubclassOf<class ATrack> > Jets;
+	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
+		TArray<TSubclassOf<class ACluster> > Clusters;
+	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
+		TArray<TSubclassOf<class AJet> > Jets;
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "EventServer")
 		void onEventLoaded();
@@ -48,6 +47,8 @@ public:
 		int32 GetEventNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetRunNr();
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		FString GetDescription();
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void SpawnTracks();
