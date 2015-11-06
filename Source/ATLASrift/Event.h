@@ -28,20 +28,21 @@ class ATLASRIFT_API AEvent : public AActor
 	int32 RunNr;
 	int32 EventNr;
 	FString Description;
+	TArray<FString> TrackTypes;
+	TArray<FString> ClusterTypes;
+	TArray<FString> JetTypes;
 
 public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
-		TArray<TSubclassOf<class ATrack> > IDSegments;
-	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
-		TArray<TSubclassOf<class ATrack> > MuonSegments;
+		TArray<TSubclassOf<class ATrack> > Tracks;
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
 		TArray<TSubclassOf<class ACluster> > Clusters;
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
 		TArray<TSubclassOf<class AJet> > Jets;
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "EventServer")
-		void onEventLoaded();
+		void onEventDownloaded();
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetEventNr();

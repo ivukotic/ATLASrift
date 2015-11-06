@@ -17,6 +17,8 @@ class ATLASRIFT_API ATrack : public AActor
 	
 public:
 	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
+		int32 type;
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
 		int32 dof;
 	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
 		float chi2;
