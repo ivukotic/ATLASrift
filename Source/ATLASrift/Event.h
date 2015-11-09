@@ -25,8 +25,10 @@ class ATLASRIFT_API AEvent : public AActor
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
-	int32 RunNr;
-	int32 EventNr;
+    int32 RunNr;
+    int32 EventNr;
+    int32 eventID;
+    int32 totalEvents;
 	FString Description;
 	TArray<FString> TrackTypes;
 	TArray<FString> ClusterTypes;

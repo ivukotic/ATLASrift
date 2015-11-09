@@ -9,8 +9,10 @@
 
 AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
-	TargetHost = "http://cl-analytics.mwt2.org:9200/atlasrift_events/event/_search";
+	TargetHost = "http://cl-analytics.mwt2.org:9200/";
 	Http = &FHttpModule::Get();
+    eventID=0;
+    totalEvents=1;
 }
 
 void AEvent::BeginPlay()
@@ -28,7 +30,7 @@ void AEvent::GetEvent()
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("HTTP initialized OK!"));
 
 	Request->SetVerb("GET");
-	Request->SetURL(TargetHost);// +"/eventserver");
+	Request->SetURL(TargetHost + "atlasrift_events/event/" + FString::FromInt(eventID%totalEvents));
 	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
 //	Request->SetHeader("Content-Type", "application/json");
 	Request->SetHeader("Accept", "application/json");
@@ -58,16 +60,43 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
 		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
 		{
-			UE_LOG(LogTemp, Display, TEXT("took %d"), JsonParsed->GetIntegerField("took"));
-			UE_LOG(LogTemp, Display, TEXT("timed_out %d"), JsonParsed->GetBoolField("timed_out"));
-			TSharedPtr<FJsonObject> EventData = JsonParsed->GetObjectField("hits");
-			UE_LOG(LogTemp, Display, TEXT("total %d"), EventData->GetIntegerField("total"));
-			TArray<TSharedPtr<FJsonValue>> evda = EventData->GetArrayField("hits");
-			FJsonObject re = *evda[0]->AsObject().Get()->GetObjectField("_source");
-			RunNr = re.GetNumberField("runnr");
-			EventNr = re.GetNumberField("eventnr");
-			Description = re.GetStringField("description");
+//			UE_LOG(LogTemp, Display, TEXT("took %d"), JsonParsed->GetIntegerField("took"));
+//			UE_LOG(LogTemp, Display, TEXT("timed_out %d"), JsonParsed->GetBoolField("timed_out"));
+			
+            TSharedPtr<FJsonObject> jEvent = JsonParsed->GetObjectField("_source");
+            
+//			UE_LOG(LogTemp, Display, TEXT("total %d"), EventData->GetIntegerField("total"));
+//			TArray<TSharedPtr<FJsonValue>> evda = EventData->GetArrayField("hits");
+//			FJsonObject re = *evda[0]->AsObject().Get()->GetObjectField("_source");
+			
+            RunNr = jEvent->GetNumberField("runnr");
+			EventNr = jEvent->GetNumberField("eventnr");
+			Description = jEvent->GetStringField("description");
 			UE_LOG(LogTemp, Display, TEXT("{\"run: %d event: %d\"}"), RunNr, EventNr);
+            
+            TSharedPtr<FJsonObject> jClusters = jEvent->GetObjectField("xAOD::Type::CaloCluster");
+            
+            for (auto currJsonValue = jClusters->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+            {
+                // Get the key name
+                const FString Name = (*currJsonValue).Key;
+                ClusterTypes.Add(Name);
+                UE_LOG(LogTemp, Display, TEXT("cluster type: %d "), *Name);
+                
+                // Get the value as a FJsonValue object
+                TSharedPtr< FJsonValue > Value = (*currJsonValue).Value;
+                
+            }
+            
+            //TArray<TSharedPtr<FJsonValue>> clustertype = EventData->GetArrayField("hits");
+//            for (int32 i = 0; i < objArray.Num(); i++)
+//            {
+//              FJsonObject re = *objArray[i]->AsObject().Get()->GetObjectField("_source");
+//                FString name = json->GetStringField(TEXT("51205"));
+//                
+//            }
+            TSharedPtr<FJsonObject> jJets = jEvent->GetObjectField("xAOD::Type::Jet");
+            TSharedPtr<FJsonObject> jTracks = jEvent->GetObjectField("xAOD::Type::TrackParticle");
 			
 
 		}
