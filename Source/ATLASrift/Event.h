@@ -7,6 +7,7 @@
 #include "GameFramework/Actor.h"
 #include "Event.generated.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(EventLog, Log, All);
 /**
  * 
  */
@@ -14,6 +15,8 @@ UCLASS()
 class ATLASRIFT_API AEvent : public AActor
 {
 	GENERATED_BODY()
+
+		
 	AEvent(const FObjectInitializer& ObjectInitializer);
 	
 	virtual void BeginPlay() override;
@@ -33,7 +36,9 @@ class ATLASRIFT_API AEvent : public AActor
 	TArray<FString> TrackTypes;
 	TArray<FString> ClusterTypes;
 	TArray<FString> JetTypes;
-
+	FVector* EventSpawnLoc;
+	FRotator* EventSpawnRotation;
+	FActorSpawnParameters SpawnInfo;
 public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
@@ -54,9 +59,6 @@ public:
 		FString GetDescription();
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
-		void SpawnTracks();
-
-	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void GetEvent();
-			
+
 };
