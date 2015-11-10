@@ -7,7 +7,7 @@
 // Sets default values for this component's properties
 UReporter::UReporter()
 {
-	TargetHost = "http://waniotest.appspot.com";
+	TargetHost = "http://atlasrift.appspot.com";
 	Http = &FHttpModule::Get();
 }
 

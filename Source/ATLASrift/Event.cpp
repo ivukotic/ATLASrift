@@ -11,7 +11,7 @@ DEFINE_LOG_CATEGORY(EventLog);
 
 AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
-	TargetHost = "http://cl-analytics.mwt2.org:9200/";
+	TargetHost = "http://atlasrift.appspot.com/";
 	Http = &FHttpModule::Get();
     eventID=0;
     totalEvents=1;
@@ -39,14 +39,12 @@ void AEvent::GetEvent()
 
 	Request->SetVerb("GET");
 	FString fullURL = TargetHost;
-	fullURL.Append("atlasrift_events/event/").Append(FString::FromInt(eventID%totalEvents));
+	fullURL.Append("eventserver?eventid=").Append(FString::FromInt(eventID%totalEvents));
 	UE_LOG(EventLog, Display, TEXT("asking for: %s"), *fullURL);
 
 	Request->SetURL(fullURL);
 	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
-//	Request->SetHeader("Content-Type", "application/json");
 	Request->SetHeader("Accept", "application/json");
-//	Request->SetContentAsString("{\"query\":{\"match_all\":{}}}");
 
 	Request->OnProcessRequestComplete().BindUObject(this, &AEvent::OnResponseReceived);
 	if (!Request->ProcessRequest())
@@ -67,12 +65,10 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
 	{
 		MessageBody = Response->GetContentAsString();
-		TSharedPtr<FJsonObject> JsonParsed;
+		TSharedPtr<FJsonObject> jEvent;
 		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
-		if (FJsonSerializer::Deserialize(JsonReader, JsonParsed))
+		if (FJsonSerializer::Deserialize(JsonReader, jEvent))
 		{
-			
-            TSharedPtr<FJsonObject> jEvent = JsonParsed->GetObjectField("_source");
             RunNr = jEvent->GetNumberField("runnr");
 			EventNr = jEvent->GetNumberField("eventnr");
 			Description = jEvent->GetStringField("description");
