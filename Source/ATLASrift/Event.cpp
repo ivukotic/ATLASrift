@@ -80,12 +80,11 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
             {
                 const FString ClusterTypeName = (*currJsonValue).Key;
 				ClusterTypes.Add(ClusterTypeName);
-				UE_LOG(EventLog, Display, TEXT("cluster type: %s "), *ClusterTypeName);
                 
                 // Get the array of clusters as a FJsonValue object
                 TSharedPtr< FJsonValue > ClusterArray = (*currJsonValue).Value;
 				TArray<TSharedPtr<FJsonValue>> clusters = ClusterArray->AsArray();
-				UE_LOG(EventLog, Display, TEXT("clusters: %d "), clusters.Num() );
+				UE_LOG(EventLog, Display, TEXT("cluster type: %s clusters: %d "), *ClusterTypeName, clusters.Num() );
 				for (int32 i = 0; i < clusters.Num(); i++)
 				{
 					FJsonObject re = *clusters[i]->AsObject();
