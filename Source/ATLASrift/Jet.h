@@ -21,6 +21,7 @@ public:
 		float eta;
 	UPROPERTY(BlueprintReadOnly, Category = "Jet Parameters")
 		float energy;
-	
+
+	UStaticMeshComponent* smc;
 	
 };

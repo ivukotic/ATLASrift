@@ -7,6 +7,9 @@
 // Sets default values
 AJet::AJet(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
-
+	smc = ObjectInitializer.CreateAbstractDefaultSubobject<UStaticMeshComponent>(this, TEXT("smc text"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> StaticMesh(TEXT("StaticMesh'/Game/Misc/cone.cone'"));
+	smc->SetStaticMesh(StaticMesh.Object);
+	RootComponent = smc;
 }
 

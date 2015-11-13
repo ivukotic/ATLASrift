@@ -6,6 +6,8 @@
 #include "ParticleDefinitions.h"
 #include "Event.h"
 #include "Cluster.h"
+#include "Jet.h"
+#include "Track.h"
 
 DEFINE_LOG_CATEGORY(EventLog);
 
@@ -88,7 +90,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 				for (int32 i = 0; i < clusters.Num(); i++)
 				{
 					FJsonObject re = *clusters[i]->AsObject();
-					EventSpawnLoc = new FVector(re.GetNumberField("phi")*500.0f, re.GetNumberField("eta")*500.0f, 0.0f);
+					EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 500.0f));
 					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), re.GetNumberField("phi"), re.GetNumberField("eta"));
 					ACluster* cl = (ACluster*) GetWorld()->SpawnActor(ACluster::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
 					cl->phi = re.GetNumberField("phi");
@@ -100,8 +102,58 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
             
 
             TSharedPtr<FJsonObject> jJets = jEvent->GetObjectField("xAOD::Type::Jet");
+			for (auto currJsonValue = jJets->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+			{
+				const FString JetTypeName = (*currJsonValue).Key;
+				ClusterTypes.Add(JetTypeName);
+
+				// Get the array of jests as a FJsonValue object
+				TSharedPtr< FJsonValue > JetArray = (*currJsonValue).Value;
+				TArray<TSharedPtr<FJsonValue>> jets = JetArray->AsArray();
+				UE_LOG(EventLog, Display, TEXT("jet type: %s jets: %d "), *JetTypeName, jets.Num());
+				for (int32 i = 0; i < jets.Num(); i++)
+				{
+					FJsonObject re = *jets[i]->AsObject();
+					EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 200.0f));
+					EventSpawnRotation = new FRotator(GetTethaFromEta(re.GetNumberField("eta"))*57.2957795, 0.0f, re.GetNumberField("phi")*57.2957795);
+					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), re.GetNumberField("phi"), re.GetNumberField("eta"));
+					AJet* jet = (AJet*)GetWorld()->SpawnActor(AJet::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+					jet->phi = re.GetNumberField("phi");
+					jet->eta = re.GetNumberField("eta");
+					jet->energy = re.GetNumberField("energy");
+					jet->coneR = re.GetNumberField("coneR");
+
+				}
+			}
+
             TSharedPtr<FJsonObject> jTracks = jEvent->GetObjectField("xAOD::Type::TrackParticle");
-			
+			for (auto currJsonValue = jTracks->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+			{
+				const FString TrackTypeName = (*currJsonValue).Key;
+				ClusterTypes.Add(TrackTypeName);
+
+				// Get the array of tracks as a FJsonValue object
+				TSharedPtr< FJsonValue > TrackArray = (*currJsonValue).Value;
+				TArray<TSharedPtr<FJsonValue>> tracks = TrackArray->AsArray();
+				UE_LOG(EventLog, Display, TEXT("jet type: %s jets: %d "), *TrackTypeName, tracks.Num());
+				for (int32 i = 0; i < tracks.Num(); i++)
+				{
+					FJsonObject re = *tracks[i]->AsObject();
+					EventSpawnLoc = new FVector(0.0f, 0.0f, 0.0f);
+					ATrack* track = (ATrack*)GetWorld()->SpawnActor(ATrack::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+					track->dof = re.GetIntegerField("dof");
+					track->chi2 = re.GetNumberField("chi2");
+					//TSharedPtr< FJsonValue > dparams = re.GetArrayField("dparams");
+					//TArray<TSharedPtr<FJsonValue>> dps = dparams->AsArray();
+					TArray<TSharedPtr<FJsonValue>> dps = re.GetArrayField("dparams");
+					track->d0 = dps[0]->AsNumber();
+					track->z0 = dps[1]->AsNumber();
+					track->phi = dps[2]->AsNumber();
+					track->theta = dps[3]->AsNumber();
+					track->qop = dps[4]->AsNumber();
+
+				}
+			}
 
 		}
 	}
@@ -110,6 +162,24 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 		UE_LOG(EventLog, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
 	onEventDownloaded();
+}
+float AEvent::GetTethaFromEta(float eta)
+{
+	return 2.0 * atan(exp(-eta));;
+}
+// polar coordinate will be given as eta, phi, r 
+// returns coordinates transformed for Unreal
+FVector * AEvent::GetCartesianFromPolar(FVector* polar)
+{
+	float eta = polar->X;
+	float fi = polar->Y;
+	float r = polar->Z;
+
+	float Theta = 2.0 * atan(exp(-eta));
+	// FVector* ret = new FVector(r*cos(fi), r*sin(fi), r*cos(Theta)); real coordinates
+	FVector* ret = new FVector(r*cos(Theta), -r*cos(fi), r*sin(fi) ); // unreal coordinates
+
+	return ret;
 }
 
 

@@ -28,6 +28,8 @@ class ATLASRIFT_API AEvent : public AActor
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
+	float GetTethaFromEta(float eta);
+	FVector* GetCartesianFromPolar(FVector* polar);
     int32 RunNr;
     int32 EventNr;
     int32 eventID;
