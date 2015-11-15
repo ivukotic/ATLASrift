@@ -114,12 +114,14 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 				for (int32 i = 0; i < jets.Num(); i++)
 				{
 					FJsonObject re = *jets[i]->AsObject();
-					EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 200.0f));
-					EventSpawnRotation = new FRotator(GetTethaFromEta(re.GetNumberField("eta"))*57.2957795, 0.0f, re.GetNumberField("phi")*57.2957795);
-					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), re.GetNumberField("phi"), re.GetNumberField("eta"));
+					float eta = re.GetNumberField("eta");
+					float phi = re.GetNumberField("phi");
+					EventSpawnLoc = GetCartesianFromPolar(new FVector(eta, phi, 0.0f));
+					EventSpawnRotation = new FRotator(GetTethaFromEta(eta)*57.2957795, 0.0f, phi*57.2957795);
+					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), phi, eta);
 					AJet* jet = (AJet*)GetWorld()->SpawnActor(AJet::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
-					jet->phi = re.GetNumberField("phi");
-					jet->eta = re.GetNumberField("eta");
+					jet->phi = phi;
+					jet->eta = eta;
 					jet->energy = re.GetNumberField("energy");
 					jet->coneR = re.GetNumberField("coneR");
 
