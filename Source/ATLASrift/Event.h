@@ -26,13 +26,15 @@ class ATLASRIFT_API AEvent : public AActor
 	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
 		FString TargetHost;
 
+
+
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 	float GetTethaFromEta(float eta);
 	FVector* GetCartesianFromPolar(FVector* polar);
     int32 RunNr;
     int32 EventNr;
-    int32 eventID;
+
     int32 totalEvents;
 	FString Description;
 	TArray<FString> TrackTypes;
@@ -41,8 +43,10 @@ class ATLASRIFT_API AEvent : public AActor
 	FVector* EventSpawnLoc;
 	FRotator* EventSpawnRotation;
 	FActorSpawnParameters SpawnInfo;
-public:
 
+public:
+	UPROPERTY(BlueprintReadWrite, Category = "Event Properties")
+		int32 eventID;
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
 		TArray<TSubclassOf<class ATrack> > Tracks;
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")

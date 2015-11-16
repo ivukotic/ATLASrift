@@ -20,6 +20,6 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Cluster Parameters")
 		float energy;
 	
-	UStaticMeshComponent* smc;
+	//UStaticMeshComponent* smc;
 	
 };
