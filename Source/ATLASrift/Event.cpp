@@ -90,7 +90,8 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 				for (int32 i = 0; i < clusters.Num(); i++)
 				{
 					FJsonObject re = *clusters[i]->AsObject();
-					EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 500.0f));
+					//EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 500.0f));
+					EventSpawnLoc = GetCartesianFromPolar(new FVector(0.0f, 0.0f, 0.0f));
 					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), re.GetNumberField("phi"), re.GetNumberField("eta"));
 					ACluster* cl = (ACluster*) GetWorld()->SpawnActor(ACluster::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
 					cl->phi = re.GetNumberField("phi");
@@ -167,7 +168,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 }
 float AEvent::GetTethaFromEta(float eta)
 {
-	return 2.0 * atan(exp(-eta));;
+	return 2.0 * atan(exp(-eta));
 }
 // polar coordinate will be given as eta, phi, r 
 // returns coordinates transformed for Unreal

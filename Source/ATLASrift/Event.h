@@ -30,8 +30,8 @@ class ATLASRIFT_API AEvent : public AActor
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
-	float GetTethaFromEta(float eta);
-	FVector* GetCartesianFromPolar(FVector* polar);
+//	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
+		FVector* GetCartesianFromPolar(FVector* polar);
     int32 RunNr;
     int32 EventNr;
 
@@ -44,7 +44,8 @@ class ATLASRIFT_API AEvent : public AActor
 	FRotator* EventSpawnRotation;
 	FActorSpawnParameters SpawnInfo;
 
-public:
+public:	
+
 	UPROPERTY(BlueprintReadWrite, Category = "Event Properties")
 		int32 eventID;
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
@@ -67,4 +68,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void GetEvent();
 
+	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
+		float GetTethaFromEta(float eta);
 };
