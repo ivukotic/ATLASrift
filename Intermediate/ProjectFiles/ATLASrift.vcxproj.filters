@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<None Include="..\..\ATLASrift.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{931C9A4C-900F-4254-BA60-A1E8895BDBAB}</UniqueIdentifier>
+			<UniqueIdentifier>{6ABC4C75-640C-4167-89B3-364ACF98DF7C}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\ATLASrift.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{ACE63B00-222B-4CF3-9301-2C1EDC5D64E0}</UniqueIdentifier>
+			<UniqueIdentifier>{B32214D4-35D4-419A-8F5B-F5FA2B5DD673}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\ATLASrift">
-			<UniqueIdentifier>{04C3E99A-4CD5-4DC1-9AD8-8B7EADEA877A}</UniqueIdentifier>
+			<UniqueIdentifier>{F5283F98-F9B3-4EAE-87FF-C4D7958D5073}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\ATLASrift\ATLASrift.Build.cs">
 			<Filter>Source\ATLASrift</Filter>
@@ -39,10 +39,28 @@
 		<ClInclude Include="..\..\Source\ATLASrift\ATLASrift.h">
 			<Filter>Source\ATLASrift</Filter>
 		</ClInclude >
+		<ClCompile Include="..\..\Source\ATLASrift\Cluster.cpp">
+			<Filter>Source\ATLASrift</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ATLASrift\Cluster.h">
+			<Filter>Source\ATLASrift</Filter>
+		</ClInclude >
 		<ClCompile Include="..\..\Source\ATLASrift\Event.cpp">
 			<Filter>Source\ATLASrift</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\ATLASrift\Event.h">
+			<Filter>Source\ATLASrift</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\ATLASrift\Jet.cpp">
+			<Filter>Source\ATLASrift</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ATLASrift\Jet.h">
+			<Filter>Source\ATLASrift</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\ATLASrift\Reporter.cpp">
+			<Filter>Source\ATLASrift</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ATLASrift\Reporter.h">
 			<Filter>Source\ATLASrift</Filter>
 		</ClInclude >
 		<ClCompile Include="..\..\Source\ATLASrift\Track.cpp">
@@ -52,10 +70,10 @@
 			<Filter>Source\ATLASrift</Filter>
 		</ClInclude >
 		<Filter Include="Source\ATLASrift\Resources">
-			<UniqueIdentifier>{50AF99BE-BD52-4650-BBD9-2AD41E245F41}</UniqueIdentifier>
+			<UniqueIdentifier>{E56FAE93-7620-4BF5-8BC0-9E4D7B6AC6C5}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\ATLASrift\Resources\Windows">
-			<UniqueIdentifier>{484F713A-9E84-445D-AB2F-864CCDA3D5DB}</UniqueIdentifier>
+			<UniqueIdentifier>{F94385A7-0148-4CCC-95EE-EF76607DF93F}</UniqueIdentifier>
 		</Filter>
 		<ResourceCompile Include="..\..\Source\ATLASrift\Resources\Windows\ATLASrift.rc">
 			<Filter>Source\ATLASrift\Resources\Windows</Filter>

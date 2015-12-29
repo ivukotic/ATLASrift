@@ -5,9 +5,18 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef ATLASRIFT_Cluster_generated_h
+	#include "Cluster.h"
+#endif
 #ifndef ATLASRIFT_Track_generated_h
 	#include "Track.h"
 #endif
 #ifndef ATLASRIFT_Event_generated_h
 	#include "Event.h"
+#endif
+#ifndef ATLASRIFT_Jet_generated_h
+	#include "Jet.h"
+#endif
+#ifndef ATLASRIFT_Reporter_generated_h
+	#include "Reporter.h"
 #endif
