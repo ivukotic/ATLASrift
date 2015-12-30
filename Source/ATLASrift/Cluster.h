@@ -16,6 +16,8 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Cluster Parameters")
 		float phi;
 	UPROPERTY(BlueprintReadOnly, Category = "Cluster Parameters")
+		float theta;
+	UPROPERTY(BlueprintReadOnly, Category = "Cluster Parameters")
 		float eta;
 	UPROPERTY(BlueprintReadOnly, Category = "Cluster Parameters")
 		float energy;

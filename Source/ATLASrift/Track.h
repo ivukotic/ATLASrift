@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "Track.generated.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(TrackLog, Log, All);
 /**
  * 
  */
@@ -36,5 +37,10 @@ public:
 		TArray<FVector> points;
 
 	void SetParameters(float d0, float z0, float phi, float theta, float qop);
-	
+
+	UFUNCTION(BlueprintCallable, Category = "Track Functions")
+		TArray <FVector> GetVertices();
+	UFUNCTION(BlueprintCallable, Category = "Track Functions")
+		TArray <int32> GetTriangles(int32 currentVertex);
+
 };
