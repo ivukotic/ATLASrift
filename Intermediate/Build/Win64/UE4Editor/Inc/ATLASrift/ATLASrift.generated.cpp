@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 		FNativeFunctionRegistrar::RegisterFunction(ATrack::StaticClass(),"GetTriangles",(Native)&ATrack::execGetTriangles);
 		FNativeFunctionRegistrar::RegisterFunction(ATrack::StaticClass(),"GetVertices",(Native)&ATrack::execGetVertices);
 	}
-	IMPLEMENT_CLASS(ATrack, 431983592);
+	IMPLEMENT_CLASS(ATrack, 90518491);
 	void AEvent::onEventDownloaded()
 	{
 		ProcessEvent(FindFunctionChecked(ATLASRIFT_onEventDownloaded),NULL);
@@ -184,7 +184,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->LinkChild(Z_Construct_UFunction_ATrack_GetVertices());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_points = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("points"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(points, ATrack), 0x0000000000000000);
+				UProperty* NewProp_points = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("points"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(points, ATrack), 0x0000000000000014);
 				UProperty* NewProp_points_Inner = new(EC_InternalUseOnlyConstructor, NewProp_points, TEXT("points"), RF_Public|RF_Transient|RF_Native) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FVector());
 				UProperty* NewProp_qop = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("qop"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(qop, ATrack), 0x0000000000000014);
 				UProperty* NewProp_theta = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("theta"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(theta, ATrack), 0x0000000000000014);
@@ -202,6 +202,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Track.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_points, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_points, TEXT("ModuleRelativePath"), TEXT("Track.h"));
 				MetaData->SetValue(NewProp_qop, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_qop, TEXT("ModuleRelativePath"), TEXT("Track.h"));
@@ -549,7 +550,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ATLASrift")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x901E8C16;
+			Guid.A = 0x522113CB;
 			Guid.B = 0xB597B5F2;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

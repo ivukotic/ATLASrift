@@ -15,6 +15,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define ATLASrift_Source_ATLASrift_Event_h_17_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetTethaFromEta) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_eta); \
+		P_FINISH; \
+		*(float*)Z_Param__Result=this->GetTethaFromEta(Z_Param_eta); \
+	} \
+ \
 	DECLARE_FUNCTION(execGetEvent) \
 	{ \
 		P_FINISH; \
@@ -41,6 +48,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define ATLASrift_Source_ATLASrift_Event_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetTethaFromEta) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_eta); \
+		P_FINISH; \
+		*(float*)Z_Param__Result=this->GetTethaFromEta(Z_Param_eta); \
+	} \
  \
 	DECLARE_FUNCTION(execGetEvent) \
 	{ \

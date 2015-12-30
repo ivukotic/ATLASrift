@@ -33,7 +33,7 @@ public:
 		float theta;
 	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
 		float qop;
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly, Category = "Track Parameters")
 		TArray<FVector> points;
 
 	void SetParameters(float d0, float z0, float phi, float theta, float qop);

@@ -8,14 +8,45 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
 #ifdef ATLASRIFT_Track_generated_h
 #error "Track.generated.h already included, missing '#pragma once' in Track.h"
 #endif
 #define ATLASRIFT_Track_generated_h
 
-#define ATLASrift_Source_ATLASrift_Track_h_14_RPC_WRAPPERS
-#define ATLASrift_Source_ATLASrift_Track_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define ATLASrift_Source_ATLASrift_Track_h_14_INCLASS_NO_PURE_DECLS \
+#define ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetTriangles) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_currentVertex); \
+		P_FINISH; \
+		*(TArray<int32>*)Z_Param__Result=this->GetTriangles(Z_Param_currentVertex); \
+	} \
+ \
+	DECLARE_FUNCTION(execGetVertices) \
+	{ \
+		P_FINISH; \
+		*(TArray<FVector>*)Z_Param__Result=this->GetVertices(); \
+	}
+
+
+#define ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetTriangles) \
+	{ \
+		P_GET_PROPERTY(UIntProperty,Z_Param_currentVertex); \
+		P_FINISH; \
+		*(TArray<int32>*)Z_Param__Result=this->GetTriangles(Z_Param_currentVertex); \
+	} \
+ \
+	DECLARE_FUNCTION(execGetVertices) \
+	{ \
+		P_FINISH; \
+		*(TArray<FVector>*)Z_Param__Result=this->GetVertices(); \
+	}
+
+
+#define ATLASrift_Source_ATLASrift_Track_h_15_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesATrack(); \
 	friend ATLASRIFT_API class UClass* Z_Construct_UClass_ATrack(); \
@@ -26,7 +57,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<ATrack*>(this); }
 
 
-#define ATLASrift_Source_ATLASrift_Track_h_14_INCLASS \
+#define ATLASrift_Source_ATLASrift_Track_h_15_INCLASS \
 	private: \
 	static void StaticRegisterNativesATrack(); \
 	friend ATLASRIFT_API class UClass* Z_Construct_UClass_ATrack(); \
@@ -37,7 +68,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<ATrack*>(this); }
 
 
-#define ATLASrift_Source_ATLASrift_Track_h_14_STANDARD_CONSTRUCTORS \
+#define ATLASrift_Source_ATLASrift_Track_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATrack(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATrack) \
@@ -49,7 +80,7 @@ private: \
 public:
 
 
-#define ATLASrift_Source_ATLASrift_Track_h_14_ENHANCED_CONSTRUCTORS \
+#define ATLASrift_Source_ATLASrift_Track_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API ATrack(const ATrack& InCopy); \
@@ -59,23 +90,23 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATrack); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATrack)
 
 
-#define ATLASrift_Source_ATLASrift_Track_h_11_PROLOG
-#define ATLASrift_Source_ATLASrift_Track_h_14_GENERATED_BODY_LEGACY \
+#define ATLASrift_Source_ATLASrift_Track_h_12_PROLOG
+#define ATLASrift_Source_ATLASrift_Track_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ATLASrift_Source_ATLASrift_Track_h_14_RPC_WRAPPERS \
-	ATLASrift_Source_ATLASrift_Track_h_14_INCLASS \
-	ATLASrift_Source_ATLASrift_Track_h_14_STANDARD_CONSTRUCTORS \
+	ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS \
+	ATLASrift_Source_ATLASrift_Track_h_15_INCLASS \
+	ATLASrift_Source_ATLASrift_Track_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ATLASrift_Source_ATLASrift_Track_h_14_GENERATED_BODY \
+#define ATLASrift_Source_ATLASrift_Track_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ATLASrift_Source_ATLASrift_Track_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	ATLASrift_Source_ATLASrift_Track_h_14_INCLASS_NO_PURE_DECLS \
-	ATLASrift_Source_ATLASrift_Track_h_14_ENHANCED_CONSTRUCTORS \
+	ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	ATLASrift_Source_ATLASrift_Track_h_15_INCLASS_NO_PURE_DECLS \
+	ATLASrift_Source_ATLASrift_Track_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

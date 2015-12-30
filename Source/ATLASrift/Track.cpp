@@ -69,8 +69,8 @@ TArray<FVector> ATrack::GetVertices()
 {
 	TArray<FVector> ret;
 	ret.Add(FVector(0.0,0.0,0.0));
-	ret.Add(FVector(phi*500, phi * 500, phi * 500));
-	ret.Add(FVector(theta * 500,theta * 500,theta * 500));
+	ret.Add(FVector(phi*500, theta * 500, phi * 500));
+	ret.Add(FVector(theta * 500, phi * 500,theta * 500));
 	UE_LOG(TrackLog, Display, TEXT("track vertex phi : %f theta: %f "), phi * 500.0, theta * 500);
 	return ret;
 }

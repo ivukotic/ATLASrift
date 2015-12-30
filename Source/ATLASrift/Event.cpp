@@ -147,15 +147,18 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 					ATrack* track = (ATrack*)GetWorld()->SpawnActor(ATrack::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
 					track->dof = re.GetIntegerField("dof");
 					track->chi2 = re.GetNumberField("chi2");
-			//		//TSharedPtr< FJsonValue > dparams = re.GetArrayField("dparams");
-			//		//TArray<TSharedPtr<FJsonValue>> dps = dparams->AsArray();
 					TArray<TSharedPtr<FJsonValue>> dps = re.GetArrayField("dparams");
 					track->d0 = dps[0]->AsNumber();
 					track->z0 = dps[1]->AsNumber();
 					track->phi = dps[2]->AsNumber();
 					track->theta = dps[3]->AsNumber();
 					track->qop = dps[4]->AsNumber();
-
+					TArray<TSharedPtr<FJsonValue>> pos = re.GetArrayField("pos"); 
+					for (int32 v = 0; v < pos.Num(); v++)
+					{
+						TArray<TSharedPtr<FJsonValue>> po = pos[v]->AsArray();
+						track->points.Add(FVector(po[0]->AsNumber(), po[1]->AsNumber(), po[2]->AsNumber()));
+					}
 				}
 			}
 
