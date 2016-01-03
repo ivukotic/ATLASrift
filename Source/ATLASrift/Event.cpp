@@ -157,7 +157,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 					for (int32 v = 0; v < pos.Num(); v++)
 					{
 						TArray<TSharedPtr<FJsonValue>> po = pos[v]->AsArray();
-						track->points.Add(FVector(po[0]->AsNumber(), po[1]->AsNumber(), po[2]->AsNumber()));
+						track->points.Add(FVector(po[0]->AsNumber()*0.1, po[1]->AsNumber()*0.1, po[2]->AsNumber()*0.1));
 					}
 				}
 			}

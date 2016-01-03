@@ -15,10 +15,8 @@ void EmptyLinkFunctionForGeneratedCodeATLASrift() {}
 	IMPLEMENT_CLASS(ACluster, 3972018700);
 	void ATrack::StaticRegisterNativesATrack()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(ATrack::StaticClass(),"GetTriangles",(Native)&ATrack::execGetTriangles);
-		FNativeFunctionRegistrar::RegisterFunction(ATrack::StaticClass(),"GetVertices",(Native)&ATrack::execGetVertices);
 	}
-	IMPLEMENT_CLASS(ATrack, 431983592);
+	IMPLEMENT_CLASS(ATrack, 2957434461);
 	void AEvent::onEventDownloaded()
 	{
 		ProcessEvent(FindFunctionChecked(ATLASRIFT_onEventDownloaded),NULL);
@@ -51,8 +49,6 @@ FName ATLASRIFT_onEventDownloaded = FName(TEXT("onEventDownloaded"));
 
 	ATLASRIFT_API class UClass* Z_Construct_UClass_ACluster_NoRegister();
 	ATLASRIFT_API class UClass* Z_Construct_UClass_ACluster();
-	ATLASRIFT_API class UFunction* Z_Construct_UFunction_ATrack_GetTriangles();
-	ATLASRIFT_API class UFunction* Z_Construct_UFunction_ATrack_GetVertices();
 	ATLASRIFT_API class UClass* Z_Construct_UClass_ATrack_NoRegister();
 	ATLASRIFT_API class UClass* Z_Construct_UClass_ATrack();
 	ATLASRIFT_API class UFunction* Z_Construct_UFunction_AEvent_GetDescription();
@@ -115,54 +111,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ACluster(Z_Construct_UClass_ACluster, TEXT("ACluster"));
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ACluster);
-	UFunction* Z_Construct_UFunction_ATrack_GetTriangles()
-	{
-		struct Track_eventGetTriangles_Parms
-		{
-			int32 currentVertex;
-			TArray<int32> ReturnValue;
-		};
-		UObject* Outer=Z_Construct_UClass_ATrack();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetTriangles"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Track_eventGetTriangles_Parms));
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(ReturnValue, Track_eventGetTriangles_Parms), 0x0000000000000580);
-			UProperty* NewProp_ReturnValue_Inner = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UIntProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
-			UProperty* NewProp_currentVertex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("currentVertex"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(currentVertex, Track_eventGetTriangles_Parms), 0x0000000000000080);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Track Functions"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Track.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UFunction* Z_Construct_UFunction_ATrack_GetVertices()
-	{
-		struct Track_eventGetVertices_Parms
-		{
-			TArray<FVector> ReturnValue;
-		};
-		UObject* Outer=Z_Construct_UClass_ATrack();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetVertices"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Track_eventGetVertices_Parms));
-			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(ReturnValue, Track_eventGetVertices_Parms), 0x0000000000000580);
-			UProperty* NewProp_ReturnValue_Inner = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FVector());
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Track Functions"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Track.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
 	UClass* Z_Construct_UClass_ATrack_NoRegister()
 	{
 		return ATrack::StaticClass();
@@ -180,11 +128,9 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_ATrack_GetTriangles());
-				OuterClass->LinkChild(Z_Construct_UFunction_ATrack_GetVertices());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-				UProperty* NewProp_points = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("points"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(points, ATrack), 0x0000000000000000);
+				UProperty* NewProp_points = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("points"), RF_Public|RF_Transient|RF_Native) UArrayProperty(CPP_PROPERTY_BASE(points, ATrack), 0x0000000000000014);
 				UProperty* NewProp_points_Inner = new(EC_InternalUseOnlyConstructor, NewProp_points, TEXT("points"), RF_Public|RF_Transient|RF_Native) UStructProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UScriptStruct_FVector());
 				UProperty* NewProp_qop = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("qop"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(qop, ATrack), 0x0000000000000014);
 				UProperty* NewProp_theta = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("theta"), RF_Public|RF_Transient|RF_Native) UFloatProperty(CPP_PROPERTY_BASE(theta, ATrack), 0x0000000000000014);
@@ -195,13 +141,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_dof = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("dof"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(dof, ATrack), 0x0000000000000014);
 				UProperty* NewProp_type = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("type"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(type, ATrack), 0x0000000000000014);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ATrack_GetTriangles()); // 3718037699
-				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ATrack_GetVertices()); // 4272368833
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Track.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Track.h"));
+				MetaData->SetValue(NewProp_points, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_points, TEXT("ModuleRelativePath"), TEXT("Track.h"));
 				MetaData->SetValue(NewProp_qop, TEXT("Category"), TEXT("Track Parameters"));
 				MetaData->SetValue(NewProp_qop, TEXT("ModuleRelativePath"), TEXT("Track.h"));
@@ -549,8 +494,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/ATLASrift")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x901E8C16;
-			Guid.B = 0xB597B5F2;
+			Guid.A = 0xDF5D6F5D;
+			Guid.B = 0xED6294F1;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

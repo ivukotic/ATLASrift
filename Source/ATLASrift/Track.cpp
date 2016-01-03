@@ -65,23 +65,15 @@ void ATrack::SetParameters(float d0, float z0, float phi, float theta, float qop
 	this->qop = qop;
 }
 
-TArray<FVector> ATrack::GetVertices()
-{
-	TArray<FVector> ret;
-	ret.Add(FVector(0.0,0.0,0.0));
-	ret.Add(FVector(phi*500, theta * 500, phi * 500));
-	ret.Add(FVector(theta * 500, phi * 500,theta * 500));
-	UE_LOG(TrackLog, Display, TEXT("track vertex phi : %f theta: %f "), phi * 500.0, theta * 500);
-	return ret;
-}
-
-TArray<int32> ATrack::GetTriangles(int32 currentVertex)
-{
-	TArray<int32> ret;
-	UE_LOG(TrackLog, Display, TEXT("triangle starts from : %d "), currentVertex);
-	ret.Add(currentVertex + 0);
-	ret.Add(currentVertex + 1);
-	ret.Add(currentVertex + 2);
-	return ret;
-}
+//TArray<FVector> ATrack::GetVertices()
+//{
+//	TArray<FVector> ret;
+//	return ret;
+//}
+//
+//TArray<int32> ATrack::GetTriangles(int32 currentVertex)
+//{
+//	TArray<int32> ret;
+//	return ret;
+//}
 

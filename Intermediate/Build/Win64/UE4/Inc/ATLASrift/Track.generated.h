@@ -8,44 +8,13 @@
 #include "ObjectBase.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FVector;
 #ifdef ATLASRIFT_Track_generated_h
 #error "Track.generated.h already included, missing '#pragma once' in Track.h"
 #endif
 #define ATLASRIFT_Track_generated_h
 
-#define ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execGetTriangles) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_currentVertex); \
-		P_FINISH; \
-		*(TArray<int32>*)Z_Param__Result=this->GetTriangles(Z_Param_currentVertex); \
-	} \
- \
-	DECLARE_FUNCTION(execGetVertices) \
-	{ \
-		P_FINISH; \
-		*(TArray<FVector>*)Z_Param__Result=this->GetVertices(); \
-	}
-
-
-#define ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execGetTriangles) \
-	{ \
-		P_GET_PROPERTY(UIntProperty,Z_Param_currentVertex); \
-		P_FINISH; \
-		*(TArray<int32>*)Z_Param__Result=this->GetTriangles(Z_Param_currentVertex); \
-	} \
- \
-	DECLARE_FUNCTION(execGetVertices) \
-	{ \
-		P_FINISH; \
-		*(TArray<FVector>*)Z_Param__Result=this->GetVertices(); \
-	}
-
-
+#define ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS
+#define ATLASrift_Source_ATLASrift_Track_h_15_RPC_WRAPPERS_NO_PURE_DECLS
 #define ATLASrift_Source_ATLASrift_Track_h_15_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesATrack(); \
