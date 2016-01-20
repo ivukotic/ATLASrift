@@ -3,6 +3,8 @@
 #include "ATLASrift.h"
 #include "Reporter.h"
 
+#include "NetServer.h"
+
 
 // Sets default values for this component's properties
 UReporter::UReporter()
@@ -60,5 +62,63 @@ void UReporter::StopWork()
 	if (!Request->ProcessRequest())
 	{
 		UE_LOG(LogTemp, Error, TEXT("ERROR on Sending STOP message"));
+	}
+}
+
+void  UReporter::LoadNetServers()
+{
+	ANetServers.Empty();
+	UE_LOG(LogTemp, Display, TEXT("Loading NetServers"));
+	if (!Http) return;
+	if (!Http->IsHttpEnabled()) return;
+	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
+	Request->SetVerb("GET");
+	Request->SetURL(TargetHost + "/netservers");
+	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
+	Request->SetHeader("Accept", "application/json");
+	Request->OnProcessRequestComplete().BindUObject(this, &UReporter::OnServersResponseReceived);
+	if (!Request->ProcessRequest())
+	{
+		UE_LOG(LogTemp, Error, TEXT("ERROR on receiving NetServers"));
+	}
+}
+
+void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful) {
+	UE_LOG(LogTemp, Display, TEXT("got something for netservers"));
+	FString MessageBody = "";
+
+	if (!Response.IsValid())
+	{
+		UE_LOG(LogTemp, Error, TEXT("Error receiving NetServers"));
+	}
+	else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
+	{
+		MessageBody = Response->GetContentAsString();
+
+		UE_LOG(LogTemp, Display, TEXT("MessageBody: %s"), *MessageBody);
+
+		TSharedPtr<FJsonObject> jServers;
+		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
+		if (FJsonSerializer::Deserialize(JsonReader, jServers))
+		{
+			for (auto currJsonValue = jServers->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+			{
+				FString Hostname = (*currJsonValue).Key;
+				TSharedPtr<FJsonValue> jServerDetails = (*currJsonValue).Value;
+				TSharedPtr<FJsonObject> jSD = jServerDetails->AsObject();
+				FString ip = jSD->GetStringField("ip");
+				FString desc = jSD->GetStringField("description");
+				UE_LOG(LogTemp, Display, TEXT("Hostname: %s   IP: %s     Description: %s"), *Hostname, *ip, *desc);
+				UNetServer ns;
+				ns.description = desc;
+				ns.ip = ip;
+				ns.hostname = Hostname;
+				//ANetServers.Push(ns);
+			}
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
 }

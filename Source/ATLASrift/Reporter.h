@@ -3,10 +3,10 @@
 #pragma once
 
 #include "Http.h"
+#include "NetServer.h"
 
 #include "Components/ActorComponent.h"
 #include "Reporter.generated.h"
-
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ATLASRIFT_API UReporter : public UActorComponent
@@ -20,6 +20,7 @@ class ATLASRIFT_API UReporter : public UActorComponent
 	FString TargetHost;
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+	void OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 public:	
 	// Sets default values for this component's properties
@@ -29,4 +30,11 @@ public:
 		void StartWork(FString js);
 	UFUNCTION(BlueprintCallable, Category = "Report On")
 		void StopWork();
+
+	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
+		TArray<TSubclassOf<class UNetServer>> ANetServers;
+	UFUNCTION(BlueprintCallable, Category = "Server")
+		void LoadNetServers();
+
+
 };
