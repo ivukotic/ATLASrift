@@ -103,17 +103,15 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 		{
 			for (auto currJsonValue = jServers->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
 			{
-				FString Hostname = (*currJsonValue).Key;
+
+				FNetServer ns;// = new UNetServer();
+				ns.hostname = (*currJsonValue).Key;
 				TSharedPtr<FJsonValue> jServerDetails = (*currJsonValue).Value;
 				TSharedPtr<FJsonObject> jSD = jServerDetails->AsObject();
-				FString ip = jSD->GetStringField("ip");
-				FString desc = jSD->GetStringField("description");
-				UE_LOG(LogTemp, Display, TEXT("Hostname: %s   IP: %s     Description: %s"), *Hostname, *ip, *desc);
-				UNetServer ns;
-				ns.description = desc;
-				ns.ip = ip;
-				ns.hostname = Hostname;
-				//ANetServers.Push(ns);
+				ns.ip = jSD->GetStringField("ip");
+				ns.description = jSD->GetStringField("description");
+				UE_LOG(LogTemp, Display, TEXT("Hostname: %s   IP: %s     Description: %s"), *ns.hostname, *ns.ip, *ns.description);
+				ANetServers.Push(ns);
 			}
 		}
 	}

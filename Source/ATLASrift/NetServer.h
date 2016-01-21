@@ -5,19 +5,14 @@
 #include "Engine/UserDefinedStruct.h"
 #include "NetServer.generated.h"
 
-/**
- * 
- */
-UCLASS()
-class ATLASRIFT_API UNetServer : public UUserDefinedStruct
-{
-	GENERATED_BODY()
-
-public:
-	FString hostname;
-	FString ip;
-	FString description;
+USTRUCT()
+struct ATLASRIFT_API FNetServer {
+	GENERATED_USTRUCT_BODY()
 	
-	
-	
+		UPROPERTY(BlueprintReadOnly)
+			FString hostname;
+		UPROPERTY(BlueprintReadOnly)
+			FString ip;
+		UPROPERTY(BlueprintReadOnly)
+			FString description;
 };

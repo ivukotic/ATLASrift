@@ -32,7 +32,7 @@ public:
 		void StopWork();
 
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
-		TArray<TSubclassOf<class UNetServer>> ANetServers;
+		TArray<FNetServer> ANetServers;
 	UFUNCTION(BlueprintCallable, Category = "Server")
 		void LoadNetServers();
 

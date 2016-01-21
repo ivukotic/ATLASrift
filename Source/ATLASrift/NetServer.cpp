@@ -2,7 +2,9 @@
 
 #include "ATLASrift.h"
 #include "NetServer.h"
-
-
-
-
+//
+//
+////
+////UNetServer::UNetServer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+////{
+////}
