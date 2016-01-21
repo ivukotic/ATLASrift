@@ -104,7 +104,7 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 			for (auto currJsonValue = jServers->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
 			{
 
-				FNetServer ns;// = new UNetServer();
+				FNetServer ns;
 				ns.hostname = (*currJsonValue).Key;
 				TSharedPtr<FJsonValue> jServerDetails = (*currJsonValue).Value;
 				TSharedPtr<FJsonObject> jSD = jServerDetails->AsObject();
@@ -114,6 +114,7 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 				ANetServers.Push(ns);
 			}
 		}
+		UE_LOG(LogTemp, Display, TEXT("Loaded %i"), ANetServers.Num() );
 	}
 	else
 	{
