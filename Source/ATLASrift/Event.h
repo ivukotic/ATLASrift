@@ -11,6 +11,39 @@ DECLARE_LOG_CATEGORY_EXTERN(EventLog, Log, All);
 /**
  * 
  */
+
+
+USTRUCT()
+struct FEventState
+{
+	GENERATED_USTRUCT_BODY()
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		BOOL ShowTracks;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		BOOL ShowJets;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		BOOL ShowClusters;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		BOOL AutoReload;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		BOOL ChangeToPreviousEvent;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		BOOL ChangeToNextEvent;
+
+	FEventState()
+	{
+		ShowTracks = true;
+		ShowJets = true;
+		ShowClusters = true;
+		AutoReload = false;
+		ChangeToPreviousEvent = false;
+		ChangeToNextEvent = false;
+	}
+
+};
+
+
 UCLASS()
 class ATLASRIFT_API AEvent : public AActor
 {
@@ -48,6 +81,32 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, Category = "Event Properties")
 		int32 eventID;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EventServer")
+		float Phi;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EventServer")
+		float Theta;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EventServer")
+		float Energy;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		int32 currentVertexIndex;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<int32> Triangles;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<int32> VertexPattern;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FVector> Points;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FVector> Vertices;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		FEventState EventState;
+
+
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
 		TArray<TSubclassOf<class ATrack> > Tracks;
 	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
