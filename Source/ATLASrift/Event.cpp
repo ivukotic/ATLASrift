@@ -16,6 +16,30 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	TargetHost = "http://atlasrift.appspot.com/";
 	Http = &FHttpModule::Get();
     eventID=0;
+	Phi = 0;
+	Theta = 0;
+	Energy = 0;
+
+	int32 temp[] = { 0, 2, 1, 0, 3, 2,
+		4, 5, 6, 4, 6, 7,
+		0, 5, 4, 0, 1, 5,
+		0, 4, 7, 0, 7, 3,
+		1, 6, 5, 1, 2, 6,
+		2, 7, 6, 2, 3, 7 };
+
+	for (int i = 0; i < 36; i++)
+		VertexPattern.Add(temp[i]);
+
+	Points.Add(FVector(-0.03f, -0.03f, 0.0f));
+	Points.Add(FVector(0.03f, -0.03f, 0.0f));
+	Points.Add(FVector(0.03f, 0.03f, 0.0f));
+	Points.Add(FVector(-0.03f, 0.03f, 0.0f));
+
+	Vertices.Add(FVector(-0.03f, -0.03f, 0.0f));
+	Vertices.Add(FVector(0.03f, -0.03f, 0.0f));
+	Vertices.Add(FVector(0.03f, 0.03f, 0.0f));
+	Vertices.Add(FVector(-0.03f, 0.03f, 0.0f));
+
     totalEvents=1;
 	EventSpawnLoc = new FVector(0.0f, 0.0f, 0.0f);
 	EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
