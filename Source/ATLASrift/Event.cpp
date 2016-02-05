@@ -213,6 +213,105 @@ FVector * AEvent::GetCartesianFromPolar(FVector* polar)
 	return ret;
 }
 
+void AEvent::AddTris()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New AddTris is called！")));
+	for (INT32 var : VertexPattern)
+	{
+		Triangles.Add(currentVertexIndex + var);
+	}
+	currentVertexIndex = currentVertexIndex + 8;
+}
+
+void AEvent::ShowClustersFunc()
+{
+	Vertices.Reset();
+	Triangles.Reset();
+
+	for (TActorIterator<ACluster> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		Phi = ActorItr->phi;
+		Theta = ActorItr->theta;
+		Energy = ActorItr->energy;
+		Add4Points(0);
+		Add4Points(Energy);
+		AddTris();
+	}
+}
+
+void AEvent::ShowTracksFunc()
+{
+	Vertices.Reset();
+	Triangles.Reset();
+	currentVertexIndex = 0;
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowTracks is called！")));
+
+	for (TActorIterator<ATrack> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		if (ActorItr->points.Num() > 2)
+		{
+			for (FVector var : ActorItr->points)
+			{
+				UE_LOG(EventLog, Error, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
+			}
+
+			Vertices.Append(ActorItr->points);
+
+			for (int i = 0; i < ActorItr->points.Num() - 2; i++)
+			{
+				Triangles.Add(currentVertexIndex + i);
+				Triangles.Add(i + 1 + currentVertexIndex);
+				Triangles.Add(i + 2 + currentVertexIndex);
+				Triangles.Add(i + 2 + currentVertexIndex);
+				Triangles.Add(i + 1 + currentVertexIndex);
+				Triangles.Add(currentVertexIndex + i);
+			}
+
+			currentVertexIndex = Vertices.Num();
+		}
+	}
+}
+
+
+
+void AEvent::Add4Points(float energy1)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New Add4Points is called！")));
+	FVector vect;
+	float scale1 = energy1 / 1000 + 320;
+	float scale2 = energy1 / 1000 + 207.7;
+
+	for (FVector var : Points)
+	{
+		float valTemp = Theta + var.X;
+		if (valTemp<0.5757 || valTemp>2.5659)
+		{
+			float sign = -1 * (valTemp - 1.5707963);
+			if (sign < 0)
+				vect.X = -1;
+			if (sign == 0)
+				vect.X = 0;
+			if (sign > 0)
+				vect.X = 1;
+
+			vect.Y = sin(valTemp)*cos(var.Y + Phi);
+			vect.Z = sin(valTemp)*sin(var.Y + Phi);
+			vect = vect *scale1;
+		}
+		else
+		{
+			vect.X = 1.0 / tan(valTemp);
+			vect.Y = cos(var.Y + Phi);
+			vect.Z = sin(var.Y + Phi);
+			vect = vect*scale2;
+		}
+
+		Vertices.Add(vect);
+
+	}
+
+}
+
 
 
 int32 AEvent::GetEventNr(){

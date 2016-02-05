@@ -120,12 +120,24 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetEventNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		void ShowTracksFunc();
+
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetRunNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		FString GetDescription();
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void GetEvent();
+	
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		void AddTris();
+
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		void Add4Points(float energy1);
+
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		void ShowClustersFunc();
 
 	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
 		float GetTethaFromEta(float eta);
