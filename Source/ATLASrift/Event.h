@@ -18,7 +18,7 @@ struct FEventState
 {
 	GENERATED_USTRUCT_BODY()
 
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		BOOL ShowTracks;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		BOOL ShowJets;
