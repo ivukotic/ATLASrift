@@ -35,6 +35,8 @@ public:
 		TArray<FNetServer> ANetServers;
 	UFUNCTION(BlueprintCallable, Category = "Server")
 		void LoadNetServers();
+	UFUNCTION(BlueprintCallable, Category = "Server")
+		bool HostAServer(FString description, bool registerMe);
 
 
 };

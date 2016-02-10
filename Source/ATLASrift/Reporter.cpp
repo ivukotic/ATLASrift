@@ -121,3 +121,28 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 		UE_LOG(LogTemp, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
 }
+
+bool UReporter::HostAServer(FString description, bool registerMe ) {
+	UE_LOG(LogTemp, Display, TEXT("Registering as a server"));
+	if (!Http) return false;
+	if (!Http->IsHttpEnabled()) return false;
+	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
+
+	Request->SetVerb("GET");
+	Request->SetURL(TargetHost + "/hostserver");
+	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
+	Request->SetHeader("Accept", "application/json");
+	if (registerMe) {
+		Request->SetContentAsString("registering");
+	}
+	else {
+		Request->SetContentAsString("unregistering");
+	}
+	if (!Request->ProcessRequest())
+	{
+		UE_LOG(LogTemp, Error, TEXT("ERROR on Registering as a server message"));
+		return false;
+	}
+	else
+		return true;
+}
