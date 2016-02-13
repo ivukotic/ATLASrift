@@ -122,22 +122,17 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 	}
 }
 
-bool UReporter::HostAServer(FString description, bool registerMe ) {
+bool UReporter::HostAServer(FString description ) {
 	UE_LOG(LogTemp, Display, TEXT("Registering as a server"));
 	if (!Http) return false;
 	if (!Http->IsHttpEnabled()) return false;
 	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
 
-	Request->SetVerb("GET");
-	Request->SetURL(TargetHost + "/hostserver");
+	Request->SetVerb("POST");
+	Request->SetURL(TargetHost + "/netservers");
 	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
-	Request->SetHeader("Accept", "application/json");
-	if (registerMe) {
-		Request->SetContentAsString("registering");
-	}
-	else {
-		Request->SetContentAsString("unregistering");
-	}
+	Request->SetHeader("Content-Type", "application/json");
+	Request->SetContentAsString(description);
 	if (!Request->ProcessRequest())
 	{
 		UE_LOG(LogTemp, Error, TEXT("ERROR on Registering as a server message"));
@@ -145,4 +140,20 @@ bool UReporter::HostAServer(FString description, bool registerMe ) {
 	}
 	else
 		return true;
+}
+void UReporter::KeepAlive(int32 clients) {
+	UE_LOG(LogTemp, Display, TEXT("keeping alive"));
+	if (!Http) return;
+	if (!Http->IsHttpEnabled()) return;
+	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
+
+	Request->SetVerb("GET");
+	Request->SetURL(TargetHost + "/keepalive");
+	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
+	Request->SetHeader("Content-Type", "application/json");
+	Request->SetContentAsString("{\"clients\":" + FString::FromInt(clients) +"}");
+	if (!Request->ProcessRequest())
+	{
+		UE_LOG(LogTemp, Error, TEXT("ERROR on Registering Keep Alive"));
+	}
 }
