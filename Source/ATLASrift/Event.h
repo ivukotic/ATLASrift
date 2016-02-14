@@ -89,10 +89,21 @@ public:
 		float Energy;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		int32 currentVertexIndexX;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		int32 currentVertexIndexY;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		int32 currentVertexIndex;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<int32> Triangles;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<int32> TrianglesX;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<int32> TrianglesY;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<int32> VertexPattern;
@@ -102,6 +113,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector> Vertices;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FVector> VerticesX;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FVector> VerticesY;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		FEventState EventState;

@@ -242,32 +242,72 @@ void AEvent::ShowClustersFunc()
 void AEvent::ShowTracksFunc()
 {
 	Vertices.Reset();
+	VerticesX.Reset();
+	VerticesY.Reset();
 	Triangles.Reset();
-	currentVertexIndex = 0;
+	TrianglesX.Reset();
+	TrianglesY.Reset();
+
+	currentVertexIndexX = 0;
+	currentVertexIndexY = 0;
 	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowTracks is called！")));
 
 	for (TActorIterator<ATrack> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
-		if (ActorItr->points.Num() > 2)
+		if (ActorItr->points.Num() > 1)
 		{
 			for (FVector var : ActorItr->points)
 			{
+				VerticesX.Add(FVector(var.X + 0.5, var.Y, var.Z));
+				VerticesX.Add(FVector(var.X - 0.5, var.Y, var.Z));
+				VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
+				VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
 				UE_LOG(EventLog, Error, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
 			}
 
-			Vertices.Append(ActorItr->points);
-
-			for (int i = 0; i < ActorItr->points.Num() - 2; i++)
+			//		UE_LOG(EventLog, Error, TEXT("before Vertices.Num()= %d "), Vertices.Num());
+			//		Vertices.Append(ActorItr->points);
+			//		UE_LOG(EventLog, Error, TEXT("after Vertices.Num()= %d "), Vertices.Num());
+			for (int i = 0; i < VerticesX.Num() - 2; i = i + 2)
 			{
-				Triangles.Add(currentVertexIndex + i);
-				Triangles.Add(i + 1 + currentVertexIndex);
-				Triangles.Add(i + 2 + currentVertexIndex);
-				Triangles.Add(i + 2 + currentVertexIndex);
-				Triangles.Add(i + 1 + currentVertexIndex);
-				Triangles.Add(currentVertexIndex + i);
+
+				TrianglesX.Add(currentVertexIndexX + i);
+				TrianglesX.Add(i + 1 + currentVertexIndexX);
+				TrianglesX.Add(i + 2 + currentVertexIndexX);
+				TrianglesX.Add(i + 2 + currentVertexIndexX);
+				TrianglesX.Add(i + 1 + currentVertexIndexX);
+				TrianglesX.Add(currentVertexIndexX + i);
+
+				TrianglesX.Add(i + 1 + currentVertexIndexX);
+				TrianglesX.Add(i + 3 + currentVertexIndexX);
+				TrianglesX.Add(i + 2 + currentVertexIndexX);
+				TrianglesX.Add(i + 2 + currentVertexIndexX);
+				TrianglesX.Add(i + 3 + currentVertexIndexX);
+				TrianglesX.Add(i + 1 + currentVertexIndexX);
+
 			}
 
-			currentVertexIndex = Vertices.Num();
+			for (int i = 0; i < VerticesY.Num() - 2; i = i + 2)
+			{
+
+				TrianglesY.Add(currentVertexIndexY + i);
+				TrianglesY.Add(i + 1 + currentVertexIndexY);
+				TrianglesY.Add(i + 2 + currentVertexIndexY);
+				TrianglesY.Add(i + 2 + currentVertexIndexY);
+				TrianglesY.Add(i + 1 + currentVertexIndexY);
+				TrianglesY.Add(currentVertexIndexY + i);
+
+				TrianglesY.Add(i + 1 + currentVertexIndexY);
+				TrianglesY.Add(i + 3 + currentVertexIndexY);
+				TrianglesY.Add(i + 2 + currentVertexIndexY);
+				TrianglesY.Add(i + 2 + currentVertexIndexY);
+				TrianglesY.Add(i + 3 + currentVertexIndexY);
+				TrianglesY.Add(i + 1 + currentVertexIndexY);
+
+			}
+
+			currentVertexIndexX = VerticesX.Num();
+			currentVertexIndexY = VerticesY.Num();
 		}
 	}
 }
