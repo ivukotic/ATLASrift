@@ -215,7 +215,7 @@ FVector * AEvent::GetCartesianFromPolar(FVector* polar)
 
 void AEvent::AddTris()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New AddTris is called！")));
+	// GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New AddTris is called！")));
 	for (INT32 var : VertexPattern)
 	{
 		Triangles.Add(currentVertexIndex + var);
@@ -250,7 +250,7 @@ void AEvent::ShowTracksFunc()
 
 	currentVertexIndexX = 0;
 	currentVertexIndexY = 0;
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowTracks is called！")));
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowTracks is called！")));
 
 	for (TActorIterator<ATrack> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
@@ -316,7 +316,7 @@ void AEvent::ShowTracksFunc()
 
 void AEvent::Add4Points(float energy1)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New Add4Points is called！")));
+	// GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New Add4Points is called！")));
 	FVector vect;
 	float scale1 = energy1 / 1000 + 320;
 	float scale2 = energy1 / 1000 + 207.7;
