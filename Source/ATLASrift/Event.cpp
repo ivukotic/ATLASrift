@@ -268,7 +268,7 @@ void AEvent::ShowTracksFunc()
 			//		UE_LOG(EventLog, Error, TEXT("before Vertices.Num()= %d "), Vertices.Num());
 			//		Vertices.Append(ActorItr->points);
 			//		UE_LOG(EventLog, Error, TEXT("after Vertices.Num()= %d "), Vertices.Num());
-			for (int i = 0; i < VerticesX.Num() - 2; i = i + 2)
+			for (int i = 0; i < VerticesX.Num() - currentVertexIndexX - 2; i = i + 2)
 			{
 
 				TrianglesX.Add(currentVertexIndexX + i);
@@ -287,7 +287,7 @@ void AEvent::ShowTracksFunc()
 
 			}
 
-			for (int i = 0; i < VerticesY.Num() - 2; i = i + 2)
+			for (int i = 0; i < VerticesY.Num() - currentVertexIndexY - 2; i = i + 2)
 			{
 
 				TrianglesY.Add(currentVertexIndexY + i);
