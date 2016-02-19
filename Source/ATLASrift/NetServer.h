@@ -10,9 +10,11 @@ struct ATLASRIFT_API FNetServer {
 	GENERATED_USTRUCT_BODY()
 	
 		UPROPERTY(BlueprintReadOnly)
-			FString hostname;
+			FString accessCode;
 		UPROPERTY(BlueprintReadOnly)
 			FString ip;
 		UPROPERTY(BlueprintReadOnly)
 			FString description;
+		UPROPERTY(BlueprintReadOnly)
+			int32 clients;
 };

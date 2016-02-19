@@ -89,7 +89,7 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 
 	if (!Response.IsValid())
 	{
-		UE_LOG(LogTemp, Error, TEXT("Error receiving NetServers"));
+		UE_LOG(LogTemp, Error, TEXT("Error Receiving NetServers"));
 	}
 	else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
 	{
@@ -105,12 +105,13 @@ void UReporter::OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponse
 			{
 
 				FNetServer ns;
-				ns.hostname = (*currJsonValue).Key;
+				ns.ip = (*currJsonValue).Key;
 				TSharedPtr<FJsonValue> jServerDetails = (*currJsonValue).Value;
 				TSharedPtr<FJsonObject> jSD = jServerDetails->AsObject();
-				ns.ip = jSD->GetStringField("ip");
 				ns.description = jSD->GetStringField("description");
-				UE_LOG(LogTemp, Display, TEXT("Hostname: %s   IP: %s     Description: %s"), *ns.hostname, *ns.ip, *ns.description);
+				ns.accessCode = jSD->GetStringField("ac");
+				ns.clients = jSD->GetIntegerField("clients");
+				UE_LOG(LogTemp, Display, TEXT("IP: %s     Description: %s    Clients: %d"),  *ns.ip, *ns.description, ns.clients);
 				ANetServers.Push(ns);
 			}
 		}
