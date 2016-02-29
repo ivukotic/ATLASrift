@@ -4,6 +4,7 @@
 
 #include "Http.h"
 #include "NetServer.h"
+#include "Networking.h"
 
 #include "Components/ActorComponent.h"
 #include "Reporter.generated.h"
@@ -22,6 +23,11 @@ class ATLASRIFT_API UReporter : public UActorComponent
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 	void OnServersResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
+	FSocket* SenderSocket;
+	ISocketSubsystem* SocketSubsystem;
+	FIPv4Endpoint RemoteEndpoint;
+	FIPv4Address RemoteAddress;
+
 public:	
 	// Sets default values for this component's properties
 	UReporter();
@@ -39,5 +45,7 @@ public:
 		bool HostAServer(FString description);
 	UFUNCTION(BlueprintCallable, Category = "Server")
 		void KeepAlive(int32 clients);
+	UFUNCTION(BlueprintCallable, Category = "Server")
+		void KeepAliveUDP(FString message);
 
 };

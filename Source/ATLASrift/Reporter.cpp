@@ -11,6 +11,41 @@ UReporter::UReporter()
 {
 	TargetHost = "http://atlasrift.appspot.com";
 	Http = &FHttpModule::Get();
+	
+	FString address = TEXT("128.141.224.219");
+	//FString address = TEXT("pb-d-128-141-164-172.cern.ch");
+	int32 port = 5005;
+	FIPv4Address::Parse(address, RemoteAddress);
+
+	RemoteEndpoint = FIPv4Endpoint(RemoteAddress, port);
+	
+	SocketSubsystem = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM);
+
+
+	if (SocketSubsystem != nullptr) { // is SocketSybstystem OK
+		SenderSocket = SocketSubsystem->CreateSocket(NAME_DGram, TEXT("default"), true);
+
+		if (SenderSocket != nullptr) {
+			bool Error = !SenderSocket->SetNonBlocking(true) || !SenderSocket->SetReuseAddr(true) || !SenderSocket->SetRecvErr();
+
+		//	if (!Error) {
+		//		Error = SenderSocket->Bind(*RemoteEndpoint.ToInternetAddr());
+		//	}
+			if (!Error) {
+				int32 OutNewSize;
+				SenderSocket->SetReceiveBufferSize(1000, OutNewSize);
+				SenderSocket->SetSendBufferSize(1000, OutNewSize);
+			}
+			if (Error) {
+				UE_LOG(LogTemp, Error, TEXT("ERROR on connecting Keep Alive UDP"));
+			}
+			else {
+				UE_LOG(LogTemp, Display, TEXT("SUCCESS on connecting Keep Alive UDP"));
+			}
+		}
+	}
+
+
 }
 
 void UReporter::StartWork(FString parameters)
@@ -157,4 +192,22 @@ void UReporter::KeepAlive(int32 clients) {
 	{
 		UE_LOG(LogTemp, Error, TEXT("ERROR on Registering Keep Alive"));
 	}
+}
+
+void UReporter::KeepAliveUDP(FString message) {
+	// UE_LOG(LogTemp, Display, TEXT("keeping alive UDP"));
+
+	if (!SenderSocket) return;
+	TCHAR *serializedChar = message.GetCharArray().GetData();
+	int32 size = FCString::Strlen(serializedChar);
+	int32 sent = 0;
+
+	bool successful = SenderSocket->SendTo((uint8*)TCHAR_TO_UTF8(serializedChar), size, sent,*RemoteEndpoint.ToInternetAddr());
+	if (!successful) {
+		UE_LOG(LogTemp, Error, TEXT("ERROR on sending Keep Alive UDP"));
+	}
+	else {
+		UE_LOG(LogTemp, Display, TEXT("SUCCESS on sending Keep Alive UDP"));
+	}
+		
 }
