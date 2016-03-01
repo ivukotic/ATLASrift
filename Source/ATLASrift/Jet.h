@@ -22,6 +22,8 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Jet Parameters")
 		float energy;
 
+	void setScale(float scale);
+
 	UStaticMeshComponent* smc;
 	
 };

@@ -1,10 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
 #include "Track.h"
 #include "Http.h"
 #include "GameFramework/Actor.h"
+#include "ProceduralMeshComponent.h"
 #include "Event.generated.h"
 
 DECLARE_LOG_CATEGORY_EXTERN(EventLog, Log, All);
@@ -59,6 +60,9 @@ class ATLASRIFT_API AEvent : public AActor
 	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
 		FString TargetHost;
 
+	UProceduralMeshComponent* meshX;
+	UProceduralMeshComponent* meshY;
+	UProceduralMeshComponent* meshCluster;
 
 
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
@@ -76,8 +80,23 @@ class ATLASRIFT_API AEvent : public AActor
 	FVector* EventSpawnLoc;
 	FRotator* EventSpawnRotation;
 	FActorSpawnParameters SpawnInfo;
-
+	bool trackDataLoadComplete;
+	
+	int32 tickGap;
+	int32 tickCounter;
+	float percentLoad;
+	bool dataload;
 public:	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FVector> normals;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FVector2D> UV0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FColor> vertexColors;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		TArray<FProcMeshTangent> tangents;
+
 
 	UPROPERTY(BlueprintReadWrite, Category = "Event Properties")
 		int32 eventID;
@@ -89,22 +108,21 @@ public:
 		float Energy;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		int32 currentVertexIndex;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		int32 currentVertexIndexX;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		int32 currentVertexIndexY;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		int32 currentVertexIndex;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<int32> Triangles;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<int32> TrianglesX;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<int32> TrianglesY;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<int32> VertexPattern;
 
@@ -113,13 +131,10 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector> Vertices;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector> VerticesX;
-	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector> VerticesY;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		FEventState EventState;
 
@@ -154,8 +169,12 @@ public:
 		void Add4Points(float energy1);
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
-		void ShowClustersFunc();
+		void ShowClustersFunc(float percent);
 
 	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
 		float GetTethaFromEta(float eta);
+
+	// Called every frame
+	virtual void Tick(float DeltaSeconds) override;
+
 };

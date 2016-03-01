@@ -9,10 +9,16 @@
 #include "Jet.h"
 #include "Track.h"
 
+
 DEFINE_LOG_CATEGORY(EventLog);
 
 AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
+	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bStartWithTickEnabled = true;
+	PrimaryActorTick.bAllowTickOnDedicatedServer = true;
+
+	this->SetActorTickEnabled(true);
 	TargetHost = "http://atlasrift.appspot.com/";
 	Http = &FHttpModule::Get();
     eventID=0;
@@ -41,17 +47,37 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	Vertices.Add(FVector(-0.03f, 0.03f, 0.0f));
 
     totalEvents=1;
+
 	EventSpawnLoc = new FVector(0.0f, 0.0f, 0.0f);
 	EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
 	SpawnInfo.Owner = this;
 	SpawnInfo.bDeferConstruction = false;
+	meshX = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh"));
+	meshY = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh1"));
+	meshCluster = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedCluster"));
+	trackDataLoadComplete = false;
+	UE_LOG(EventLog, Error, TEXT("Set trackDataLoadComplete = false"));
 
+	normals.Add(FVector(1, 0, 0));
+	normals.Add(FVector(1, 0, 0));
+	normals.Add(FVector(1, 0, 0));
+
+	UV0.Add(FVector2D(0, 0));
+	UV0.Add(FVector2D(0, 10));
+	UV0.Add(FVector2D(10, 10));
+
+	vertexColors.Add(FColor(100, 100, 100, 100));
+	vertexColors.Add(FColor(100, 100, 100, 100));
+	vertexColors.Add(FColor(100, 100, 100, 100));
+
+	tangents.Add(FProcMeshTangent(1, 1, 1));
+	tangents.Add(FProcMeshTangent(1, 1, 1));
+	tangents.Add(FProcMeshTangent(1, 1, 1));
 	//GetWorld()->SpawnActor<ATrack>(Tracks[0]);
-}
-
-void AEvent::BeginPlay()
-{
-	Super::BeginPlay();
+	percentLoad = 0;
+	dataload = false;
+	tickGap = 1;
+	tickCounter = 0;
 }
 
 
@@ -99,7 +125,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 			EventNr = jEvent->GetNumberField("eventnr");
 			Description = jEvent->GetStringField("description");
 			UE_LOG(EventLog, Display, TEXT("run: %d event: %d"), RunNr, EventNr);
-
+			
             TSharedPtr<FJsonObject> jClusters = jEvent->GetObjectField("xAOD::Type::CaloCluster");
             
             for (auto currJsonValue = jClusters->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
@@ -149,7 +175,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 					jet->eta = eta;
 					jet->energy = re.GetNumberField("energy");
 					jet->coneR = re.GetNumberField("coneR");
-
+					
 				}
 			}
 
@@ -192,7 +218,11 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	{
 		UE_LOG(EventLog, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
+	dataload = true;
 	onEventDownloaded();
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
+
+
 }
 float AEvent::GetTethaFromEta(float eta)
 {
@@ -213,31 +243,6 @@ FVector * AEvent::GetCartesianFromPolar(FVector* polar)
 	return ret;
 }
 
-void AEvent::AddTris()
-{
-	// GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New AddTris is called！")));
-	for (INT32 var : VertexPattern)
-	{
-		Triangles.Add(currentVertexIndex + var);
-	}
-	currentVertexIndex = currentVertexIndex + 8;
-}
-
-void AEvent::ShowClustersFunc()
-{
-	Vertices.Reset();
-	Triangles.Reset();
-
-	for (TActorIterator<ACluster> ActorItr(GetWorld()); ActorItr; ++ActorItr)
-	{
-		Phi = ActorItr->phi;
-		Theta = ActorItr->theta;
-		Energy = ActorItr->energy;
-		Add4Points(0);
-		Add4Points(Energy);
-		AddTris();
-	}
-}
 
 void AEvent::ShowTracksFunc()
 {
@@ -250,19 +255,25 @@ void AEvent::ShowTracksFunc()
 
 	currentVertexIndexX = 0;
 	currentVertexIndexY = 0;
-	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowTracks is called！")));
-
+//	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowTracks is called！")));
+	
 	for (TActorIterator<ATrack> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
-		if (ActorItr->points.Num() > 1)
+		if (ActorItr->points.Num()*percentLoad > 1)
 		{
+			int counter = 0;
 			for (FVector var : ActorItr->points)
 			{
-				VerticesX.Add(FVector(var.X + 0.5, var.Y, var.Z));
-				VerticesX.Add(FVector(var.X - 0.5, var.Y, var.Z));
-				VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
-				VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
-				UE_LOG(EventLog, Error, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
+				if (counter < ActorItr->points.Num()*percentLoad)
+				{
+					counter++;
+					VerticesX.Add(FVector(var.X + 0.5, var.Y, var.Z));
+					VerticesX.Add(FVector(var.X - 0.5, var.Y, var.Z));
+					VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
+					VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
+
+					UE_LOG(EventLog, Error, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
+				}
 			}
 
 			//		UE_LOG(EventLog, Error, TEXT("before Vertices.Num()= %d "), Vertices.Num());
@@ -309,14 +320,94 @@ void AEvent::ShowTracksFunc()
 			currentVertexIndexX = VerticesX.Num();
 			currentVertexIndexY = VerticesY.Num();
 		}
+
 	}
+
 }
 
 
+// Called every frame
+void AEvent::Tick(float DeltaTime)
+{
+	tickCounter++;
+	Super::Tick(DeltaTime);
+
+	if (dataload&&tickCounter>=tickGap)
+	{
+
+		percentLoad = percentLoad + 0.01;
+		if (percentLoad > 1)
+			percentLoad = 0;
+
+		tickCounter = 0;
+
+		ShowTracksFunc();
+		if (VerticesX.Num()>0)
+		{
+			int32 counterTemp = VerticesX.Num();
+
+			TArray<FVector> VerticesXTemp;
+			TArray<int32> TrianglesXTemp;
+			TArray<FVector> VerticesYTemp;
+			TArray<int32> TrianglesYTemp;
+
+			for (int i = 0; i < counterTemp; i++)
+			{
+				VerticesXTemp.Add(VerticesX[i]);
+				VerticesYTemp.Add(VerticesY[i]);
+			}
+			for (int i = 0; i < 2 * (counterTemp - 4) + 4; i++)
+			{
+				TrianglesXTemp.Add(TrianglesX[i]);
+				TrianglesYTemp.Add(TrianglesY[i]);
+			}
+			meshX->CreateMeshSection(1, VerticesXTemp, TrianglesXTemp, normals, UV0, vertexColors, tangents, false);
+			meshY->CreateMeshSection(1, VerticesYTemp, TrianglesYTemp, normals, UV0, vertexColors, tangents, false);
+			meshX->AttachTo(RootComponent);
+			meshY->AttachTo(RootComponent);
+		}
+
+		for (TActorIterator<AJet> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+		{
+			ActorItr->setScale(percentLoad);
+		}
+		ShowClustersFunc(percentLoad);
+	}
+	
+}
+
+void AEvent::AddTris()
+{
+	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New AddTris is called！")));
+	for (INT32 var : VertexPattern)
+	{
+		Triangles.Add(currentVertexIndex + var);
+	}
+	currentVertexIndex = currentVertexIndex + 8;
+}
+
+void AEvent::ShowClustersFunc(float percentLoad)
+{
+	Vertices.Reset();
+	Triangles.Reset();
+	currentVertexIndex = 0;
+	for (TActorIterator<ACluster> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		Phi = ActorItr->phi;
+		Theta = ActorItr->theta;
+		Energy = ActorItr->energy;
+		Add4Points(0);
+		Add4Points(Energy*percentLoad);
+		AddTris();
+	}
+
+	meshCluster->CreateMeshSection(1, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
+	meshCluster->AttachTo(RootComponent);
+}
 
 void AEvent::Add4Points(float energy1)
 {
-	// GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New Add4Points is called！")));
+//	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New Add4Points is called！")));
 	FVector vect;
 	float scale1 = energy1 / 1000 + 320;
 	float scale2 = energy1 / 1000 + 207.7;
@@ -352,7 +443,11 @@ void AEvent::Add4Points(float energy1)
 
 }
 
-
+// Called when the game starts or when spawned
+void AEvent::BeginPlay()
+{
+	PrimaryActorTick.bCanEverTick = true;
+}
 
 int32 AEvent::GetEventNr(){
 	return EventNr;
@@ -365,3 +460,5 @@ int32 AEvent::GetRunNr(){
 FString AEvent::GetDescription(){
 	return Description;
 }
+
+
