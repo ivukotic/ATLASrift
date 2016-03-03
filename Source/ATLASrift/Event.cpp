@@ -26,6 +26,12 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	Theta = 0;
 	Energy = 0;
 
+
+
+	meshX = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh - meshX"));
+	meshY = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh - meshY"));
+	meshCluster = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh - meshCluster"));
+
 	int32 temp[] = { 0, 2, 1, 0, 3, 2,
 		4, 5, 6, 4, 6, 7,
 		0, 5, 4, 0, 1, 5,
@@ -52,11 +58,7 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
 	SpawnInfo.Owner = this;
 	SpawnInfo.bDeferConstruction = false;
-	meshX = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh"));
-	meshY = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh1"));
-	meshCluster = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedCluster"));
 	trackDataLoadComplete = false;
-	UE_LOG(EventLog, Error, TEXT("Set trackDataLoadComplete = false"));
 
 	normals.Add(FVector(1, 0, 0));
 	normals.Add(FVector(1, 0, 0));
@@ -126,6 +128,8 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 			Description = jEvent->GetStringField("description");
 			UE_LOG(EventLog, Display, TEXT("run: %d event: %d"), RunNr, EventNr);
 			
+
+
             TSharedPtr<FJsonObject> jClusters = jEvent->GetObjectField("xAOD::Type::CaloCluster");
             
             for (auto currJsonValue = jClusters->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
@@ -216,7 +220,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	}
 	else
 	{
-		UE_LOG(EventLog, Error, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
+		UE_LOG(EventLog, Display, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
 	dataload = true;
 	onEventDownloaded();
