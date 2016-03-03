@@ -43,8 +43,8 @@ public:
 		void LoadNetServers();
 	UFUNCTION(BlueprintCallable, Category = "Server")
 		bool HostAServer(FString description);
-	UFUNCTION(BlueprintCallable, Category = "Server")
-		void KeepAlive(int32 clients);
+	//UFUNCTION(BlueprintCallable, Category = "Server")
+	//	void KeepAlive(int32 clients);
 	UFUNCTION(BlueprintCallable, Category = "Server")
 		void KeepAliveUDP(FString message);
 

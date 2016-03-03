@@ -177,22 +177,22 @@ bool UReporter::HostAServer(FString description ) {
 	else
 		return true;
 }
-void UReporter::KeepAlive(int32 clients) {
-	UE_LOG(LogTemp, Display, TEXT("keeping alive"));
-	if (!Http) return;
-	if (!Http->IsHttpEnabled()) return;
-	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
-
-	Request->SetVerb("GET");
-	Request->SetURL(TargetHost + "/keepalive");
-	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
-	Request->SetHeader("Content-Type", "application/json");
-	Request->SetContentAsString("{\"clients\":" + FString::FromInt(clients) +"}");
-	if (!Request->ProcessRequest())
-	{
-		UE_LOG(LogTemp, Error, TEXT("ERROR on Registering Keep Alive"));
-	}
-}
+//void UReporter::KeepAlive(int32 clients) {
+//	UE_LOG(LogTemp, Display, TEXT("keeping alive"));
+//	if (!Http) return;
+//	if (!Http->IsHttpEnabled()) return;
+//	TSharedRef < IHttpRequest > Request = Http->CreateRequest();
+//
+//	Request->SetVerb("GET");
+//	Request->SetURL(TargetHost + "/keepalive");
+//	Request->SetHeader("User-Agent", "ATLASriftClient/1.0");
+//	Request->SetHeader("Content-Type", "application/json");
+//	Request->SetContentAsString("{\"clients\":" + FString::FromInt(clients) +"}");
+//	if (!Request->ProcessRequest())
+//	{
+//		UE_LOG(LogTemp, Error, TEXT("ERROR on Registering Keep Alive"));
+//	}
+//}
 
 void UReporter::KeepAliveUDP(FString message) {
 	// UE_LOG(LogTemp, Display, TEXT("keeping alive UDP"));
