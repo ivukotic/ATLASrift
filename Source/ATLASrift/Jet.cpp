@@ -20,5 +20,5 @@ void AJet::setScale(float scale)
 {
 	FVector Scale = FVector(scale);
 	smc->SetWorldScale3D(Scale);
-	smc->AttachTo(RootComponent);
+	//smc->AttachTo(RootComponent);
 }

@@ -276,7 +276,7 @@ void AEvent::ShowTracksFunc()
 					VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
 					VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
 
-					UE_LOG(EventLog, Error, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
+					//UE_LOG(EventLog, Display, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
 				}
 			}
 
