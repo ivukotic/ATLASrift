@@ -9,9 +9,9 @@ AJet::AJet(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitialize
 {
 	smc = ObjectInitializer.CreateAbstractDefaultSubobject<UStaticMeshComponent>(this, TEXT("smc text"));
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> StaticMesh(TEXT("StaticMesh'/Game/Misc/cone'"));
-	static ConstructorHelpers::FObjectFinder <UMaterialInterface> Material_Blue(TEXT("Material'/Game/Materials/M_Metal_Red'"));
+	static ConstructorHelpers::FObjectFinder <UMaterialInterface> Material_Red(TEXT("Material'/Game/Materials/M_Metal_Red'"));
 	smc->SetStaticMesh(StaticMesh.Object);
-	smc->SetMaterial(0, Material_Blue.Object);
+	smc->SetMaterial(0, Material_Red.Object);
 	RootComponent = smc;
 }
 
