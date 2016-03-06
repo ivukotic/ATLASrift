@@ -365,6 +365,8 @@ void AEvent::Tick(float DeltaTime)
 			}
 			meshX->CreateMeshSection(1, VerticesXTemp, TrianglesXTemp, normals, UV0, vertexColors, tangents, false);
 			meshY->CreateMeshSection(1, VerticesYTemp, TrianglesYTemp, normals, UV0, vertexColors, tangents, false);
+			meshX->SetMaterial(1, TrackMaterial);
+			meshY->SetMaterial(1, TrackMaterial);
 		}
 
 		for (TActorIterator<AJet> ActorItr(GetWorld()); ActorItr; ++ActorItr)
@@ -401,8 +403,8 @@ void AEvent::ShowClustersFunc(float percentLoad)
 		AddTris();
 	}
 
-	meshCluster->CreateMeshSection(1, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
-
+	meshCluster->CreateMeshSection(0, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
+	meshCluster->SetMaterial(0, ClusterMaterial);
 }
 
 void AEvent::Add4Points(float energy1)

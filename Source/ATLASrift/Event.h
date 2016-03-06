@@ -88,6 +88,10 @@ class ATLASRIFT_API AEvent : public AActor
 	bool dataload;
 public:	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		UMaterial* ClusterMaterial;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		UMaterial* TrackMaterial;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector> normals;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector2D> UV0;
@@ -96,7 +100,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FProcMeshTangent> tangents;
-
 
 	UPROPERTY(BlueprintReadWrite, Category = "Event Properties")
 		int32 eventID;
