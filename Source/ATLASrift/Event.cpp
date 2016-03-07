@@ -52,7 +52,7 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	Vertices.Add(FVector(0.03f, 0.03f, 0.0f));
 	Vertices.Add(FVector(-0.03f, 0.03f, 0.0f));
 
-    totalEvents=1;
+    totalEvents=4;
 
 	EventSpawnLoc = new FVector(0.0f, 0.0f, 0.0f);
 	EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
