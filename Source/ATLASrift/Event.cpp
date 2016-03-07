@@ -275,8 +275,6 @@ void AEvent::ShowTracksFunc()
 					VerticesX.Add(FVector(var.X - 0.5, var.Y, var.Z));
 					VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
 					VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
-
-					//UE_LOG(EventLog, Display, TEXT("x=: %f, y= %f, z=%f"), var.X, var.Y, var.Z);
 				}
 			}
 
@@ -367,8 +365,8 @@ void AEvent::Tick(float DeltaTime)
 			}
 			meshX->CreateMeshSection(1, VerticesXTemp, TrianglesXTemp, normals, UV0, vertexColors, tangents, false);
 			meshY->CreateMeshSection(1, VerticesYTemp, TrianglesYTemp, normals, UV0, vertexColors, tangents, false);
-			meshX->AttachTo(RootComponent);
-			meshY->AttachTo(RootComponent);
+			meshX->SetMaterial(1, TrackMaterial);
+			meshY->SetMaterial(1, TrackMaterial);
 		}
 
 		for (TActorIterator<AJet> ActorItr(GetWorld()); ActorItr; ++ActorItr)
@@ -405,8 +403,8 @@ void AEvent::ShowClustersFunc(float percentLoad)
 		AddTris();
 	}
 
-	meshCluster->CreateMeshSection(1, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
-	meshCluster->AttachTo(RootComponent);
+	meshCluster->CreateMeshSection(0, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
+	meshCluster->SetMaterial(0, ClusterMaterial);
 }
 
 void AEvent::Add4Points(float energy1)
