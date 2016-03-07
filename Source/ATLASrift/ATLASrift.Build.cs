@@ -18,7 +18,7 @@ public class ATLASrift : ModuleRules
 
 	public ATLASrift(TargetInfo Target)
 	{
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HTTP", "Json", "Sockets", "Networking" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HTTP", "Json", "Sockets", "Networking", "OnlineSubsystemNull" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

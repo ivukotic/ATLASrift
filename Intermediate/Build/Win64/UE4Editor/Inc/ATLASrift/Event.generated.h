@@ -13,13 +13,38 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ATLASRIFT_Event_generated_h
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_RPC_WRAPPERS \
+#define ATLASrift_Source_ATLASrift_Event_h_20_GENERATED_BODY \
+	friend ATLASRIFT_API class UScriptStruct* Z_Construct_UScriptStruct_FEventState(); \
+	ATLASRIFT_API static class UScriptStruct* StaticStruct();
+
+
+#define ATLASrift_Source_ATLASrift_Event_h_51_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetTethaFromEta) \
 	{ \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_eta); \
 		P_FINISH; \
 		*(float*)Z_Param__Result=this->GetTethaFromEta(Z_Param_eta); \
+	} \
+ \
+	DECLARE_FUNCTION(execShowClustersFunc) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_percent); \
+		P_FINISH; \
+		this->ShowClustersFunc(Z_Param_percent); \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd4Points) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_energy1); \
+		P_FINISH; \
+		this->Add4Points(Z_Param_energy1); \
+	} \
+ \
+	DECLARE_FUNCTION(execAddTris) \
+	{ \
+		P_FINISH; \
+		this->AddTris(); \
 	} \
  \
 	DECLARE_FUNCTION(execGetEvent) \
@@ -40,6 +65,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		*(int32*)Z_Param__Result=this->GetRunNr(); \
 	} \
  \
+	DECLARE_FUNCTION(execShowTracksFunc) \
+	{ \
+		P_FINISH; \
+		this->ShowTracksFunc(); \
+	} \
+ \
 	DECLARE_FUNCTION(execGetEventNr) \
 	{ \
 		P_FINISH; \
@@ -47,13 +78,33 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define ATLASrift_Source_ATLASrift_Event_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetTethaFromEta) \
 	{ \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_eta); \
 		P_FINISH; \
 		*(float*)Z_Param__Result=this->GetTethaFromEta(Z_Param_eta); \
+	} \
+ \
+	DECLARE_FUNCTION(execShowClustersFunc) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_percent); \
+		P_FINISH; \
+		this->ShowClustersFunc(Z_Param_percent); \
+	} \
+ \
+	DECLARE_FUNCTION(execAdd4Points) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_energy1); \
+		P_FINISH; \
+		this->Add4Points(Z_Param_energy1); \
+	} \
+ \
+	DECLARE_FUNCTION(execAddTris) \
+	{ \
+		P_FINISH; \
+		this->AddTris(); \
 	} \
  \
 	DECLARE_FUNCTION(execGetEvent) \
@@ -74,6 +125,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		*(int32*)Z_Param__Result=this->GetRunNr(); \
 	} \
  \
+	DECLARE_FUNCTION(execShowTracksFunc) \
+	{ \
+		P_FINISH; \
+		this->ShowTracksFunc(); \
+	} \
+ \
 	DECLARE_FUNCTION(execGetEventNr) \
 	{ \
 		P_FINISH; \
@@ -81,10 +138,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_EVENT_PARMS
+#define ATLASrift_Source_ATLASrift_Event_h_51_EVENT_PARMS
 extern ATLASRIFT_API  FName ATLASRIFT_onEventDownloaded;
-#define ATLASrift_Source_ATLASrift_Event_h_17_CALLBACK_WRAPPERS
-#define ATLASrift_Source_ATLASrift_Event_h_17_INCLASS_NO_PURE_DECLS \
+#define ATLASrift_Source_ATLASrift_Event_h_51_CALLBACK_WRAPPERS
+#define ATLASrift_Source_ATLASrift_Event_h_51_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAEvent(); \
 	friend ATLASRIFT_API class UClass* Z_Construct_UClass_AEvent(); \
@@ -95,7 +152,7 @@ extern ATLASRIFT_API  FName ATLASRIFT_onEventDownloaded;
 	virtual UObject* _getUObject() const override { return const_cast<AEvent*>(this); }
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_INCLASS \
+#define ATLASrift_Source_ATLASrift_Event_h_51_INCLASS \
 	private: \
 	static void StaticRegisterNativesAEvent(); \
 	friend ATLASRIFT_API class UClass* Z_Construct_UClass_AEvent(); \
@@ -106,7 +163,7 @@ extern ATLASRIFT_API  FName ATLASRIFT_onEventDownloaded;
 	virtual UObject* _getUObject() const override { return const_cast<AEvent*>(this); }
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_STANDARD_CONSTRUCTORS \
+#define ATLASrift_Source_ATLASrift_Event_h_51_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEvent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEvent) \
@@ -118,7 +175,7 @@ private: \
 public:
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_ENHANCED_CONSTRUCTORS \
+#define ATLASrift_Source_ATLASrift_Event_h_51_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AEvent(const AEvent& InCopy); \
@@ -128,28 +185,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEvent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEvent)
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_14_PROLOG \
-	ATLASrift_Source_ATLASrift_Event_h_17_EVENT_PARMS
+#define ATLASrift_Source_ATLASrift_Event_h_48_PROLOG \
+	ATLASrift_Source_ATLASrift_Event_h_51_EVENT_PARMS
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_GENERATED_BODY_LEGACY \
+#define ATLASrift_Source_ATLASrift_Event_h_51_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ATLASrift_Source_ATLASrift_Event_h_17_RPC_WRAPPERS \
-	ATLASrift_Source_ATLASrift_Event_h_17_CALLBACK_WRAPPERS \
-	ATLASrift_Source_ATLASrift_Event_h_17_INCLASS \
-	ATLASrift_Source_ATLASrift_Event_h_17_STANDARD_CONSTRUCTORS \
+	ATLASrift_Source_ATLASrift_Event_h_51_RPC_WRAPPERS \
+	ATLASrift_Source_ATLASrift_Event_h_51_CALLBACK_WRAPPERS \
+	ATLASrift_Source_ATLASrift_Event_h_51_INCLASS \
+	ATLASrift_Source_ATLASrift_Event_h_51_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ATLASrift_Source_ATLASrift_Event_h_17_GENERATED_BODY \
+#define ATLASrift_Source_ATLASrift_Event_h_51_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ATLASrift_Source_ATLASrift_Event_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	ATLASrift_Source_ATLASrift_Event_h_17_CALLBACK_WRAPPERS \
-	ATLASrift_Source_ATLASrift_Event_h_17_INCLASS_NO_PURE_DECLS \
-	ATLASrift_Source_ATLASrift_Event_h_17_ENHANCED_CONSTRUCTORS \
+	ATLASrift_Source_ATLASrift_Event_h_51_RPC_WRAPPERS_NO_PURE_DECLS \
+	ATLASrift_Source_ATLASrift_Event_h_51_CALLBACK_WRAPPERS \
+	ATLASrift_Source_ATLASrift_Event_h_51_INCLASS_NO_PURE_DECLS \
+	ATLASrift_Source_ATLASrift_Event_h_51_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

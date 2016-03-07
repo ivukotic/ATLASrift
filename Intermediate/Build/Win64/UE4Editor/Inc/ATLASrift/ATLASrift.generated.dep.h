@@ -17,6 +17,12 @@
 #ifndef ATLASRIFT_Jet_generated_h
 	#include "Jet.h"
 #endif
+#ifndef ATLASRIFT_MyProceduralMeshComponent_generated_h
+	#include "MyProceduralMeshComponent.h"
+#endif
+#ifndef ATLASRIFT_NetServer_generated_h
+	#include "NetServer.h"
+#endif
 #ifndef ATLASRIFT_Reporter_generated_h
 	#include "Reporter.h"
 #endif
