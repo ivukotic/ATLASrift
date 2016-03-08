@@ -50,11 +50,8 @@ class ATLASRIFT_API AEvent : public AActor
 {
 	GENERATED_BODY()
 
-		
 	AEvent(const FObjectInitializer& ObjectInitializer);
-	
 	virtual void BeginPlay() override;
-
 	FHttpModule* Http;
 
 	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
@@ -64,15 +61,14 @@ class ATLASRIFT_API AEvent : public AActor
 	UProceduralMeshComponent* meshY;
 	UProceduralMeshComponent* meshCluster;
 
-
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 //	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
-		FVector* GetCartesianFromPolar(FVector* polar);
-    int32 RunNr;
-    int32 EventNr;
+	FVector* GetCartesianFromPolar(FVector* polar);
+	int32 RunNr;
+	int32 EventNr;
 
-    int32 totalEvents;
+	int32 totalEvents;
 	FString Description;
 	TArray<FString> TrackTypes;
 	TArray<FString> ClusterTypes;
@@ -86,7 +82,10 @@ class ATLASRIFT_API AEvent : public AActor
 	int32 tickCounter;
 	float percentLoad;
 	bool dataload;
-public:	
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		bool animationsBP;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		UMaterial* ClusterMaterial;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
@@ -112,7 +111,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		int32 currentVertexIndex;
-
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		int32 currentVertexIndexX;
@@ -156,7 +154,8 @@ public:
 		int32 GetEventNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void ShowTracksFunc();
-
+	UFUNCTION(BlueprintCallable, Category = "Event Functions")
+		void ShowStaticGraphic();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetRunNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")

@@ -327,6 +327,40 @@ void AEvent::ShowTracksFunc()
 
 }
 
+void AEvent::ShowStaticGraphic()
+{
+	ShowTracksFunc();
+	if (VerticesX.Num()>0)
+	{
+		int32 counterTemp = VerticesX.Num();
+
+		TArray<FVector> VerticesXTemp;
+		TArray<int32> TrianglesXTemp;
+		TArray<FVector> VerticesYTemp;
+		TArray<int32> TrianglesYTemp;
+
+		for (int i = 0; i < counterTemp; i++)
+		{
+			VerticesXTemp.Add(VerticesX[i]);
+			VerticesYTemp.Add(VerticesY[i]);
+		}
+		for (int i = 0; i < 2 * (counterTemp - 4) + 4; i++)
+		{
+			TrianglesXTemp.Add(TrianglesX[i]);
+			TrianglesYTemp.Add(TrianglesY[i]);
+		}
+		meshX->CreateMeshSection(1, VerticesXTemp, TrianglesXTemp, normals, UV0, vertexColors, tangents, false);
+		meshY->CreateMeshSection(1, VerticesYTemp, TrianglesYTemp, normals, UV0, vertexColors, tangents, false);
+		meshX->SetMaterial(1, TrackMaterial);
+		meshY->SetMaterial(1, TrackMaterial);
+	}
+
+	for (TActorIterator<AJet> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		ActorItr->setScale(percentLoad);
+	}
+	ShowClustersFunc(percentLoad);
+}
 
 // Called every frame
 void AEvent::Tick(float DeltaTime)
@@ -342,38 +376,7 @@ void AEvent::Tick(float DeltaTime)
 			percentLoad = 0;
 
 		tickCounter = 0;
-
-		ShowTracksFunc();
-		if (VerticesX.Num()>0)
-		{
-			int32 counterTemp = VerticesX.Num();
-
-			TArray<FVector> VerticesXTemp;
-			TArray<int32> TrianglesXTemp;
-			TArray<FVector> VerticesYTemp;
-			TArray<int32> TrianglesYTemp;
-
-			for (int i = 0; i < counterTemp; i++)
-			{
-				VerticesXTemp.Add(VerticesX[i]);
-				VerticesYTemp.Add(VerticesY[i]);
-			}
-			for (int i = 0; i < 2 * (counterTemp - 4) + 4; i++)
-			{
-				TrianglesXTemp.Add(TrianglesX[i]);
-				TrianglesYTemp.Add(TrianglesY[i]);
-			}
-			meshX->CreateMeshSection(1, VerticesXTemp, TrianglesXTemp, normals, UV0, vertexColors, tangents, false);
-			meshY->CreateMeshSection(1, VerticesYTemp, TrianglesYTemp, normals, UV0, vertexColors, tangents, false);
-			meshX->SetMaterial(1, TrackMaterial);
-			meshY->SetMaterial(1, TrackMaterial);
-		}
-
-		for (TActorIterator<AJet> ActorItr(GetWorld()); ActorItr; ++ActorItr)
-		{
-			ActorItr->setScale(percentLoad);
-		}
-		ShowClustersFunc(percentLoad);
+		ShowStaticGraphic();
 	}
 	
 }
