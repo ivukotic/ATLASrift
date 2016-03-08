@@ -225,7 +225,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	dataload = true;
 	onEventDownloaded();
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
-
+	percentLoad = 0;
 
 }
 float AEvent::GetTethaFromEta(float eta)
@@ -370,12 +370,14 @@ void AEvent::Tick(float DeltaTime)
 
 	if (dataload&&tickCounter>=tickGap)
 	{
+		tickCounter = 0;
 
 		percentLoad = percentLoad + 0.01;
 		if (percentLoad > 1)
-			percentLoad = 0;
-
-		tickCounter = 0;
+		{
+			//percentLoad = 0;
+			dataload = false;
+		}
 
 		if (!animationsBP)
 			percentLoad = 1;
@@ -409,6 +411,11 @@ void AEvent::ShowClustersFunc(float percentLoad)
 		Add4Points(Energy*percentLoad);
 		AddTris();
 	}
+
+	if (percentLoad == 0)
+		meshCluster->SetVisibility(false);
+	else
+		meshCluster->SetVisibility(true);
 
 	meshCluster->CreateMeshSection(0, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
 	meshCluster->SetMaterial(0, ClusterMaterial);
