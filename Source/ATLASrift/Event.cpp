@@ -224,7 +224,7 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	}
 	dataload = true;
 	onEventDownloaded();
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
 	percentLoad = 0;
 
 }
