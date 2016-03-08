@@ -68,9 +68,9 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	UV0.Add(FVector2D(0, 10));
 	UV0.Add(FVector2D(10, 10));
 
-	vertexColors.Add(FColor(100, 100, 100, 100));
-	vertexColors.Add(FColor(100, 100, 100, 100));
-	vertexColors.Add(FColor(100, 100, 100, 100));
+	//vertexColors.Add(FColor(100, 100, 100, 100));
+	//vertexColors.Add(FColor(100, 100, 100, 100));
+	//vertexColors.Add(FColor(100, 100, 100, 100));
 
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	tangents.Add(FProcMeshTangent(1, 1, 1));

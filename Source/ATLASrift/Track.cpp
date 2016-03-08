@@ -22,39 +22,6 @@ ATrack::ATrack(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	*	@param	bCreateCollision	Indicates whether collision should be created for this section. This adds significant cost.
 	*/
 
-	//TArray<FVector> vertices;
-
-	//vertices.Add(FVector(0, 0, 0));
-	//vertices.Add(FVector(0, 100, 0));
-	//vertices.Add(FVector(0, 0, 100));
-
-	//TArray<int32> Triangles;
-	//Triangles.Add(0);
-	//Triangles.Add(1);
-	//Triangles.Add(2);
-
-	//TArray<FVector> normals;
-	//normals.Add(FVector(1, 0, 0));
-	//normals.Add(FVector(1, 0, 0));
-	//normals.Add(FVector(1, 0, 0));
-
-	//TArray<FVector2D> UV0;
-	//UV0.Add(FVector2D(0, 0));
-	//UV0.Add(FVector2D(0, 10));
-	//UV0.Add(FVector2D(10, 10));
-
-	//TArray<FColor> vertexColors;
-	//vertexColors.Add(FColor(100, 100, 100, 100));
-	//vertexColors.Add(FColor(100, 100, 100, 100));
-	//vertexColors.Add(FColor(100, 100, 100, 100));
-
-
-	//TArray<FProcMeshTangent> tangents;
-	//tangents.Add(FProcMeshTangent(1, 1, 1));
-	//tangents.Add(FProcMeshTangent(1, 1, 1));
-	//tangents.Add(FProcMeshTangent(1, 1, 1));
-
-
 }
 
 void ATrack::SetParameters(float d0, float z0, float phi, float theta, float qop){
