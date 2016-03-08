@@ -376,6 +376,10 @@ void AEvent::Tick(float DeltaTime)
 			percentLoad = 0;
 
 		tickCounter = 0;
+
+		if (!animationsBP)
+			percentLoad = 1;
+
 		ShowStaticGraphic();
 	}
 	
