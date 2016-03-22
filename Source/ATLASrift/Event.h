@@ -57,10 +57,6 @@ class ATLASRIFT_API AEvent : public AActor
 	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
 		FString TargetHost;
 
-	UProceduralMeshComponent* meshX;
-	UProceduralMeshComponent* meshY;
-	UProceduralMeshComponent* meshCluster;
-
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 
 //	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
@@ -139,13 +135,16 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		FEventState EventState;
 
+	USceneComponent* SceneComponent;
 
-	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
-		TArray<TSubclassOf<class ATrack> > Tracks;
-	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
-		TArray<TSubclassOf<class ACluster> > Clusters;
-	UPROPERTY(BlueprintReadOnly, Category = "Event elements")
+	UPROPERTY(BlueprintReadOnly, Category = "Jet elements")
 		TArray<TSubclassOf<class AJet> > Jets;
+	UPROPERTY(BlueprintReadOnly, Category = "Track elements")
+		UProceduralMeshComponent* meshX;
+	UPROPERTY(BlueprintReadOnly, Category = "Track elements")
+		UProceduralMeshComponent* meshY;
+	UPROPERTY(BlueprintReadOnly, Category = "Cluster elements")
+		UProceduralMeshComponent* meshCluster;
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "EventServer")
 		void onEventDownloaded();

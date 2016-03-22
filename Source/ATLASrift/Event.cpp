@@ -26,7 +26,8 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	Theta = 0;
 	Energy = 0;
 
-
+	SceneComponent = CreateDefaultSubobject<USceneComponent>(TEXT("root scene"));
+	RootComponent = SceneComponent;
 
 	meshX = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh - meshX"));
 	meshY = CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("GeneratedMesh - meshY"));
