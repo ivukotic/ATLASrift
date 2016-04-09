@@ -77,7 +77,7 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	//GetWorld()->SpawnActor<ATrack>(Tracks[0]);
-	percentLoad = 0;
+	percentLoad = 1;
 	dataload = false;
 	tickGap = 1;
 	tickCounter = 0;
@@ -360,7 +360,7 @@ void AEvent::ShowStaticGraphic()
 	{
 		ActorItr->setScale(percentLoad);
 	}
-	ShowClustersFunc(percentLoad);
+	ShowClustersFunc();
 }
 
 // Called every frame
@@ -398,8 +398,9 @@ void AEvent::AddTris()
 	currentVertexIndex = currentVertexIndex + 8;
 }
 
-void AEvent::ShowClustersFunc(float percentLoad)
+void AEvent::ShowClustersFunc()
 {
+	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowClusters called！")));
 	Vertices.Reset();
 	Triangles.Reset();
 	currentVertexIndex = 0;
@@ -415,11 +416,12 @@ void AEvent::ShowClustersFunc(float percentLoad)
 
 	if (percentLoad == 0)
 		meshCluster->SetVisibility(false);
-	else
+	else {
 		meshCluster->SetVisibility(true);
-
-	meshCluster->CreateMeshSection(0, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
-	meshCluster->SetMaterial(0, ClusterMaterial);
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowClusters SET MATERIAL called！")));
+		meshCluster->CreateMeshSection(0, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
+		meshCluster->SetMaterial(0, ClusterMaterial);
+	}
 }
 
 void AEvent::Add4Points(float energy1)

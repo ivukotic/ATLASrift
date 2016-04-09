@@ -170,7 +170,7 @@ public:
 		void Add4Points(float energy1);
 
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
-		void ShowClustersFunc(float percent);
+		void ShowClustersFunc();
 
 	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
 		float GetTethaFromEta(float eta);
