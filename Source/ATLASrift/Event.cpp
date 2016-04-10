@@ -14,9 +14,9 @@ DEFINE_LOG_CATEGORY(EventLog);
 
 AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
-	PrimaryActorTick.bCanEverTick = true;
-	PrimaryActorTick.bStartWithTickEnabled = true;
-	PrimaryActorTick.bAllowTickOnDedicatedServer = true;
+	//PrimaryActorTick.bCanEverTick = true;
+	//PrimaryActorTick.bStartWithTickEnabled = true;
+	//PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 
 	this->SetActorTickEnabled(true);
 	TargetHost = "http://atlasrift.appspot.com/";
@@ -59,7 +59,6 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
 	SpawnInfo.Owner = this;
 	SpawnInfo.bDeferConstruction = false;
-	trackDataLoadComplete = false;
 
 	normals.Add(FVector(1, 0, 0));
 	normals.Add(FVector(1, 0, 0));
@@ -76,11 +75,6 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	tangents.Add(FProcMeshTangent(1, 1, 1));
-	//GetWorld()->SpawnActor<ATrack>(Tracks[0]);
-	percentLoad = 0;
-	dataload = false;
-	tickGap = 1;
-	tickCounter = 0;
 }
 
 
@@ -223,8 +217,6 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	{
 		UE_LOG(EventLog, Display, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
-	dataload = true;
-	percentLoad = 1;
 	onEventDownloaded();
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
 
@@ -251,10 +243,8 @@ FVector * AEvent::GetCartesianFromPolar(FVector* polar)
 
 void AEvent::ShowTracksFunc()
 {
-	Vertices.Reset();
 	VerticesX.Reset();
 	VerticesY.Reset();
-	Triangles.Reset();
 	TrianglesX.Reset();
 	TrianglesY.Reset();
 
@@ -265,6 +255,7 @@ void AEvent::ShowTracksFunc()
 	for (TActorIterator<ATrack> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
 		int counter = ActorItr->points.Num()*percentLoad;
+		if (counter < 3) continue;
 		for (FVector var : ActorItr->points)
 		{
 			if (!counter) break;
@@ -275,9 +266,6 @@ void AEvent::ShowTracksFunc()
 			VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
 		}
 
-		//		UE_LOG(EventLog, Error, TEXT("before Vertices.Num()= %d "), Vertices.Num());
-		//		Vertices.Append(ActorItr->points);
-		//		UE_LOG(EventLog, Error, TEXT("after Vertices.Num()= %d "), Vertices.Num());
 		for (int i = 0; i < VerticesX.Num() - currentVertexIndexX - 2; i = i + 2)
 			{
 
@@ -352,29 +340,6 @@ void AEvent::ShowTracksFunc()
 	}
 }
 
-// Called every frame
-void AEvent::Tick(float DeltaTime)
-{
-	//tickCounter++;
-	//Super::Tick(DeltaTime);
-
-	//if (dataload&&tickCounter>=tickGap)
-	//{
-	//	tickCounter = 0;
-
-	//	percentLoad = percentLoad + 0.01;
-	//	if (percentLoad > 1)
-	//	{
-	//		dataload = false;
-	//	}
-
-	//	if (!animationsBP)
-	//		percentLoad = 1;
-
-	//	ShowStaticGraphic();
-	//}
-	
-}
 
 void AEvent::AddTris()
 {
@@ -446,12 +411,6 @@ void AEvent::Add4Points(float energy1)
 
 	}
 
-}
-
-// Called when the game starts or when spawned
-void AEvent::BeginPlay()
-{
-	PrimaryActorTick.bCanEverTick = true;
 }
 
 int32 AEvent::GetEventNr(){

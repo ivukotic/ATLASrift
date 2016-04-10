@@ -51,7 +51,6 @@ class ATLASRIFT_API AEvent : public AActor
 	GENERATED_BODY()
 
 	AEvent(const FObjectInitializer& ObjectInitializer);
-	virtual void BeginPlay() override;
 	FHttpModule* Http;
 
 	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
@@ -72,16 +71,10 @@ class ATLASRIFT_API AEvent : public AActor
 	FVector* EventSpawnLoc;
 	FRotator* EventSpawnRotation;
 	FActorSpawnParameters SpawnInfo;
-	bool trackDataLoadComplete;
 	
-	int32 tickGap;
-	int32 tickCounter;
-	float percentLoad;
-	bool dataload;
-
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool animationsBP;
+		float percentLoad;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		UMaterial* ClusterMaterial;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
@@ -173,8 +166,5 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Geometry Transformation Functions")
 		float GetTethaFromEta(float eta);
-
-	// Called every frame
-	virtual void Tick(float DeltaSeconds) override;
 
 };
