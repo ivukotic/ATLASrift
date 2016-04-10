@@ -77,7 +77,7 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	tangents.Add(FProcMeshTangent(1, 1, 1));
 	//GetWorld()->SpawnActor<ATrack>(Tracks[0]);
-	percentLoad = 1;
+	percentLoad = 0;
 	dataload = false;
 	tickGap = 1;
 	tickCounter = 0;
@@ -224,9 +224,9 @@ void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Respon
 		UE_LOG(EventLog, Display, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
 	}
 	dataload = true;
+	percentLoad = 1;
 	onEventDownloaded();
 	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
-	percentLoad = 0;
 
 }
 float AEvent::GetTethaFromEta(float eta)
@@ -264,25 +264,21 @@ void AEvent::ShowTracksFunc()
 	
 	for (TActorIterator<ATrack> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
-		if (ActorItr->points.Num()*percentLoad > 1)
+		int counter = ActorItr->points.Num()*percentLoad;
+		for (FVector var : ActorItr->points)
 		{
-			int counter = 0;
-			for (FVector var : ActorItr->points)
-			{
-				if (counter < ActorItr->points.Num()*percentLoad)
-				{
-					counter++;
-					VerticesX.Add(FVector(var.X + 0.5, var.Y, var.Z));
-					VerticesX.Add(FVector(var.X - 0.5, var.Y, var.Z));
-					VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
-					VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
-				}
-			}
+			if (!counter) break;
+			counter--;
+			VerticesX.Add(FVector(var.X + 0.5, var.Y, var.Z));
+			VerticesX.Add(FVector(var.X - 0.5, var.Y, var.Z));
+			VerticesY.Add(FVector(var.X, var.Y + 0.5, var.Z));
+			VerticesY.Add(FVector(var.X, var.Y - 0.5, var.Z));
+		}
 
-			//		UE_LOG(EventLog, Error, TEXT("before Vertices.Num()= %d "), Vertices.Num());
-			//		Vertices.Append(ActorItr->points);
-			//		UE_LOG(EventLog, Error, TEXT("after Vertices.Num()= %d "), Vertices.Num());
-			for (int i = 0; i < VerticesX.Num() - currentVertexIndexX - 2; i = i + 2)
+		//		UE_LOG(EventLog, Error, TEXT("before Vertices.Num()= %d "), Vertices.Num());
+		//		Vertices.Append(ActorItr->points);
+		//		UE_LOG(EventLog, Error, TEXT("after Vertices.Num()= %d "), Vertices.Num());
+		for (int i = 0; i < VerticesX.Num() - currentVertexIndexX - 2; i = i + 2)
 			{
 
 				TrianglesX.Add(currentVertexIndexX + i);
@@ -301,7 +297,7 @@ void AEvent::ShowTracksFunc()
 
 			}
 
-			for (int i = 0; i < VerticesY.Num() - currentVertexIndexY - 2; i = i + 2)
+		for (int i = 0; i < VerticesY.Num() - currentVertexIndexY - 2; i = i + 2)
 			{
 
 				TrianglesY.Add(currentVertexIndexY + i);
@@ -322,15 +318,9 @@ void AEvent::ShowTracksFunc()
 
 			currentVertexIndexX = VerticesX.Num();
 			currentVertexIndexY = VerticesY.Num();
-		}
 
 	}
 
-}
-
-void AEvent::ShowStaticGraphic()
-{
-	ShowTracksFunc();
 	if (VerticesX.Num()>0)
 	{
 		int32 counterTemp = VerticesX.Num();
@@ -360,31 +350,29 @@ void AEvent::ShowStaticGraphic()
 	{
 		ActorItr->setScale(percentLoad);
 	}
-	ShowClustersFunc();
 }
 
 // Called every frame
 void AEvent::Tick(float DeltaTime)
 {
-	tickCounter++;
-	Super::Tick(DeltaTime);
+	//tickCounter++;
+	//Super::Tick(DeltaTime);
 
-	if (dataload&&tickCounter>=tickGap)
-	{
-		tickCounter = 0;
+	//if (dataload&&tickCounter>=tickGap)
+	//{
+	//	tickCounter = 0;
 
-		percentLoad = percentLoad + 0.01;
-		if (percentLoad > 1)
-		{
-			//percentLoad = 0;
-			dataload = false;
-		}
+	//	percentLoad = percentLoad + 0.01;
+	//	if (percentLoad > 1)
+	//	{
+	//		dataload = false;
+	//	}
 
-		if (!animationsBP)
-			percentLoad = 1;
+	//	if (!animationsBP)
+	//		percentLoad = 1;
 
-		ShowStaticGraphic();
-	}
+	//	ShowStaticGraphic();
+	//}
 	
 }
 
@@ -400,7 +388,6 @@ void AEvent::AddTris()
 
 void AEvent::ShowClustersFunc()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowClusters called！")));
 	Vertices.Reset();
 	Triangles.Reset();
 	currentVertexIndex = 0;
@@ -418,7 +405,6 @@ void AEvent::ShowClustersFunc()
 		meshCluster->SetVisibility(false);
 	else {
 		meshCluster->SetVisibility(true);
-		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("ShowClusters SET MATERIAL called！")));
 		meshCluster->CreateMeshSection(0, Vertices, Triangles, normals, UV0, vertexColors, tangents, false);
 		meshCluster->SetMaterial(0, ClusterMaterial);
 	}

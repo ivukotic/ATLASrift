@@ -153,8 +153,7 @@ public:
 		int32 GetEventNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		void ShowTracksFunc();
-	UFUNCTION(BlueprintCallable, Category = "Event Functions")
-		void ShowStaticGraphic();
+
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
 		int32 GetRunNr();
 	UFUNCTION(BlueprintCallable, Category = "Event Functions")
