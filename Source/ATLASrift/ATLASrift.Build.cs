@@ -6,15 +6,15 @@ using System.IO;
 public class ATLASrift : ModuleRules
 {
 
-    private string ModulePath
-    {
-        get { return Path.GetDirectoryName(RulesCompiler.GetModuleFilename(this.GetType().Name)); }
-    }
+    //private string ModulePath
+    //{
+    //    get { return Path.GetDirectoryName(RulesCompiler.GetModuleFilename(this.GetType().Name)); }
+    //}
 
-    private string ThirdPartyPath
-    {
-        get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }
-    }
+    //private string ThirdPartyPath
+    //{
+    //    get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }
+    //}
 
 	public ATLASrift(TargetInfo Target)
 	{
