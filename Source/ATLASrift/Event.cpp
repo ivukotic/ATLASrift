@@ -233,9 +233,9 @@ FVector * AEvent::GetCartesianFromPolar(FVector* polar)
 	float fi = polar->Y;
 	float r = polar->Z;
 
-	float Theta = 2.0 * atan(exp(-eta));
+	float tmpTheta = 2.0 * atan(exp(-eta));
 	// FVector* ret = new FVector(r*cos(fi), r*sin(fi), r*cos(Theta)); real coordinates
-	FVector* ret = new FVector(r*cos(Theta), -r*cos(fi), r*sin(fi) ); // unreal coordinates
+	FVector* ret = new FVector(r*cos(tmpTheta), -r*cos(fi), r*sin(fi) ); // unreal coordinates
 
 	return ret;
 }
@@ -344,7 +344,7 @@ void AEvent::ShowTracksFunc()
 void AEvent::AddTris()
 {
 	//GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("New AddTris is called！")));
-	for (INT32 var : VertexPattern)
+	for (int32 var : VertexPattern)
 	{
 		Triangles.Add(currentVertexIndex + var);
 	}
