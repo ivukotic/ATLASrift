@@ -20,17 +20,17 @@ struct FEventState
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		BOOL ShowTracks;
+		bool ShowTracks;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		BOOL ShowJets;
+		bool ShowJets;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		BOOL ShowClusters;
+		bool ShowClusters;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		BOOL AutoReload;
+		bool AutoReload;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		BOOL ChangeToPreviousEvent;
+		bool ChangeToPreviousEvent;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		BOOL ChangeToNextEvent;
+		bool ChangeToNextEvent;
 
 	FEventState()
 	{
