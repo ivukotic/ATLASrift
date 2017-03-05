@@ -31,6 +31,30 @@
 			"Name": "Substance",
 			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
+		},
+		{
+			"Name": "PerforceSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "SubversionSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemOculus",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemIOS",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemGooglePlay",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemAmazon",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
