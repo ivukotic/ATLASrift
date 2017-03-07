@@ -55,6 +55,18 @@
 		{
 			"Name": "OnlineSubsystemAmazon",
 			"Enabled": true
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemNull",
+			"Enabled": false
+		},
+		{
+			"Name": "AdvancedSessions",
+			"Enabled": false
 		}
 	],
 	"TargetPlatforms": [
