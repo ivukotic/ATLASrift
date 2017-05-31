@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.15",
+	"EngineAssociation": "4.16",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -53,15 +53,47 @@
 			"Enabled": false
 		},
 		{
-			"Name": "OnlineSubsystemAmazon",
-			"Enabled": true
-		},
-		{
 			"Name": "OnlineSubsystemNull",
 			"Enabled": false
 		},
 		{
 			"Name": "AdvancedSessions",
+			"Enabled": false
+		},
+		{
+			"Name": "SteamVR",
+			"Enabled": false
+		},
+		{
+			"Name": "LocationServicesBPLibrary",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "IOSDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "LinuxDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "WindowsDeviceProfileSelector",
+			"Enabled": true
+		},
+		{
+			"Name": "ExampleDeviceProfileSelector",
+			"Enabled": false
+		},
+		{
+			"Name": "FacialAnimation",
+			"Enabled": false
+		},
+		{
+			"Name": "MobilePatchingUtils",
 			"Enabled": false
 		}
 	],
