@@ -5,7 +5,7 @@
 #include "Engine/UserDefinedStruct.h"
 #include "NetServer.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct ATLASRIFT_API FNetServer {
 	GENERATED_USTRUCT_BODY()
 	
