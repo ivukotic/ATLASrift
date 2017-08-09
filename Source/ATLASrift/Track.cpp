@@ -24,12 +24,12 @@ ATrack::ATrack(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 
 }
 
-void ATrack::SetParameters(float d0, float z0, float phi, float theta, float qop){
-	this->d0 = d0;
-	this->z0 = z0;
-	this->phi = phi;
-	this->theta = theta;
-	this->qop = qop;
+void ATrack::SetParameters(float _d0, float _z0, float _phi, float _theta, float _qop){
+	this->d0 = _d0;
+	this->z0 = _z0;
+	this->phi = _phi;
+	this->theta = _theta;
+	this->qop = _qop;
 }
 
 //TArray<FVector> ATrack::GetVertices()

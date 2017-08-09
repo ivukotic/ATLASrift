@@ -14,7 +14,7 @@ DECLARE_LOG_CATEGORY_EXTERN(EventLog, Log, All);
  */
 
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FEventState
 {
 	GENERATED_USTRUCT_BODY()
