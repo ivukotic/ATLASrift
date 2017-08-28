@@ -53,10 +53,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "OnlineSubsystemNull",
-			"Enabled": false
-		},
-		{
 			"Name": "AdvancedSessions",
 			"Enabled": false
 		},
@@ -94,6 +90,14 @@
 		},
 		{
 			"Name": "MobilePatchingUtils",
+			"Enabled": false
+		},
+		{
+			"Name": "OnlineSubsystemNull",
+			"Enabled": false
+		},
+		{
+			"Name": "AdvancedSteamSessions",
 			"Enabled": false
 		}
 	],

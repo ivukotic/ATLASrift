@@ -16,7 +16,7 @@ public class ATLASrift : ModuleRules
     //    get { return Path.GetFullPath(Path.Combine(ModulePath, "../../ThirdParty/")); }
     //}
 
-	public ATLASrift(TargetInfo Target)
+	public ATLASrift(ReadOnlyTargetRules Target) : base (Target)
 	{
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HTTP", "Json", "Sockets", "Networking", "OnlineSubsystemNull" , "HeadMountedDisplay" });
 
