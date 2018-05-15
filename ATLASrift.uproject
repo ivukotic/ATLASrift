@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.18",
+	"EngineAssociation": "4.19",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -77,10 +77,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "ExampleDeviceProfileSelector",
-			"Enabled": false
-		},
-		{
 			"Name": "FacialAnimation",
 			"Enabled": false
 		},
@@ -108,6 +104,22 @@
 		{
 			"Name": "SteamVR",
 			"Enabled": false
+		},
+		{
+			"Name": "AppleARKit",
+			"Enabled": false
+		},
+		{
+			"Name": "MfMedia",
+			"Enabled": true
+		},
+		{
+			"Name": "SoundMod",
+			"Enabled": true
+		},
+		{
+			"Name": "SoundUtilities",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
