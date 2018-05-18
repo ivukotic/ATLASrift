@@ -1,0 +1,1590 @@
+﻿# NewTarget English (United States) translation.
+# Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: NewTarget\n"
+"POT-Creation-Date: 2018-05-18 15:31\n"
+"PO-Revision-Date: 2018-05-18 15:31\n"
+"Language-Team: \n"
+"Language: en-US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Key:	03C87005594F00C700BDA9A530C9460D
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(32 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(32 - Value).DisplayNameMap
+msgctxt ",03C87005594F00C700BDA9A530C9460D"
+msgid "Jets"
+msgstr "Jets"
+
+#. Key:	063F31E1F0476D5DCD5464B508D37EB2
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",063F31E1F0476D5DCD5464B508D37EB2"
+msgid "ControlRoom"
+msgstr "ControlRoom"
+
+#. Key:	067EB1D847803948EB2B528AB009CEA6
+#. SourceLocation:	/Game/Physicst/Controllers.Controllers.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/Physicst/Controllers.Controllers.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",067EB1D847803948EB2B528AB009CEA6"
+msgid "undetermined"
+msgstr "undetermined"
+
+#. Key:	06804BC9D846F4ACEF446AA60320B71A
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title18.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title18.NewTextRenderComponent.Text
+msgctxt ",06804BC9D846F4ACEF446AA60320B71A"
+msgid "MUON Exp."
+msgstr "MUON Exp."
+
+#. Key:	06A731544B66F4DF9C7C2092E2701AE7
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(41 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(41 - Value).DisplayNameMap
+msgctxt ",06A731544B66F4DF9C7C2092E2701AE7"
+msgid "ProcessingLHCData"
+msgstr "ProcessingLHCData"
+
+#. Key:	081042C9E7417A02626359B551A662E5
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(9 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(9 - Value).DisplayNameMap
+msgctxt ",081042C9E7417A02626359B551A662E5"
+msgid "IDservices"
+msgstr "IDservices"
+
+#. Key:	08C2EE93144D865618D6868DB87CAE1C
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title9.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title9.NewTextRenderComponent.Text
+msgctxt ",08C2EE93144D865618D6868DB87CAE1C"
+msgid "DCS"
+msgstr "DCS"
+
+#. Key:	090C6334624A04D96C3D7E9EAA6F045A
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(22 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(22 - Value).DisplayNameMap
+msgctxt ",090C6334624A04D96C3D7E9EAA6F045A"
+msgid "Solid"
+msgstr "Solid"
+
+#. Key:	09A94C4945EFDBE83A2A0B94C69F89DA
+#. SourceLocation:	/Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",09A94C4945EFDBE83A2A0B94C69F89DA"
+msgid "Events"
+msgstr "Events"
+
+#. Key:	0A37FF23D44DD6A703C937AF3B26B6CC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title14.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title14.NewTextRenderComponent.Text
+msgctxt ",0A37FF23D44DD6A703C937AF3B26B6CC"
+msgid "Shift Leader"
+msgstr "Shift Leader"
+
+#. Key:	0A8CF9142A4CA17E833C5D9CA69B8F04
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title11.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title11.NewTextRenderComponent.Text
+msgctxt ",0A8CF9142A4CA17E833C5D9CA69B8F04"
+msgid "CSAM<br>LACS<br>LASER"
+msgstr "CSAM<br>LACS<br>LASER"
+
+#. Key:	0A8EF4DB4713297B6EB713A29A83977B
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(4 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(4 - Value).DisplayNameMap
+msgctxt ",0A8EF4DB4713297B6EB713A29A83977B"
+msgid "RadiationShield"
+msgstr "RadiationShield"
+
+#. Key:	0A97E25244965075777C53AAFB50B07D
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",0A97E25244965075777C53AAFB50B07D"
+msgid "Chinese"
+msgstr "Chinese"
+
+#. Key:	0B0DA30D6640427B55D0A1AB61147848
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(28 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(28 - Value).DisplayNameMap
+msgctxt ",0B0DA30D6640427B55D0A1AB61147848"
+msgid "Quit"
+msgstr "Quit"
+
+#. Key:	0D30BCD94EA76E63DB6460A24AE7CFB3
+#. SourceLocation:	/Game/ControlRoom/Beamers/ADC1.ADC1_C:WidgetTree.Title.Text
+#: /Game/ControlRoom/Beamers/ADC1.ADC1_C:WidgetTree.Title.Text
+msgctxt ",0D30BCD94EA76E63DB6460A24AE7CFB3"
+msgid "ADC Home"
+msgstr "ADC Home"
+
+#. Key:	0D322F96EC4BC5C3F705F392CCB10EEC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title5.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title5.NewTextRenderComponent.Text
+msgctxt ",0D322F96EC4BC5C3F705F392CCB10EEC"
+msgid "SCT"
+msgstr "SCT"
+
+#. Key:	0D70113143A900D098D343B1142B5623
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_1015.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_1015.Text
+msgctxt ",0D70113143A900D098D343B1142B5623"
+msgid "Enable Teleportation"
+msgstr "Enable Teleportation"
+
+#. Key:	0DE99AFAFB4D83A8B83C2A83A107829A
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(51 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(51 - Value).DisplayNameMap
+msgctxt ",0DE99AFAFB4D83A8B83C2A83A107829A"
+msgid "ASL2"
+msgstr "ASL2"
+
+#. Key:	0EC609746D49341E75C006B1FBE98E9B
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(13 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(13 - Value).DisplayNameMap
+msgctxt ",0EC609746D49341E75C006B1FBE98E9B"
+msgid "EndcapToroid"
+msgstr "EndcapToroid"
+
+#. Key:	10B515B5C34AA82587DAB2A84E57D250
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(31 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(31 - Value).DisplayNameMap
+msgctxt ",10B515B5C34AA82587DAB2A84E57D250"
+msgid "Tracks"
+msgstr "Tracks"
+
+#. Key:	1128905A7F4B2B79BE1BC090DB367911
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(39 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(39 - Value).DisplayNameMap
+msgctxt ",1128905A7F4B2B79BE1BC090DB367911"
+msgid "Physics"
+msgstr "Physics"
+
+#. Key:	16554A7BEC449A1C9891F4B830581349
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title17.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title17.NewTextRenderComponent.Text
+msgctxt ",16554A7BEC449A1C9891F4B830581349"
+msgid "DAQ"
+msgstr "DAQ"
+
+#. Key:	16EC4DFA417F7305C49F02B8D599EE8C
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_796.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_796.Text
+msgctxt ",16EC4DFA417F7305C49F02B8D599EE8C"
+msgid "Enable Rotation"
+msgstr "Enable Rotation"
+
+#. Key:	172F15C049C1B812F3698FA1AE279596
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",172F15C049C1B812F3698FA1AE279596"
+msgid "FIRST DIRECT EVIDENCE OF LIGHT-BY-LIGHT<br>SCATTERING AT HIGH ENERGY"
+msgstr "FIRST DIRECT EVIDENCE OF LIGHT-BY-LIGHT<br>SCATTERING AT HIGH ENERGY"
+
+#. Key:	18FD22B644BB3AAD8EF99C9559E835F4
+#. SourceLocation:	/Game/Globe/PosterSet.PosterSet.DisplayNameMap(4 - Value).DisplayNameMap
+#: /Game/Globe/PosterSet.PosterSet.DisplayNameMap(4 - Value).DisplayNameMap
+msgctxt ",18FD22B644BB3AAD8EF99C9559E835F4"
+msgid "Overview"
+msgstr "Overview"
+
+#. Key:	19AE1F1E4192B8AAC1FC038B812E7987
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_740.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_740.Text
+msgctxt ",19AE1F1E4192B8AAC1FC038B812E7987"
+msgid "Multiplayer"
+msgstr "Multiplayer"
+
+#. Key:	1A626DFBD54C46539E9392B6C9C6D4DC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title.NewTextRenderComponent.Text
+msgctxt ",1A626DFBD54C46539E9392B6C9C6D4DC"
+msgid "CALO Expert"
+msgstr "CALO Expert"
+
+#. Key:	1A9C82284D2884204DC9BB81C1C2076B
+#. SourceLocation:	/Game/VirtualRealityBP/Blueprints/GripEnum.GripEnum.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/VirtualRealityBP/Blueprints/GripEnum.GripEnum.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",1A9C82284D2884204DC9BB81C1C2076B"
+msgid "Open"
+msgstr "Open"
+
+#. Key:	1AA0D623493DBEE2B9236A96DF227139
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",1AA0D623493DBEE2B9236A96DF227139"
+msgid "French"
+msgstr "French"
+
+#. Key:	1C5D2D764B6ADACFACBCDCA1010DC10D
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Tilecal.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Tilecal.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",1C5D2D764B6ADACFACBCDCA1010DC10D"
+msgid "Calorimeters"
+msgstr "Calorimeters"
+
+#. Key:	1C69AA25ED4C9AF5987C4EA97BE69695
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(26 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(26 - Value).DisplayNameMap
+msgctxt ",1C69AA25ED4C9AF5987C4EA97BE69695"
+msgid "Caverns"
+msgstr "Caverns"
+
+#. Key:	1E9221201B46E43892509F8E568D73FA
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(55 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(55 - Value).DisplayNameMap
+msgctxt ",1E9221201B46E43892509F8E568D73FA"
+msgid "Analysis"
+msgstr "Analysis"
+
+#. Key:	1F5EDECF2946E8D74F6783878F5FB24F
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(43 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(43 - Value).DisplayNameMap
+msgctxt ",1F5EDECF2946E8D74F6783878F5FB24F"
+msgid "Rucio"
+msgstr "Rucio"
+
+#. Key:	1F75B7E446EB2C623B33ADA3E82E5368
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(4 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(4 - Value).DisplayNameMap
+msgctxt ",1F75B7E446EB2C623B33ADA3E82E5368"
+msgid "Russian"
+msgstr "Russian"
+
+#. Key:	1FB0AD3E4BB8116DA9C4D697B81C2A26
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.CustomLink.ToolTipText
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.CustomLink.ToolTipText
+msgctxt ",1FB0AD3E4BB8116DA9C4D697B81C2A26"
+msgid "e.g. a web page showing your institution."
+msgstr "e.g. a web page showing your institution."
+
+#. Key:	2134B499409CBB32581381AAC35BAE7B
+#. SourceLocation:	/Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.HistoryofATLAS.NewTextRenderComponent.Text
+#: /Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.HistoryofATLAS.NewTextRenderComponent.Text
+msgctxt ",2134B499409CBB32581381AAC35BAE7B"
+msgid "History<br> of<br> ATLAS"
+msgstr "History<br> of<br> ATLAS"
+
+#. Key:	21858D704453A692D58787BB5C92A493
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(5 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(5 - Value).DisplayNameMap
+msgctxt ",21858D704453A692D58787BB5C92A493"
+msgid "Widget"
+msgstr "Widget"
+
+#. Key:	239422024158714FD48A1DA6303A4527
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.MuonWheel.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.MuonWheel.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",239422024158714FD48A1DA6303A4527"
+msgid "Muon Spectrometer"
+msgstr "Muon Spectrometer"
+
+#. Key:	2408CFCF410D02F34ACC71957E023DF4
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",2408CFCF410D02F34ACC71957E023DF4"
+msgid "FIRST TECHNICAL DESIGN REPORT RELEASED<br>FOR ATLAS UPGRADE"
+msgstr "FIRST TECHNICAL DESIGN REPORT RELEASED<br>FOR ATLAS UPGRADE"
+
+#. Key:	275E73D049C2D6AD934359BD27EEC00E
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",275E73D049C2D6AD934359BD27EEC00E"
+msgid "July 4, 2012"
+msgstr "July 4, 2012"
+
+#. Key:	280A340845DDEE8FB2EB8A8E805CC45B
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_307.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_307.Text
+msgctxt ",280A340845DDEE8FB2EB8A8E805CC45B"
+msgid "Full access cert"
+msgstr "Full access cert"
+
+#. Key:	28BD21E44E354BBED3D45AAE6290D5D4
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",28BD21E44E354BBED3D45AAE6290D5D4"
+msgid "FORMAL APPROVAL OF ATLAS EXPERIMENT"
+msgstr "FORMAL APPROVAL OF ATLAS EXPERIMENT"
+
+#. Key:	2904E5894803EC5C8B1623B757A74B0C
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.PX14.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.PX14.NewTextRenderComponent.Text
+msgctxt ",2904E5894803EC5C8B1623B757A74B0C"
+msgid "PX 14"
+msgstr "PX 14"
+
+#. Key:	290E2B750A4D7C19B4C820BCCEDF1A77
+#. SourceLocation:	/Game/ControlRoom/Beamers/ADC2.ADC2_C:WidgetTree.Title.Text
+#: /Game/ControlRoom/Beamers/ADC2.ADC2_C:WidgetTree.Title.Text
+msgctxt ",290E2B750A4D7C19B4C820BCCEDF1A77"
+msgid "ADC 2"
+msgstr "ADC 2"
+
+#. Key:	29E559644ECD83ED835967BC92AF885A
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",29E559644ECD83ED835967BC92AF885A"
+msgid "ExperimentLevel"
+msgstr "ExperimentLevel"
+
+#. Key:	2A01FEFB4D8AFC5B86E5F5A7D0AAFDD8
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(13 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(13 - Value).DisplayNameMap
+msgctxt ",2A01FEFB4D8AFC5B86E5F5A7D0AAFDD8"
+msgid "Outer"
+msgstr "Outer"
+
+#. Key:	2AB5DCF74BFF3271DB25328D81E342CD
+#. SourceLocation:	/Game/Globe/PosterSet.PosterSet.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/Globe/PosterSet.PosterSet.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",2AB5DCF74BFF3271DB25328D81E342CD"
+msgid "Calorimeters"
+msgstr "Calorimeters"
+
+#. Key:	2C499BAA4FAC590F12B4299AB217CF6E
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",2C499BAA4FAC590F12B4299AB217CF6E"
+msgid "Montenegrin"
+msgstr "Montenegrin"
+
+#. Key:	2CA34E22413DE6EC2A6C36BCF815C3AD
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",2CA34E22413DE6EC2A6C36BCF815C3AD"
+msgid "GlobeLevel"
+msgstr "GlobeLevel"
+
+#. Key:	2CD3A5FE6546C07FAC6845AC6544102B
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(12 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(12 - Value).DisplayNameMap
+msgctxt ",2CD3A5FE6546C07FAC6845AC6544102B"
+msgid "BarrelToroid"
+msgstr "BarrelToroid"
+
+#. Key:	2FE1020EDF4EC9422563AA9DEFBB5CE8
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(14 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(14 - Value).DisplayNameMap
+msgctxt ",2FE1020EDF4EC9422563AA9DEFBB5CE8"
+msgid "TGC"
+msgstr "TGC"
+
+#. Key:	3248B0784F22F0128351E286BE9F6E22
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(9 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(9 - Value).DisplayNameMap
+msgctxt ",3248B0784F22F0128351E286BE9F6E22"
+msgid "LAR"
+msgstr "LAR"
+
+#. Key:	3292B094499871939BA7E4B4E9F1B706
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(15 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(15 - Value).DisplayNameMap
+msgctxt ",3292B094499871939BA7E4B4E9F1B706"
+msgid "SCT"
+msgstr "SCT"
+
+#. Key:	33826CC7427FCBCC65DBF99B9DEFCB09
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(57 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(57 - Value).DisplayNameMap
+msgctxt ",33826CC7427FCBCC65DBF99B9DEFCB09"
+msgid "Calorimeters"
+msgstr "Calorimeters"
+
+#. Key:	33D34EFB704F0898AC2B34BE51206C5B
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title10.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title10.NewTextRenderComponent.Text
+msgctxt ",33D34EFB704F0898AC2B34BE51206C5B"
+msgid "SLIMOS"
+msgstr "SLIMOS"
+
+#. Key:	38B3F07F4A11FC635D97CBBF039CAE37
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",38B3F07F4A11FC635D97CBBF039CAE37"
+msgid "The 2013 Nobel Prize in physics is<br>awarded to Professors François Englert<br>and Peter Higgs \"for the theoretical<br>discovery of a mechanism that<br>contributes to our understanding of the<br>origin of mass of subatomic particles,<br>and which recently was confirmed through<br>the discovery of the predicted<br>fundamental particle, by the ATLAS and<br>CMS experiments at CERN's Large Hadron<br>Collider\". ATLAS and CMS physicists<br>cheered the announcement."
+msgstr "The 2013 Nobel Prize in physics is<br>awarded to Professors François Englert<br>and Peter Higgs \"for the theoretical<br>discovery of a mechanism that<br>contributes to our understanding of the<br>origin of mass of subatomic particles,<br>and which recently was confirmed through<br>the discovery of the predicted<br>fundamental particle, by the ATLAS and<br>CMS experiments at CERN's Large Hadron<br>Collider\". ATLAS and CMS physicists<br>cheered the announcement."
+
+#. Key:	38D451FE4A17442FBA4D198C377612A2
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(56 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(56 - Value).DisplayNameMap
+msgctxt ",38D451FE4A17442FBA4D198C377612A2"
+msgid "Inner Detector"
+msgstr "Inner Detector"
+
+#. Key:	39CF5EB4DA46979987D76EB4BBED04B7
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(48 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(48 - Value).DisplayNameMap
+msgctxt ",39CF5EB4DA46979987D76EB4BBED04B7"
+msgid "DriftTubes"
+msgstr "DriftTubes"
+
+#. Key:	3A182B6646DCBC7112539BB82391A585
+#. SourceLocation:	/Game/Physicst/Controllers.Controllers.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/Physicst/Controllers.Controllers.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",3A182B6646DCBC7112539BB82391A585"
+msgid "KeyboardAndMouse"
+msgstr "KeyboardAndMouse"
+
+#. Key:	3B3C8F0E4A33E72A3C09D2A10A9A97CD
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Magnet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Magnet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",3B3C8F0E4A33E72A3C09D2A10A9A97CD"
+msgid "Magnet System"
+msgstr "Magnet System"
+
+#. Key:	3C7D874CCE4DB18B8389179AAB8192BF
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(33 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(33 - Value).DisplayNameMap
+msgctxt ",3C7D874CCE4DB18B8389179AAB8192BF"
+msgid "Clusters"
+msgstr "Clusters"
+
+#. Key:	3CCC4AA841EA770F97AA99A95E80BD9D
+#. SourceLocation:	/Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",3CCC4AA841EA770F97AA99A95E80BD9D"
+msgid "Wireframe"
+msgstr "Wireframe"
+
+#. Key:	3D59E3F0CC4498E66ADB7FBC04B1881D
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title15.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title15.NewTextRenderComponent.Text
+msgctxt ",3D59E3F0CC4498E66ADB7FBC04B1881D"
+msgid "Proj 1/2"
+msgstr "Proj 1/2"
+
+#. Key:	3F0397A548D2BEE24CCEE5BCDE7FE5EF
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",3F0397A548D2BEE24CCEE5BCDE7FE5EF"
+msgid "Oct 4, 2008"
+msgstr "Oct 4, 2008"
+
+#. Key:	3F4CDC434E700684BAD775B57AE3E039
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(14 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(14 - Value).DisplayNameMap
+msgctxt ",3F4CDC434E700684BAD775B57AE3E039"
+msgid "MDT"
+msgstr "MDT"
+
+#. Key:	3F91296D49063824EFCE0792D0024C1E
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",3F91296D49063824EFCE0792D0024C1E"
+msgid "Plans for a Large Hadron Collider (LHC) <br>make waves at high-energy physics <br>workshops and conferences. Reaching <br>mind-boggling multi-TeV energies, this <br>machine would allow physicists to search <br>for the Higgs boson at all possible <br>masses. In December 1991, the Long-<br>Range Planning Committee recommends <br>the LHC as the best step forward for <br>CERN’s future, and plans for LHC <br>experiments begin to take form. A <br>significant amount of research and <br>development was needed to select the <br>technologies that ATLAS and other LHC <br>experiments would use and subsequently <br>build upon."
+msgstr "Plans for a Large Hadron Collider (LHC) <br>make waves at high-energy physics <br>workshops and conferences. Reaching <br>mind-boggling multi-TeV energies, this <br>machine would allow physicists to search <br>for the Higgs boson at all possible <br>masses. In December 1991, the Long-<br>Range Planning Committee recommends <br>the LHC as the best step forward for <br>CERN’s future, and plans for LHC <br>experiments begin to take form. A <br>significant amount of research and <br>development was needed to select the <br>technologies that ATLAS and other LHC <br>experiments would use and subsequently <br>build upon."
+
+#. Key:	41E8FD61084256431E2D7F8DBCD6AF57
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title7.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title7.NewTextRenderComponent.Text
+msgctxt ",41E8FD61084256431E2D7F8DBCD6AF57"
+msgid "ID"
+msgstr "ID"
+
+#. Key:	489032D04A2DED446FB36980874F7185
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.ULX15.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.ULX15.NewTextRenderComponent.Text
+msgctxt ",489032D04A2DED446FB36980874F7185"
+msgid "ULX 15"
+msgstr "ULX 15"
+
+#. Key:	48E4576DE74D5081B51774AF1C90424C
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(27 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(27 - Value).DisplayNameMap
+msgctxt ",48E4576DE74D5081B51774AF1C90424C"
+msgid "LHCmagnets"
+msgstr "LHCmagnets"
+
+#. Key:	490D1F604CE8701F3AA2FDA13500E79A
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.UX15.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.UX15.NewTextRenderComponent.Text
+msgctxt ",490D1F604CE8701F3AA2FDA13500E79A"
+msgid "UX 15"
+msgstr "UX 15"
+
+#. Key:	49F35DDD46330EDA54C2168E962190A3
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",49F35DDD46330EDA54C2168E962190A3"
+msgid "ControlRoomLevel"
+msgstr "ControlRoomLevel"
+
+#. Key:	4A5F7CB6417660C46C6DCAA9389A0AB2
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.InnerDet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.InnerDet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",4A5F7CB6417660C46C6DCAA9389A0AB2"
+msgid "Inner Detector"
+msgstr "Inner Detector"
+
+#. Key:	4BA9EEB2BA4507BF1D7F16B239E93576
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_149.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_149.Text
+msgctxt ",4BA9EEB2BA4507BF1D7F16B239E93576"
+msgid "Done"
+msgstr "Done"
+
+#. Key:	4D939877FB471381395F5D84245E6C99
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title13.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title13.NewTextRenderComponent.Text
+msgctxt ",4D939877FB471381395F5D84245E6C99"
+msgid "Expert"
+msgstr "Expert"
+
+#. Key:	5338CCB64D2870E69BA6A68A62400E2C
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(4 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(4 - Value).DisplayNameMap
+msgctxt ",5338CCB64D2870E69BA6A68A62400E2C"
+msgid "Settings"
+msgstr "Settings"
+
+#. Key:	54BA30454403C93801AFCEBC5C2D4366
+#. SourceLocation:	/Game/Globe/PosterSet.PosterSet.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/Globe/PosterSet.PosterSet.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",54BA30454403C93801AFCEBC5C2D4366"
+msgid "MuonSpectrometer"
+msgstr "MuonSpectrometer"
+
+#. Key:	558C44BE4D35AFE0D74F5181A97B22CF
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(11 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(11 - Value).DisplayNameMap
+msgctxt ",558C44BE4D35AFE0D74F5181A97B22CF"
+msgid "Inner"
+msgstr "Inner"
+
+#. Key:	564F59F3408881EAF817998A851C83B7
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(5 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(5 - Value).DisplayNameMap
+msgctxt ",564F59F3408881EAF817998A851C83B7"
+msgid "EndcapToroid"
+msgstr "EndcapToroid"
+
+#. Key:	56B4993AC8435EFF34F63EB9C49AD077
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title8.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title8.NewTextRenderComponent.Text
+msgctxt ",56B4993AC8435EFF34F63EB9C49AD077"
+msgid "Ext. System"
+msgstr "Ext. System"
+
+#. Key:	56B8B2A62A4E57877039B083EB944CF8
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title20.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title20.NewTextRenderComponent.Text
+msgctxt ",56B8B2A62A4E57877039B083EB944CF8"
+msgid "Expert"
+msgstr "Expert"
+
+#. Key:	589F9EC8C34A86606068B3A484DD547C
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(49 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(49 - Value).DisplayNameMap
+msgctxt ",589F9EC8C34A86606068B3A484DD547C"
+msgid "CaloShower"
+msgstr "CaloShower"
+
+#. Key:	58EF1BC6434021E09A2B7EAD7657C099
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",58EF1BC6434021E09A2B7EAD7657C099"
+msgid "END OF ATLAS CONSTRUCTION"
+msgstr "END OF ATLAS CONSTRUCTION"
+
+#. Key:	58FC35ECFB45651A32EBF59668E246A5
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(42 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(42 - Value).DisplayNameMap
+msgctxt ",58FC35ECFB45651A32EBF59668E246A5"
+msgid "Vistars"
+msgstr "Vistars"
+
+#. Key:	5984482D45256B1DC0841CA58C44EF28
+#. SourceLocation:	/Game/Globe/PosterSet.PosterSet.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/Globe/PosterSet.PosterSet.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",5984482D45256B1DC0841CA58C44EF28"
+msgid "Magnets"
+msgstr "Magnets"
+
+#. Key:	5AC7C5CC466C47CB39971CAF7BA5FC2A
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(7 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(7 - Value).DisplayNameMap
+msgctxt ",5AC7C5CC466C47CB39971CAF7BA5FC2A"
+msgid "Spanish"
+msgstr "Spanish"
+
+#. Key:	5C779BBDE040A7A92C70A0B6DC0C7281
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(25 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(25 - Value).DisplayNameMap
+msgctxt ",5C779BBDE040A7A92C70A0B6DC0C7281"
+msgid "4piPhotos"
+msgstr "4piPhotos"
+
+#. Key:	5CC4BA63403D49550CC0E0B53AC408E4
+#. SourceLocation:	/Game/ControlRoom/VideoScreen_BP.VideoScreen_BP_C:TextRender_GEN_VARIABLE.Text
+#: /Game/ControlRoom/VideoScreen_BP.VideoScreen_BP_C:TextRender_GEN_VARIABLE.Text
+msgctxt ",5CC4BA63403D49550CC0E0B53AC408E4"
+msgid "Processing LHC Data"
+msgstr "Processing LHC Data"
+
+#. Key:	5CCF306341F215DF2010BFBBA1E0F5B1
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(60 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(60 - Value).DisplayNameMap
+msgctxt ",5CCF306341F215DF2010BFBBA1E0F5B1"
+msgid "PicturingParticles"
+msgstr "PicturingParticles"
+
+#. Key:	5DDC8BDFE942C011CDCE14B4E4004D55
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(8 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(8 - Value).DisplayNameMap
+msgctxt ",5DDC8BDFE942C011CDCE14B4E4004D55"
+msgid "TRT"
+msgstr "TRT"
+
+#. Key:	5E0733514FF890BE108195B6B27BB4EB
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",5E0733514FF890BE108195B6B27BB4EB"
+msgid "ATLAS RECORDS FIRST COLLISIONS"
+msgstr "ATLAS RECORDS FIRST COLLISIONS"
+
+#. Key:	5F15E8979B4E5D3C1D73E9B7C32A3F98
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title3.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title3.NewTextRenderComponent.Text
+msgctxt ",5F15E8979B4E5D3C1D73E9B7C32A3F98"
+msgid "LUMI"
+msgstr "LUMI"
+
+#. Key:	5F2CCE1541134F7D19D8E885748B8276
+#. SourceLocation:	/Game/BPs/Events/EventBP.EventBP_C:RunNumberDisplay_GEN_VARIABLE.Text
+#: /Game/BPs/Events/EventBP.EventBP_C:RunNumberDisplay_GEN_VARIABLE.Text
+msgctxt ",5F2CCE1541134F7D19D8E885748B8276"
+msgid "-"
+msgstr "-"
+
+#. Key:	601318915A427521559FBC9564E01F35
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(36 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(36 - Value).DisplayNameMap
+msgctxt ",601318915A427521559FBC9564E01F35"
+msgid "NextEvent"
+msgstr "NextEvent"
+
+#. Key:	611E6F2877441A062125339389D65736
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",611E6F2877441A062125339389D65736"
+msgid "Globe"
+msgstr "Globe"
+
+#. Key:	62B404CF674E08F578CDDAA2767715BF
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(38 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(38 - Value).DisplayNameMap
+msgctxt ",62B404CF674E08F578CDDAA2767715BF"
+msgid "Detector"
+msgstr "Detector"
+
+#. Key:	644BF9ABCD40AF33DD50BA8FF80022BA
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(30 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(30 - Value).DisplayNameMap
+msgctxt ",644BF9ABCD40AF33DD50BA8FF80022BA"
+msgid "Events"
+msgstr "Events"
+
+#. Key:	657E4ED50549B3B88600A3ACF22920FC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title2.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title2.NewTextRenderComponent.Text
+msgctxt ",657E4ED50549B3B88600A3ACF22920FC"
+msgid "CALO"
+msgstr "CALO"
+
+#. Key:	69D0998E42DC83332365759E35045053
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(12 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(12 - Value).DisplayNameMap
+msgctxt ",69D0998E42DC83332365759E35045053"
+msgid "Middle"
+msgstr "Middle"
+
+#. Key:	6E65FD26434207BFB732738C3A25ED39
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(53 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(53 - Value).DisplayNameMap
+msgctxt ",6E65FD26434207BFB732738C3A25ED39"
+msgid "ASL4"
+msgstr "ASL4"
+
+#. Key:	6FD3AF204DB4DFEEF8BA538A20AC5D7B
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(6 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(6 - Value).DisplayNameMap
+msgctxt ",6FD3AF204DB4DFEEF8BA538A20AC5D7B"
+msgid "BarrelToroid"
+msgstr "BarrelToroid"
+
+#. Key:	70EDA96C4425D3A8772FACBFC642717C
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Aside.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Aside.NewTextRenderComponent.Text
+msgctxt ",70EDA96C4425D3A8772FACBFC642717C"
+msgid "A side"
+msgstr "A side"
+
+#. Key:	713B2AC54FD983D6E5A320AAAFE4DB56
+#. SourceLocation:	/Game/Physicst/Controllers.Controllers.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/Physicst/Controllers.Controllers.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",713B2AC54FD983D6E5A320AAAFE4DB56"
+msgid "xBox"
+msgstr "xBox"
+
+#. Key:	7328962942A3ACD023B07D8291B614CC
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.UPX15.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.UPX15.NewTextRenderComponent.Text
+msgctxt ",7328962942A3ACD023B07D8291B614CC"
+msgid "UPX 15"
+msgstr "UPX 15"
+
+#. Key:	735B0591254DEE075AE0E6A2B0284AEB
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",735B0591254DEE075AE0E6A2B0284AEB"
+msgid "Experiment"
+msgstr "Experiment"
+
+#. Key:	736CA941452A3FB9561AA2BDF24E03C7
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",736CA941452A3FB9561AA2BDF24E03C7"
+msgid "EXCAVATION OF THE ATLAS EXPERIMENT<br>CAVERN BEGINS"
+msgstr "EXCAVATION OF THE ATLAS EXPERIMENT<br>CAVERN BEGINS"
+
+#. Key:	754C60047A4624D5CB224DBCB22D5954
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title6.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title6.NewTextRenderComponent.Text
+msgctxt ",754C60047A4624D5CB224DBCB22D5954"
+msgid "Pixel"
+msgstr "Pixel"
+
+#. Key:	77E50E3048AEEB3C1134EE9E3219EE85
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",77E50E3048AEEB3C1134EE9E3219EE85"
+msgid "NOBEL PRIZE FOR THE HIGGS DISCOVERY"
+msgstr "NOBEL PRIZE FOR THE HIGGS DISCOVERY"
+
+#. Key:	79D8A9524533CA1E4EDDE7BBADC711C3
+#. SourceLocation:	/Game/BPs/Events/EventBP.EventBP_C:EventNumberDisplay_GEN_VARIABLE.Text
+#: /Game/BPs/Events/EventBP.EventBP_C:EventNumberDisplay_GEN_VARIABLE.Text
+msgctxt ",79D8A9524533CA1E4EDDE7BBADC711C3"
+msgid "-"
+msgstr "-"
+
+#. Key:	7AA88D06407E2E4FCA4235B53AA28374
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",7AA88D06407E2E4FCA4235B53AA28374"
+msgid "On 4 July 2012, as a curtain raiser to<br>the year’s major particle physics<br>conference, ICHEP 2012 in Melbourne, the<br>ATLAS and CMS Experiments present their<br>latest preliminary results in the search<br>for the long-sought Higgs particle. Both<br>experiments have observed a new particle<br>in the mass region around 125-126 GeV."
+msgstr "On 4 July 2012, as a curtain raiser to<br>the year’s major particle physics<br>conference, ICHEP 2012 in Melbourne, the<br>ATLAS and CMS Experiments present their<br>latest preliminary results in the search<br>for the long-sought Higgs particle. Both<br>experiments have observed a new particle<br>in the mass region around 125-126 GeV."
+
+#. Key:	7AF295BC49A31C25BB479F9D98C38627
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",7AF295BC49A31C25BB479F9D98C38627"
+msgid "BIRTH OF THE LHC PROJECT"
+msgstr "BIRTH OF THE LHC PROJECT"
+
+#. Key:	7B69FAD5694474CFE2BA2FA610E7770B
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(29 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(29 - Value).DisplayNameMap
+msgctxt ",7B69FAD5694474CFE2BA2FA610E7770B"
+msgid "GuidedTour"
+msgstr "GuidedTour"
+
+#. Key:	7C3C18A64A51F0924C4E179AF72CBDB1
+#. SourceLocation:	/Game/VirtualRealityBP/Blueprints/GripEnum.GripEnum.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/VirtualRealityBP/Blueprints/GripEnum.GripEnum.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",7C3C18A64A51F0924C4E179AF72CBDB1"
+msgid "CanGrab"
+msgstr "CanGrab"
+
+#. Key:	7C81012C4BAE6958E58221935D16A769
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(6 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(6 - Value).DisplayNameMap
+msgctxt ",7C81012C4BAE6958E58221935D16A769"
+msgid "EntryLevel"
+msgstr "EntryLevel"
+
+#. Key:	7D4A6A93894150CF15B10896D0F01A30
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(35 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(35 - Value).DisplayNameMap
+msgctxt ",7D4A6A93894150CF15B10896D0F01A30"
+msgid "REW"
+msgstr "REW"
+
+#. Key:	7D90316C49575B085B0952A0FB1DBCB6
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(59 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(59 - Value).DisplayNameMap
+msgctxt ",7D90316C49575B085B0952A0FB1DBCB6"
+msgid "Magnets"
+msgstr "Magnets"
+
+#. Key:	7F512D3C43604B62BF5E259D0D0F552B
+#. SourceLocation:	/Game/Maps/MySaveData.Default__MySaveData_C.CustomLink
+#: /Game/Maps/MySaveData.Default__MySaveData_C.CustomLink
+msgctxt ",7F512D3C43604B62BF5E259D0D0F552B"
+msgid "http://"
+msgstr "http://"
+
+#. Key:	810BD0814702BAFD53025682CAE75BD5
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",810BD0814702BAFD53025682CAE75BD5"
+msgid "The LHC Experiments Committee and CERN<br>Director-General, Chris Llewellyn Smith,<br>approve the construction of the ATLAS<br>detector. As the first Technical Design<br>Reports are approved, ATLAS teams all<br>over the world begin building detector<br>components and worked on final technical<br>developments."
+msgstr "The LHC Experiments Committee and CERN<br>Director-General, Chris Llewellyn Smith,<br>approve the construction of the ATLAS<br>detector. As the first Technical Design<br>Reports are approved, ATLAS teams all<br>over the world begin building detector<br>components and worked on final technical<br>developments."
+
+#. Key:	8279F37AEC477658A132D9A61B62B041
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title19.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title19.NewTextRenderComponent.Text
+msgctxt ",8279F37AEC477658A132D9A61B62B041"
+msgid "Trigger"
+msgstr "Trigger"
+
+#. Key:	8413BFBBF148A2BCD1C029A19740DE46
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(54 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(54 - Value).DisplayNameMap
+msgctxt ",8413BFBBF148A2BCD1C029A19740DE46"
+msgid "ASL5"
+msgstr "ASL5"
+
+#. Key:	8459DDCF40E6819DC80B23BC4470A931
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",8459DDCF40E6819DC80B23BC4470A931"
+msgid "The start of a fantastic era of physics!<br>ATLAS records first collisions at<br>0.9 TeV."
+msgstr "The start of a fantastic era of physics!<br>ATLAS records first collisions at<br>0.9 TeV."
+
+#. Key:	853DC1CCDA46640E6B9160933C83DC89
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(37 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(37 - Value).DisplayNameMap
+msgctxt ",853DC1CCDA46640E6B9160933C83DC89"
+msgid "StopEvent"
+msgstr "StopEvent"
+
+#. Key:	87D5B8714520FC43FBC9D39D9F1117A6
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(8 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(8 - Value).DisplayNameMap
+msgctxt ",87D5B8714520FC43FBC9D39D9F1117A6"
+msgid "IDservices"
+msgstr "IDservices"
+
+#. Key:	88FAD7CDB74DCD62A0EB2F85AAA7EE4B
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(19 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(19 - Value).DisplayNameMap
+msgctxt ",88FAD7CDB74DCD62A0EB2F85AAA7EE4B"
+msgid "Feet"
+msgstr "Feet"
+
+#. Key:	893715D049F781DE5783E8BDBB12D83D
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(16 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(16 - Value).DisplayNameMap
+msgctxt ",893715D049F781DE5783E8BDBB12D83D"
+msgid "TRT"
+msgstr "TRT"
+
+#. Key:	8982C1974BF0818F6ED5958CAA8C2202
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",8982C1974BF0818F6ED5958CAA8C2202"
+msgid "WORLD'S LARGEST SUPERCONDUCTING<br>MAGNET TURNS ON"
+msgstr "WORLD'S LARGEST SUPERCONDUCTING<br>MAGNET TURNS ON"
+
+#. Key:	8C6B19F24ADE53CC919000B811CC6C77
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",8C6B19F24ADE53CC919000B811CC6C77"
+msgid "The ATLAS Collaboration proposes the<br>construction of a general-purpose<br>detector at the Large Hadron Collider.<br>The ATLAS Letter of Intent was submitted<br>to the LHC Experiments Committee, which<br>marked the first official use of the<br>name ATLAS. The Letter identified a<br>number of conceptual and technical<br>design options, including a<br>superconducting toroid magnet system."
+msgstr "The ATLAS Collaboration proposes the<br>construction of a general-purpose<br>detector at the Large Hadron Collider.<br>The ATLAS Letter of Intent was submitted<br>to the LHC Experiments Committee, which<br>marked the first official use of the<br>name ATLAS. The Letter identified a<br>number of conceptual and technical<br>design options, including a<br>superconducting toroid magnet system."
+
+#. Key:	8F567E8F13466DB938D825871B8DEA4F
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(34 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(34 - Value).DisplayNameMap
+msgctxt ",8F567E8F13466DB938D825871B8DEA4F"
+msgid "FWD"
+msgstr "FWD"
+
+#. Key:	90059F024D4E6862262AA8B895437A93
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(44 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(44 - Value).DisplayNameMap
+msgctxt ",90059F024D4E6862262AA8B895437A93"
+msgid "Settings"
+msgstr "Settings"
+
+#. Key:	916B38D5194ABBF121C0E68AAC43789D
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(15 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(15 - Value).DisplayNameMap
+msgctxt ",916B38D5194ABBF121C0E68AAC43789D"
+msgid "Inner"
+msgstr "Inner"
+
+#. Key:	924B193E47934624F5FA569E303E1090
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(10 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(10 - Value).DisplayNameMap
+msgctxt ",924B193E47934624F5FA569E303E1090"
+msgid "Tile"
+msgstr "Tile"
+
+#. Key:	936F2A56418FEDA55E4721B2BCEF06F2
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(64 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(64 - Value).DisplayNameMap
+msgctxt ",936F2A56418FEDA55E4721B2BCEF06F2"
+msgid "Higgs"
+msgstr "Higgs"
+
+#. Key:	93D073714A41DE06EDD60CAADA2AF90C
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(23 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(23 - Value).DisplayNameMap
+msgctxt ",93D073714A41DE06EDD60CAADA2AF90C"
+msgid "Wireframe"
+msgstr "Wireframe"
+
+#. Key:	94D007CC4575D30247D640A7E8BB3D1F
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(61 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(61 - Value).DisplayNameMap
+msgctxt ",94D007CC4575D30247D640A7E8BB3D1F"
+msgid "CERN_in_ 4 minutes"
+msgstr "CERN_in_ 4 minutes"
+
+#. Key:	9535B3DF4AFDD1E618CD9ABE31DF4C5D
+#. SourceLocation:	/Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/HandMenu/MainMenus.MainMenus.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",9535B3DF4AFDD1E618CD9ABE31DF4C5D"
+msgid "Permanent"
+msgstr "Permanent"
+
+#. Key:	9CECB8AA473812801630B08C9E13C324
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.USA15.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.USA15.NewTextRenderComponent.Text
+msgctxt ",9CECB8AA473812801630B08C9E13C324"
+msgid "USA 15"
+msgstr "USA 15"
+
+#. Key:	9D57C47449079B57CE10B5AB0D8C8507
+#. SourceLocation:	/Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",9D57C47449079B57CE10B5AB0D8C8507"
+msgid "DetGeo"
+msgstr "DetGeo"
+
+#. Key:	A02BCE934DCCEC4F942189AEBDC3EEFE
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",A02BCE934DCCEC4F942189AEBDC3EEFE"
+msgid "Aug 14, 2017"
+msgstr "Aug 14, 2017"
+
+#. Key:	A067115744A6ABB30E4FC4A2F94B801C
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",A067115744A6ABB30E4FC4A2F94B801C"
+msgid "Nov 23, 2009"
+msgstr "Nov 23, 2009"
+
+#. Key:	A1A7AAA14566C72015E1D7AB530CC218
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",A1A7AAA14566C72015E1D7AB530CC218"
+msgid "ATLAS AND CMS OBSERVE A PARTICLE<br>CONSISTENT WITH THE HIGGS BOSON"
+msgstr "ATLAS AND CMS OBSERVE A PARTICLE<br>CONSISTENT WITH THE HIGGS BOSON"
+
+#. Key:	A4A594874F84F5EEEC497E80B187B797
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",A4A594874F84F5EEEC497E80B187B797"
+msgid "ATLAS began recording physics data from<br>13 TeV proton collisions, which allow<br>for precision studies of the Higgs boson<br>and other Standard Model particles, as<br>well as the search for new particles<br>with higher masses."
+msgstr "ATLAS began recording physics data from<br>13 TeV proton collisions, which allow<br>for precision studies of the Higgs boson<br>and other Standard Model particles, as<br>well as the search for new particles<br>with higher masses."
+
+#. Key:	A4ACE2E74A421B738BA8DBA494B88AB8
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",A4ACE2E74A421B738BA8DBA494B88AB8"
+msgid "Pixel"
+msgstr "Pixel"
+
+#. Key:	A73D9BFA49C5BFC67CAEFA91FFC0CEC3
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_306.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_306.Text
+msgctxt ",A73D9BFA49C5BFC67CAEFA91FFC0CEC3"
+msgid "Accessibility"
+msgstr "Accessibility"
+
+#. Key:	A9F8A7C58F4BC19C8BC406A35EC15F0A
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(11 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(11 - Value).DisplayNameMap
+msgctxt ",A9F8A7C58F4BC19C8BC406A35EC15F0A"
+msgid "Tile"
+msgstr "Tile"
+
+#. Key:	AA6B5D6F49AA224D7E39F4A6D4D164A0
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(5 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(5 - Value).DisplayNameMap
+msgctxt ",AA6B5D6F49AA224D7E39F4A6D4D164A0"
+msgid "German"
+msgstr "German"
+
+#. Key:	AD5CCAED4453C6D4715965B9A394482B
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",AD5CCAED4453C6D4715965B9A394482B"
+msgid "To celebrate the end of the ATLAS<br>construction phase, the Collaboration<br>hosts a party at CERN's magnet testing<br>facility (SM18). This was the largest<br>ATLAS celebration yet, with<br>collaboration members travelling from<br>around the world to mark this milestone."
+msgstr "To celebrate the end of the ATLAS<br>construction phase, the Collaboration<br>hosts a party at CERN's magnet testing<br>facility (SM18). This was the largest<br>ATLAS celebration yet, with<br>collaboration members travelling from<br>around the world to mark this milestone."
+
+#. Key:	AF7D722E45D9C163463279A27DA53B48
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.US15.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.US15.NewTextRenderComponent.Text
+msgctxt ",AF7D722E45D9C163463279A27DA53B48"
+msgid "US 15"
+msgstr "US 15"
+
+#. Key:	B01903884D752B2092674D887E3634B4
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",B01903884D752B2092674D887E3634B4"
+msgid "Nov 20, 2006"
+msgstr "Nov 20, 2006"
+
+#. Key:	B0C3FB8B034F75F35A3CA8AC93841FDE
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title4.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title4.NewTextRenderComponent.Text
+msgctxt ",B0C3FB8B034F75F35A3CA8AC93841FDE"
+msgid "TRT"
+msgstr "TRT"
+
+#. Key:	B1B4BC52461C4B2F7F153AA02D41BA19
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",B1B4BC52461C4B2F7F153AA02D41BA19"
+msgid "Pixel"
+msgstr "Pixel"
+
+#. Key:	B2DC77464FF4FE60AC8B4480C6AF9E77
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",B2DC77464FF4FE60AC8B4480C6AF9E77"
+msgid "English"
+msgstr "English"
+
+#. Key:	B4FFBCF248A1DE90C33E8F821204240A
+#. SourceLocation:	/Game/VirtualRealityBP/Blueprints/GripEnum.GripEnum.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/VirtualRealityBP/Blueprints/GripEnum.GripEnum.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",B4FFBCF248A1DE90C33E8F821204240A"
+msgid "Grab"
+msgstr "Grab"
+
+#. Key:	B6B01E094586F507F40468B39F0E5F03
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(63 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(63 - Value).DisplayNameMap
+msgctxt ",B6B01E094586F507F40468B39F0E5F03"
+msgid "ClaireLee"
+msgstr "ClaireLee"
+
+#. Key:	B829551A2E43E6017577E49DC3396187
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(20 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(20 - Value).DisplayNameMap
+msgctxt ",B829551A2E43E6017577E49DC3396187"
+msgid "Transparent"
+msgstr "Transparent"
+
+#. Key:	BAEEDD055846173AD264D2A4BC79CEE6
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(21 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(21 - Value).DisplayNameMap
+msgctxt ",BAEEDD055846173AD264D2A4BC79CEE6"
+msgid "Hidden"
+msgstr "Hidden"
+
+#. Key:	BB1FC6484C6A4A5C434A1D968256CDBB
+#. SourceLocation:	/Game/Globe/History/HistoryPoster.HistoryPoster_C:TitleText_GEN_VARIABLE.Text
+#: /Game/Globe/History/HistoryPoster.HistoryPoster_C:TitleText_GEN_VARIABLE.Text
+msgctxt ",BB1FC6484C6A4A5C434A1D968256CDBB"
+msgid "Title Text"
+msgstr "Title Text"
+
+#. Key:	BB77EE714F4DD7527023D5B7AADE873C
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(6 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(6 - Value).DisplayNameMap
+msgctxt ",BB77EE714F4DD7527023D5B7AADE873C"
+msgid "BeamPipe"
+msgstr "BeamPipe"
+
+#. Key:	BCB2D3C64A499C6A1F6785A3369A3E14
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Cside.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Cside.NewTextRenderComponent.Text
+msgctxt ",BCB2D3C64A499C6A1F6785A3369A3E14"
+msgid "C side"
+msgstr "C side"
+
+#. Key:	BD7DEE664A16F26D145C4F8D121C4A23
+#. SourceLocation:	/Game/Globe/PosterSet.PosterSet.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/Globe/PosterSet.PosterSet.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",BD7DEE664A16F26D145C4F8D121C4A23"
+msgid "InnerDetector"
+msgstr "InnerDetector"
+
+#. Key:	BDDB219749078F825220BEAD85D42F7B
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.ULX14.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.ULX14.NewTextRenderComponent.Text
+msgctxt ",BDDB219749078F825220BEAD85D42F7B"
+msgid "ULX 14"
+msgstr "ULX 14"
+
+#. Key:	C2D91E75425369066F749198A9B5507E
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",C2D91E75425369066F749198A9B5507E"
+msgid "1984-1992"
+msgstr "1984-1992"
+
+#. Key:	C57004913E4D3750166E518F090F5722
+#. SourceLocation:	/Game/ControlRoom/Beamers/Perfsonar.Perfsonar_C:WidgetTree.Title.Text
+#: /Game/ControlRoom/Beamers/Perfsonar.Perfsonar_C:WidgetTree.Title.Text
+msgctxt ",C57004913E4D3750166E518F090F5722"
+msgid "Perfsonar Ingestion"
+msgstr "Perfsonar Ingestion"
+
+#. Key:	C6A7EB4F754FE787DED929B02E71A2A8
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(5 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(5 - Value).DisplayNameMap
+msgctxt ",C6A7EB4F754FE787DED929B02E71A2A8"
+msgid "MDT"
+msgstr "MDT"
+
+#. Key:	C82F0ABF2B42536D954B3BBD8428AC19
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(46 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(46 - Value).DisplayNameMap
+msgctxt ",C82F0ABF2B42536D954B3BBD8428AC19"
+msgid "Particles"
+msgstr "Particles"
+
+#. Key:	C84005BD4D8CF07CF00AE5A75D329D8D
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",C84005BD4D8CF07CF00AE5A75D329D8D"
+msgid "ATLAS COLLABORATION PUBLISHES<br>LETTER OF INTENT"
+msgstr "ATLAS COLLABORATION PUBLISHES<br>LETTER OF INTENT"
+
+#. Key:	C9A8513748D02CB4C4436AACD65E7AC0
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",C9A8513748D02CB4C4436AACD65E7AC0"
+msgid "ATLAS publishes the first direct<br>evidence of high energy light-by-light<br>scattering, a very rare process in which<br>two photons – particles of light –<br>interact and change direction. The<br>result, published in Nature Physics,<br>confirms one of the oldest predictions<br>of quantum electrodynamics."
+msgstr "ATLAS publishes the first direct<br>evidence of high energy light-by-light<br>scattering, a very rare process in which<br>two photons – particles of light –<br>interact and change direction. The<br>result, published in Nature Physics,<br>confirms one of the oldest predictions<br>of quantum electrodynamics."
+
+#. Key:	CA3A77F6C14CF2A75B7AE9A26C5AEEB6
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(17 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(17 - Value).DisplayNameMap
+msgctxt ",CA3A77F6C14CF2A75B7AE9A26C5AEEB6"
+msgid "Outer"
+msgstr "Outer"
+
+#. Key:	CA7CA3064FFF1F9EB0ECB0BEF205FC10
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",CA7CA3064FFF1F9EB0ECB0BEF205FC10"
+msgid "Oct 8, 2013"
+msgstr "Oct 8, 2013"
+
+#. Key:	CC0630AED64DCA229B42428FE439E45C
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(50 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(50 - Value).DisplayNameMap
+msgctxt ",CC0630AED64DCA229B42428FE439E45C"
+msgid "ASL1"
+msgstr "ASL1"
+
+#. Key:	CD1C1396AC444ABFA7CC17888B3AE2C9
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(47 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(47 - Value).DisplayNameMap
+msgctxt ",CD1C1396AC444ABFA7CC17888B3AE2C9"
+msgid "WLCG"
+msgstr "WLCG"
+
+#. Key:	CE3A3DA14855E05334AA1F869C2AA03F
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",CE3A3DA14855E05334AA1F869C2AA03F"
+msgid "July 1, 1997"
+msgstr "July 1, 1997"
+
+#. Key:	D0B66F384FA600D1D4DAD791863BD523
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",D0B66F384FA600D1D4DAD791863BD523"
+msgid "1998"
+msgstr "1998"
+
+#. Key:	D0DED0B94C7E4D79094EB8ADD9789DE0
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(6 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(6 - Value).DisplayNameMap
+msgctxt ",D0DED0B94C7E4D79094EB8ADD9789DE0"
+msgid "Italian"
+msgstr "Italian"
+
+#. Key:	D131735045D17B5BAB8EF989B0DAF4B9
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_738.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_738.Text
+msgctxt ",D131735045D17B5BAB8EF989B0DAF4B9"
+msgid "Effects volume"
+msgstr "Effects volume"
+
+#. Key:	D21BCC0E41F889C8E01773B0681825C7
+#. SourceLocation:	/Game/Physicst/Controllers.Controllers.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/Physicst/Controllers.Controllers.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",D21BCC0E41F889C8E01773B0681825C7"
+msgid "HandTracking"
+msgstr "HandTracking"
+
+#. Key:	D4A466F34F651FD442FC06BFBA632AA0
+#. SourceLocation:	/Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",D4A466F34F651FD442FC06BFBA632AA0"
+msgid "Transparent"
+msgstr "Transparent"
+
+#. Key:	D5E7AC904267A0943AF518A35D572B8D
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",D5E7AC904267A0943AF518A35D572B8D"
+msgid "Team of engineers begin excavating a<br>series of underground caverns in Meyrin,<br>Switzerland. These caverns will be home<br>to the ATLAS Experiment and its<br>supporting infrastructure."
+msgstr "Team of engineers begin excavating a<br>series of underground caverns in Meyrin,<br>Switzerland. These caverns will be home<br>to the ATLAS Experiment and its<br>supporting infrastructure."
+
+#. Key:	D6047E7B4790571C4BA1B7BAB4514EAD
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",D6047E7B4790571C4BA1B7BAB4514EAD"
+msgid "April 1, 2017"
+msgstr "April 1, 2017"
+
+#. Key:	D7CE6E7E964662733AB9DDB34FA1EBF0
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title16.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title16.NewTextRenderComponent.Text
+msgctxt ",D7CE6E7E964662733AB9DDB34FA1EBF0"
+msgid "Data Quality"
+msgstr "Data Quality"
+
+#. Key:	D93DF7BB471BCC0984B8EE8455E2A513
+#. SourceLocation:	/Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",D93DF7BB471BCC0984B8EE8455E2A513"
+msgid "ADCanalytics"
+msgstr "ADCanalytics"
+
+#. Key:	DA1BAE584F9E351F780C089759B4CFE8
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_736.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_736.Text
+msgctxt ",DA1BAE584F9E351F780C089759B4CFE8"
+msgid "Audio"
+msgstr "Audio"
+
+#. Key:	DA9E82A5C8445FCFD3B118BBD335202C
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title22.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title22.NewTextRenderComponent.Text
+msgctxt ",DA9E82A5C8445FCFD3B118BBD335202C"
+msgid "Expert"
+msgstr "Expert"
+
+#. Key:	DC12AFB645118B623FB6428C557CE4CA
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",DC12AFB645118B623FB6428C557CE4CA"
+msgid "The ATLAS Barrel Toroid, a<br>characteristic component of the<br>detector, then the largest<br>superconducting magnet ever built, was<br>switched on for the first time. It works<br>together with the two Endcap Toroids and<br>a central Solenoid magnet to bend the<br>paths of charged particles produced in<br>collisions at the LHC, enabling<br>important properties to be measured."
+msgstr "The ATLAS Barrel Toroid, a<br>characteristic component of the<br>detector, then the largest<br>superconducting magnet ever built, was<br>switched on for the first time. It works<br>together with the two Endcap Toroids and<br>a central Solenoid magnet to bend the<br>paths of charged particles produced in<br>collisions at the LHC, enabling<br>important properties to be measured."
+
+#. Key:	DCE3032D48901DE9CD9B08A8F063DA73
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(8 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(8 - Value).DisplayNameMap
+msgctxt ",DCE3032D48901DE9CD9B08A8F063DA73"
+msgid "Hebrew"
+msgstr "Hebrew"
+
+#. Key:	DF845C814AEA8DE1E8575FA13017D068
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.LAr.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.LAr.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",DF845C814AEA8DE1E8575FA13017D068"
+msgid "Calorimeters"
+msgstr "Calorimeters"
+
+#. Key:	E022B6DE4476D8A98A360F9FADA4C8AE
+#. SourceLocation:	/Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.TextRenderActor_3.NewTextRenderComponent.Text
+#: /Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.TextRenderActor_3.NewTextRenderComponent.Text
+msgctxt ",E022B6DE4476D8A98A360F9FADA4C8AE"
+msgid "ATLAS Experiment"
+msgstr "ATLAS Experiment"
+
+#. Key:	E3A9818842AEAD77DB660BADE2BADF6D
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",E3A9818842AEAD77DB660BADE2BADF6D"
+msgid "TGC"
+msgstr "TGC"
+
+#. Key:	E44C570143195486392B9082A931B4D5
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_739.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_739.Text
+msgctxt ",E44C570143195486392B9082A931B4D5"
+msgid "  Guide volume"
+msgstr "  Guide volume"
+
+#. Key:	E59221364C64667BE09EE0A7CB0F90CB
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",E59221364C64667BE09EE0A7CB0F90CB"
+msgid "Feet"
+msgstr "Feet"
+
+#. Key:	E62C5681431DA9C45C712EBD6299BCEB
+#. SourceLocation:	/Game/Globe/History/HistoryPoster.HistoryPoster_C:Date_GEN_VARIABLE.Text
+#: /Game/Globe/History/HistoryPoster.HistoryPoster_C:Date_GEN_VARIABLE.Text
+msgctxt ",E62C5681431DA9C45C712EBD6299BCEB"
+msgid "Jan 1, 1900"
+msgstr "Jan 1, 1900"
+
+#. Key:	E72859A9884A0D75380617A8AA035237
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title12.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title12.NewTextRenderComponent.Text
+msgctxt ",E72859A9884A0D75380617A8AA035237"
+msgid "Run Control"
+msgstr "Run Control"
+
+#. Key:	E8A0EBB643F0B11F99B3D58131B56365
+#. SourceLocation:	/Game/Globe/History/HistoryPoster.HistoryPoster_C:Text_GEN_VARIABLE.Text
+#: /Game/Globe/History/HistoryPoster.HistoryPoster_C:Text_GEN_VARIABLE.Text
+msgctxt ",E8A0EBB643F0B11F99B3D58131B56365"
+msgid "Lorem ipsum dolor sit <br> amet, sit et agam aperiri <br>blandit, cum ei nisl case <br>possim, tollit consetetur <br>vel ex. Mazim senserit at <br>eos. Sit ne atqui <br>incorrupte temporibus"
+msgstr "Lorem ipsum dolor sit <br> amet, sit et agam aperiri <br>blandit, cum ei nisl case <br>possim, tollit consetetur <br>vel ex. Mazim senserit at <br>eos. Sit ne atqui <br>incorrupte temporibus"
+
+#. Key:	E9E254FB6E4B37D03621C593C0030958
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(24 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(24 - Value).DisplayNameMap
+msgctxt ",E9E254FB6E4B37D03621C593C0030958"
+msgid "Catwalks"
+msgstr "Catwalks"
+
+#. Key:	EBB73C2D4B60D2D47E34E2A6C335CBFA
+#. SourceLocation:	/Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/HandMenu/SubMenus.SubMenus.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",EBB73C2D4B60D2D47E34E2A6C335CBFA"
+msgid "P1analytics"
+msgstr "P1analytics"
+
+#. Key:	EBFD78FE4B3EDCEC9A404EB9798DED19
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",EBFD78FE4B3EDCEC9A404EB9798DED19"
+msgid "ATLAS begins preparations for the Phase<br>II upgrade of the experiment, which will<br>be in place for the High-Luminosity LHC.<br>This upgraded ATLAS experiment will<br>begin data taking in 2026."
+msgstr "ATLAS begins preparations for the Phase<br>II upgrade of the experiment, which will<br>be in place for the High-Luminosity LHC.<br>This upgraded ATLAS experiment will<br>begin data taking in 2026."
+
+#. Key:	ECA0061EE24024A8014C868A66BA1219
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title21.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title21.NewTextRenderComponent.Text
+msgctxt ",ECA0061EE24024A8014C868A66BA1219"
+msgid "MUON"
+msgstr "MUON"
+
+#. Key:	ED43ECCAA64F83D91523839DCF8F3DE5
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(4 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(4 - Value).DisplayNameMap
+msgctxt ",ED43ECCAA64F83D91523839DCF8F3DE5"
+msgid "CSC"
+msgstr "CSC"
+
+#. Key:	EF635D178B4443143C3BBE9184F5CE7C
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(10 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(10 - Value).DisplayNameMap
+msgctxt ",EF635D178B4443143C3BBE9184F5CE7C"
+msgid "LAR"
+msgstr "LAR"
+
+#. Key:	F0880AAB4353F66052127B9089963F8A
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(62 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(62 - Value).DisplayNameMap
+msgctxt ",F0880AAB4353F66052127B9089963F8A"
+msgid "HappyBirthday"
+msgstr "HappyBirthday"
+
+#. Key:	F3D020F04D5E32F07FDD28B0E2B3C6CF
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_742.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_742.Text
+msgctxt ",F3D020F04D5E32F07FDD28B0E2B3C6CF"
+msgid "        Server"
+msgstr "        Server"
+
+#. Key:	F47F6EEE5F4C1A350832D785C2108385
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(45 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(45 - Value).DisplayNameMap
+msgctxt ",F47F6EEE5F4C1A350832D785C2108385"
+msgid "Entry"
+msgstr "Entry"
+
+#. Key:	F6B92C8FDA454C0B461639BEC63EF264
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(7 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(7 - Value).DisplayNameMap
+msgctxt ",F6B92C8FDA454C0B461639BEC63EF264"
+msgid "SCT"
+msgstr "SCT"
+
+#. Key:	F6CF996931451CE24B06D2BA2F457322
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(16 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(16 - Value).DisplayNameMap
+msgctxt ",F6CF996931451CE24B06D2BA2F457322"
+msgid "Middle"
+msgstr "Middle"
+
+#. Key:	F7142F774D40EAF7A3112B94ED539509
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",F7142F774D40EAF7A3112B94ED539509"
+msgid "Oct 1, 1992"
+msgstr "Oct 1, 1992"
+
+#. Key:	F7CBC108684561BABB86E0934A5BFD02
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(52 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(52 - Value).DisplayNameMap
+msgctxt ",F7CBC108684561BABB86E0934A5BFD02"
+msgid "ASL3"
+msgstr "ASL3"
+
+#. Key:	F8833EFA4E8C34940CFB69BEC7487B53
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(7 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(7 - Value).DisplayNameMap
+msgctxt ",F8833EFA4E8C34940CFB69BEC7487B53"
+msgid "BeamPipe"
+msgstr "BeamPipe"
+
+#. Key:	F8CEED5A4A911C5FFF6D61A620989D33
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",F8CEED5A4A911C5FFF6D61A620989D33"
+msgid "June 3, 2015"
+msgstr "June 3, 2015"
+
+#. Key:	F93C475C4E9B5F2E4964288E4155A083
+#. SourceLocation:	/Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",F93C475C4E9B5F2E4964288E4155A083"
+msgid "Hidden"
+msgstr "Hidden"
+
+#. Key:	F984365847CF94A5CD5931902C2AB272
+#. SourceLocation:	/Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/Detector/Subdetectors.Subdetectors.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",F984365847CF94A5CD5931902C2AB272"
+msgid "CSC"
+msgstr "CSC"
+
+#. Key:	FA20E6E50549F9A6F6C2DCB7A414E625
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(18 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(18 - Value).DisplayNameMap
+msgctxt ",FA20E6E50549F9A6F6C2DCB7A414E625"
+msgid "RadiationShield"
+msgstr "RadiationShield"
+
+#. Key:	FA31334F1E4A419505877EABC9F95AA2
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(40 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(40 - Value).DisplayNameMap
+msgctxt ",FA31334F1E4A419505877EABC9F95AA2"
+msgid "Panda"
+msgstr "Panda"
+
+#. Key:	FA60272748C140D4E23721916006D5A2
+#. SourceLocation:	/Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(58 - Value).DisplayNameMap
+#: /Game/HandMenu/ButtonNames.ButtonNames.DisplayNameMap(58 - Value).DisplayNameMap
+msgctxt ",FA60272748C140D4E23721916006D5A2"
+msgid "Muon"
+msgstr "Muon"
+
+#. Key:	FC6A04E345B91A080A8DE785039BDFDD
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_0.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_0.Text
+msgctxt ",FC6A04E345B91A080A8DE785039BDFDD"
+msgid "Connect"
+msgstr "Connect"
+
+#. Key:	FCAB067A42186C0B76031395D5B4588C
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",FCAB067A42186C0B76031395D5B4588C"
+msgid "ATLAS BEGINS RECORDING<br>PHYSICS DATA AT 13 TeV"
+msgstr "ATLAS BEGINS RECORDING<br>PHYSICS DATA AT 13 TeV"
+
+#. Key:	FF53B6444BBB30716EAF399EA49DE04E
+#. SourceLocation:	/Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/Detector/DetectorVisualization.DetectorVisualization.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",FF53B6444BBB30716EAF399EA49DE04E"
+msgid "Solid"
+msgstr "Solid"
+
+#. Key:	Constants
+#. SourceLocation:	/Game/gold_like.gold_like:MaterialExpressionConstant_0.MenuCategories(0).MenuCategories
+#: /Game/gold_like.gold_like:MaterialExpressionConstant_0.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Constants"
+msgid "Constants"
+msgstr "Constants"
+
+#. Key:	Coordinates
+#. SourceLocation:	/Game/Materials/M_Metal_Brushed_Nickel.M_Metal_Brushed_Nickel:MaterialExpressionTextureCoordinate_37.MenuCategories(0).MenuCategories
+#: /Game/Materials/M_Metal_Brushed_Nickel.M_Metal_Brushed_Nickel:MaterialExpressionTextureCoordinate_37.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Coordinates"
+msgid "Coordinates"
+msgstr "Coordinates"
+
+#. Key:	Depth
+#. SourceLocation:	/Game/VirtualReality/Materials/MF_OccludedPixels.MF_OccludedPixels:MaterialExpressionSceneDepth_2.MenuCategories(0).MenuCategories
+#: /Game/VirtualReality/Materials/MF_OccludedPixels.MF_OccludedPixels:MaterialExpressionSceneDepth_2.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Depth"
+msgid "Depth"
+msgstr "Depth"
+
+#. Key:	Functions
+#. SourceLocation:	/Game/Materials/M_Tech_Checker_Dot.M_Tech_Checker_Dot:MaterialExpressionMaterialFunctionCall_7.MenuCategories(0).MenuCategories
+#: /Game/Materials/M_Tech_Checker_Dot.M_Tech_Checker_Dot:MaterialExpressionMaterialFunctionCall_7.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Functions"
+msgid "Functions"
+msgstr "Functions"
+
+#. Key:	Math
+#. SourceLocation:	/Game/Logo/EventInfoDisplay_Mat.EventInfoDisplay_Mat:MaterialExpressionMultiply_0.MenuCategories(0).MenuCategories
+#: /Game/Logo/EventInfoDisplay_Mat.EventInfoDisplay_Mat:MaterialExpressionMultiply_0.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Math"
+msgid "Math"
+msgstr "Math"
+
+#. Key:	Parameters
+#. SourceLocation:	/Game/gold_like.gold_like:MaterialExpressionVectorParameter_1.MenuCategories(0).MenuCategories
+#: /Game/gold_like.gold_like:MaterialExpressionVectorParameter_1.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Parameters"
+msgid "Parameters"
+msgstr "Parameters"
+
+#. Key:	Texture
+#. SourceLocation:	/Game/Logo/EventInfoDisplay_Mat.EventInfoDisplay_Mat:MaterialExpressionTextureSample_0.MenuCategories(0).MenuCategories
+#: /Game/Logo/EventInfoDisplay_Mat.EventInfoDisplay_Mat:MaterialExpressionTextureSample_0.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Texture"
+msgid "Texture"
+msgstr "Texture"
+
+#. Key:	Utility
+#. SourceLocation:	/Game/Materials/M_Glass.M_Glass:MaterialExpressionFeatureLevelSwitch_0.MenuCategories(0).MenuCategories
+#: /Game/Materials/M_Glass.M_Glass:MaterialExpressionFeatureLevelSwitch_0.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Utility"
+msgid "Utility"
+msgstr "Utility"
+
+#. Key:	VectorOps
+#. SourceLocation:	/Game/VirtualReality/Materials/M_ArcEndpoint.M_ArcEndpoint:MaterialExpressionComponentMask_3.MenuCategories(1).MenuCategories
+#: /Game/VirtualReality/Materials/M_ArcEndpoint.M_ArcEndpoint:MaterialExpressionComponentMask_3.MenuCategories(1).MenuCategories
+msgctxt "MaterialExpression,VectorOps"
+msgid "VectorOps"
+msgstr "VectorOps"
+
+#. Key:	Vectors
+#. SourceLocation:	/Game/Materials/M_Metal_Blue.M_Metal_Blue:MaterialExpressionConstant3Vector_3.MenuCategories(1).MenuCategories
+#: /Game/Materials/M_Metal_Blue.M_Metal_Blue:MaterialExpressionConstant3Vector_3.MenuCategories(1).MenuCategories
+msgctxt "MaterialExpression,Vectors"
+msgid "Vectors"
+msgstr "Vectors"
+
+#. Key:	2860810D4F3EC98EF997408A5E42D929
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_741.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_741.Text
+msgctxt "Menu,2860810D4F3EC98EF997408A5E42D929"
+msgid "      Language"
+msgstr "      Language"
+
