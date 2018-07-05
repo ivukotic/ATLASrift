@@ -1,0 +1,624 @@
+﻿# Game Czech translation.
+# Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Game\n"
+"POT-Creation-Date: 2018-07-05 14:48\n"
+"PO-Revision-Date: 2018-07-05 14:48\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. Key:	06804BC9D846F4ACEF446AA60320B71A
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title18.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title18.NewTextRenderComponent.Text
+msgctxt ",06804BC9D846F4ACEF446AA60320B71A"
+msgid "MUON Exp."
+msgstr "MUON Exp."
+
+#. Key:	08C2EE93144D865618D6868DB87CAE1C
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title9.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title9.NewTextRenderComponent.Text
+msgctxt ",08C2EE93144D865618D6868DB87CAE1C"
+msgid "DCS"
+msgstr "DCS"
+
+#. Key:	0A37FF23D44DD6A703C937AF3B26B6CC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title14.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title14.NewTextRenderComponent.Text
+msgctxt ",0A37FF23D44DD6A703C937AF3B26B6CC"
+msgid "Shift Leader"
+msgstr "Shift Leader"
+
+#. Key:	0A8CF9142A4CA17E833C5D9CA69B8F04
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title11.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title11.NewTextRenderComponent.Text
+msgctxt ",0A8CF9142A4CA17E833C5D9CA69B8F04"
+msgid "CSAM<br>LACS<br>LASER"
+msgstr "CSAM<br>LACS<br>LASER"
+
+#. Key:	0D30BCD94EA76E63DB6460A24AE7CFB3
+#. SourceLocation:	/Game/ControlRoom/Beamers/ADC1.ADC1_C:WidgetTree.Title.Text
+#: /Game/ControlRoom/Beamers/ADC1.ADC1_C:WidgetTree.Title.Text
+msgctxt ",0D30BCD94EA76E63DB6460A24AE7CFB3"
+msgid "ADC Home"
+msgstr "ADC Home"
+
+#. Key:	0D70113143A900D098D343B1142B5623
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_1015.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_1015.Text
+msgctxt ",0D70113143A900D098D343B1142B5623"
+msgid "Enable Teleportation"
+msgstr "Enable Teleportation"
+
+#. Key:	16554A7BEC449A1C9891F4B830581349
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title17.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title17.NewTextRenderComponent.Text
+msgctxt ",16554A7BEC449A1C9891F4B830581349"
+msgid "DAQ"
+msgstr "DAQ"
+
+#. Key:	16EC4DFA417F7305C49F02B8D599EE8C
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_796.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_796.Text
+msgctxt ",16EC4DFA417F7305C49F02B8D599EE8C"
+msgid "Enable Rotation"
+msgstr "Enable Rotation"
+
+#. Key:	172F15C049C1B812F3698FA1AE279596
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",172F15C049C1B812F3698FA1AE279596"
+msgid "FIRST DIRECT EVIDENCE OF LIGHT-BY-LIGHT SCATTERING AT HIGH ENERGY"
+msgstr ""
+
+#. Key:	19AE1F1E4192B8AAC1FC038B812E7987
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_740.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_740.Text
+msgctxt ",19AE1F1E4192B8AAC1FC038B812E7987"
+msgid "Multiplayer"
+msgstr "Multiplayer"
+
+#. Key:	1A626DFBD54C46539E9392B6C9C6D4DC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title.NewTextRenderComponent.Text
+msgctxt ",1A626DFBD54C46539E9392B6C9C6D4DC"
+msgid "CALO Expert"
+msgstr "CALO Expert"
+
+#. Key:	1C5D2D764B6ADACFACBCDCA1010DC10D
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Tilecal.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Tilecal.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",1C5D2D764B6ADACFACBCDCA1010DC10D"
+msgid "Calorimeters"
+msgstr "Calorimeters"
+
+#. Key:	1FB0AD3E4BB8116DA9C4D697B81C2A26
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.CustomLink.ToolTipText
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.CustomLink.ToolTipText
+msgctxt ",1FB0AD3E4BB8116DA9C4D697B81C2A26"
+msgid "e.g. a web page showing your institution."
+msgstr "e.g. a web page showing your institution."
+
+#. Key:	2134B499409CBB32581381AAC35BAE7B
+#. SourceLocation:	/Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.HistoryofATLAS.NewTextRenderComponent.Text
+#: /Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.HistoryofATLAS.NewTextRenderComponent.Text
+msgctxt ",2134B499409CBB32581381AAC35BAE7B"
+msgid "History<br> of<br> ATLAS"
+msgstr "Historie společnosti ATLAS"
+
+#. Key:	239422024158714FD48A1DA6303A4527
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.MuonWheel.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.MuonWheel.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",239422024158714FD48A1DA6303A4527"
+msgid "Muon Spectrometer"
+msgstr "Muon Spectrometer"
+
+#. Key:	2408CFCF410D02F34ACC71957E023DF4
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",2408CFCF410D02F34ACC71957E023DF4"
+msgid "FIRST TECHNICAL DESIGN REPORT RELEASED FOR ATLAS UPGRADE"
+msgstr ""
+
+#. Key:	275E73D049C2D6AD934359BD27EEC00E
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",275E73D049C2D6AD934359BD27EEC00E"
+msgid "July 4, 2012"
+msgstr "July 4, 2012"
+
+#. Key:	280A340845DDEE8FB2EB8A8E805CC45B
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_307.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_307.Text
+msgctxt ",280A340845DDEE8FB2EB8A8E805CC45B"
+msgid "Full access cert"
+msgstr "Full access cert"
+
+#. Key:	28BD21E44E354BBED3D45AAE6290D5D4
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",28BD21E44E354BBED3D45AAE6290D5D4"
+msgid "FORMAL APPROVAL OF ATLAS EXPERIMENT"
+msgstr "FORMAL APPROVAL OF ATLAS EXPERIMENT"
+
+#. Key:	290E2B750A4D7C19B4C820BCCEDF1A77
+#. SourceLocation:	/Game/ControlRoom/Beamers/ADC2.ADC2_C:WidgetTree.Title.Text
+#: /Game/ControlRoom/Beamers/ADC2.ADC2_C:WidgetTree.Title.Text
+msgctxt ",290E2B750A4D7C19B4C820BCCEDF1A77"
+msgid "ADC 2"
+msgstr "ADC 2"
+
+#. Key:	33D34EFB704F0898AC2B34BE51206C5B
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title10.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title10.NewTextRenderComponent.Text
+msgctxt ",33D34EFB704F0898AC2B34BE51206C5B"
+msgid "SLIMOS"
+msgstr "SLIMOS"
+
+#. Key:	34C7B66749E845AEF4F4989118FB9875
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title6.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title6.NewTextRenderComponent.Text
+msgctxt ",34C7B66749E845AEF4F4989118FB9875"
+msgid "Pixel"
+msgstr ""
+
+#. Key:	38B3F07F4A11FC635D97CBBF039CAE37
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",38B3F07F4A11FC635D97CBBF039CAE37"
+msgid "The 2013 Nobel Prize in physics is awarded to Professors François Englert and Peter Higgs \"for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider\". ATLAS and CMS physicists cheered the announcement."
+msgstr ""
+
+#. Key:	3B3C8F0E4A33E72A3C09D2A10A9A97CD
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Magnet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Magnet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",3B3C8F0E4A33E72A3C09D2A10A9A97CD"
+msgid "Magnet System"
+msgstr "Magnet System"
+
+#. Key:	3D59E3F0CC4498E66ADB7FBC04B1881D
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title15.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title15.NewTextRenderComponent.Text
+msgctxt ",3D59E3F0CC4498E66ADB7FBC04B1881D"
+msgid "Proj 1/2"
+msgstr "Proj 1/2"
+
+#. Key:	3F0397A548D2BEE24CCEE5BCDE7FE5EF
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",3F0397A548D2BEE24CCEE5BCDE7FE5EF"
+msgid "Oct 4, 2008"
+msgstr "Oct 4, 2008"
+
+#. Key:	3F91296D49063824EFCE0792D0024C1E
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",3F91296D49063824EFCE0792D0024C1E"
+msgid "Plans for a Large Hadron Collider (LHC) make waves at high-energy physics workshops and conferences. Reaching mind-boggling multi-TeV energies, this machine would allow physicists to search for the Higgs boson at all possible masses. In December 1991, the Long-Range Planning Committee recommends the LHC as the best step forward for CERN’s future, and plans for LHC experiments begin to take form. A significant amount of research and development was needed to select the technologies that ATLAS and other LHC experiments would use and subsequently build upon."
+msgstr ""
+
+#. Key:	41E8FD61084256431E2D7F8DBCD6AF57
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title7.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title7.NewTextRenderComponent.Text
+msgctxt ",41E8FD61084256431E2D7F8DBCD6AF57"
+msgid "ID"
+msgstr "ID"
+
+#. Key:	4A5F7CB6417660C46C6DCAA9389A0AB2
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.InnerDet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.InnerDet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",4A5F7CB6417660C46C6DCAA9389A0AB2"
+msgid "Inner Detector"
+msgstr "Inner Detector"
+
+#. Key:	4BA9EEB2BA4507BF1D7F16B239E93576
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_149.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_149.Text
+msgctxt ",4BA9EEB2BA4507BF1D7F16B239E93576"
+msgid "Done"
+msgstr "Done"
+
+#. Key:	4D939877FB471381395F5D84245E6C99
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title13.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title13.NewTextRenderComponent.Text
+msgctxt ",4D939877FB471381395F5D84245E6C99"
+msgid "Expert"
+msgstr "Expert"
+
+#. Key:	56B4993AC8435EFF34F63EB9C49AD077
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title8.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title8.NewTextRenderComponent.Text
+msgctxt ",56B4993AC8435EFF34F63EB9C49AD077"
+msgid "Ext. System"
+msgstr "Ext. System"
+
+#. Key:	56B8B2A62A4E57877039B083EB944CF8
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title20.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title20.NewTextRenderComponent.Text
+msgctxt ",56B8B2A62A4E57877039B083EB944CF8"
+msgid "Expert"
+msgstr "Expert"
+
+#. Key:	58EF1BC6434021E09A2B7EAD7657C099
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",58EF1BC6434021E09A2B7EAD7657C099"
+msgid "END OF ATLAS CONSTRUCTION"
+msgstr "END OF ATLAS CONSTRUCTION"
+
+#. Key:	5CC4BA63403D49550CC0E0B53AC408E4
+#. SourceLocation:	/Game/ControlRoom/VideoScreen_BP.VideoScreen_BP_C:TextRender_GEN_VARIABLE.Text
+#: /Game/ControlRoom/VideoScreen_BP.VideoScreen_BP_C:TextRender_GEN_VARIABLE.Text
+msgctxt ",5CC4BA63403D49550CC0E0B53AC408E4"
+msgid "Processing LHC Data"
+msgstr "Processing LHC Data"
+
+#. Key:	5E0733514FF890BE108195B6B27BB4EB
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",5E0733514FF890BE108195B6B27BB4EB"
+msgid "ATLAS RECORDS FIRST COLLISIONS"
+msgstr "ATLAS RECORDS FIRST COLLISIONS"
+
+#. Key:	5F15E8979B4E5D3C1D73E9B7C32A3F98
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title3.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title3.NewTextRenderComponent.Text
+msgctxt ",5F15E8979B4E5D3C1D73E9B7C32A3F98"
+msgid "LUMI"
+msgstr "LUMI"
+
+#. Key:	5F2CCE1541134F7D19D8E885748B8276
+#. SourceLocation:	/Game/BPs/Events/EventBP.EventBP_C:RunNumberDisplay_GEN_VARIABLE.Text
+#: /Game/BPs/Events/EventBP.EventBP_C:RunNumberDisplay_GEN_VARIABLE.Text
+msgctxt ",5F2CCE1541134F7D19D8E885748B8276"
+msgid "-"
+msgstr "-"
+
+#. Key:	657E4ED50549B3B88600A3ACF22920FC
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title2.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title2.NewTextRenderComponent.Text
+msgctxt ",657E4ED50549B3B88600A3ACF22920FC"
+msgid "CALO"
+msgstr "CALO"
+
+#. Key:	70EDA96C4425D3A8772FACBFC642717C
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Aside.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Aside.NewTextRenderComponent.Text
+msgctxt ",70EDA96C4425D3A8772FACBFC642717C"
+msgid "A side"
+msgstr "A side"
+
+#. Key:	736CA941452A3FB9561AA2BDF24E03C7
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",736CA941452A3FB9561AA2BDF24E03C7"
+msgid "EXCAVATION OF THE ATLAS EXPERIMENT CAVERN BEGINS"
+msgstr ""
+
+#. Key:	751C29AA4F7286A6A166FD80011C741A
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title5.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title5.NewTextRenderComponent.Text
+msgctxt ",751C29AA4F7286A6A166FD80011C741A"
+msgid "SCT"
+msgstr ""
+
+#. Key:	77E50E3048AEEB3C1134EE9E3219EE85
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",77E50E3048AEEB3C1134EE9E3219EE85"
+msgid "NOBEL PRIZE FOR THE HIGGS DISCOVERY"
+msgstr "NOBEL PRIZE FOR THE HIGGS DISCOVERY"
+
+#. Key:	79D8A9524533CA1E4EDDE7BBADC711C3
+#. SourceLocation:	/Game/BPs/Events/EventBP.EventBP_C:EventNumberDisplay_GEN_VARIABLE.Text
+#: /Game/BPs/Events/EventBP.EventBP_C:EventNumberDisplay_GEN_VARIABLE.Text
+msgctxt ",79D8A9524533CA1E4EDDE7BBADC711C3"
+msgid "-"
+msgstr "-"
+
+#. Key:	7AA88D06407E2E4FCA4235B53AA28374
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",7AA88D06407E2E4FCA4235B53AA28374"
+msgid "On 4 July 2012, as a curtain raises to the year’s major particle physics conference, ICHEP 2012 in Melbourne, the ATLAS and CMS Experiments present their latest preliminary results in the search for the long-sought Higgs particle. Both experiments have observed a new particle in the mass region around 125-126 GeV."
+msgstr ""
+
+#. Key:	7AF295BC49A31C25BB479F9D98C38627
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History1.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",7AF295BC49A31C25BB479F9D98C38627"
+msgid "BIRTH OF THE LHC PROJECT"
+msgstr "BIRTH OF THE LHC PROJECT"
+
+#. Key:	7F512D3C43604B62BF5E259D0D0F552B
+#. SourceLocation:	/Game/Maps/MySaveData.Default__MySaveData_C.CustomLink
+#: /Game/Maps/MySaveData.Default__MySaveData_C.CustomLink
+msgctxt ",7F512D3C43604B62BF5E259D0D0F552B"
+msgid "http://"
+msgstr "http://"
+
+#. Key:	810BD0814702BAFD53025682CAE75BD5
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",810BD0814702BAFD53025682CAE75BD5"
+msgid "The LHC Experiments Committee and CERN Director-General, Chris Llewellyn Smith, approve the construction of the ATLAS detector. As the first Technical Design Reports are approved, ATLAS teams all over the world begin building detector components and worked on final technical developments."
+msgstr ""
+
+#. Key:	8279F37AEC477658A132D9A61B62B041
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title19.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title19.NewTextRenderComponent.Text
+msgctxt ",8279F37AEC477658A132D9A61B62B041"
+msgid "Trigger"
+msgstr "Trigger"
+
+#. Key:	8459DDCF40E6819DC80B23BC4470A931
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",8459DDCF40E6819DC80B23BC4470A931"
+msgid "The start of a fantastic era of physics! ATLAS records first collisions at 0.9 TeV."
+msgstr ""
+
+#. Key:	8982C1974BF0818F6ED5958CAA8C2202
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",8982C1974BF0818F6ED5958CAA8C2202"
+msgid "WORLD'S LARGEST SUPERCONDUCTING MAGNET TURNS ON"
+msgstr ""
+
+#. Key:	8C6B19F24ADE53CC919000B811CC6C77
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",8C6B19F24ADE53CC919000B811CC6C77"
+msgid "The ATLAS Collaboration proposes the construction of a general-purpose detector at the Large Hadron Collider. The ATLAS Letter of Intent was submitted to the LHC Experiments Committee, which marked the first official use of the name ATLAS. The Letter identified a number of conceptual and technical design options, including a superconducting toroid magnet system."
+msgstr ""
+
+#. Key:	9DC63A49495DFD4C204951A3CE0B5798
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title4.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title4.NewTextRenderComponent.Text
+msgctxt ",9DC63A49495DFD4C204951A3CE0B5798"
+msgid "TRT"
+msgstr ""
+
+#. Key:	A02BCE934DCCEC4F942189AEBDC3EEFE
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",A02BCE934DCCEC4F942189AEBDC3EEFE"
+msgid "Aug 14, 2017"
+msgstr "Aug 14, 2017"
+
+#. Key:	A067115744A6ABB30E4FC4A2F94B801C
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",A067115744A6ABB30E4FC4A2F94B801C"
+msgid "Nov 23, 2009"
+msgstr "Nov 23, 2009"
+
+#. Key:	A1A7AAA14566C72015E1D7AB530CC218
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",A1A7AAA14566C72015E1D7AB530CC218"
+msgid "ATLAS AND CMS OBSERVE A PARTICLE CONSISTENT WITH THE HIGGS BOSON"
+msgstr ""
+
+#. Key:	A4A594874F84F5EEEC497E80B187B797
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",A4A594874F84F5EEEC497E80B187B797"
+msgid "ATLAS began recording physics data from 13 TeV proton collisions, which allow for precision studies of the Higgs boson and other Standard Model particles, as well as the search for new particles with higher masses."
+msgstr ""
+
+#. Key:	A73D9BFA49C5BFC67CAEFA91FFC0CEC3
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_306.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_306.Text
+msgctxt ",A73D9BFA49C5BFC67CAEFA91FFC0CEC3"
+msgid "Accessibility"
+msgstr "Accessibility"
+
+#. Key:	AD5CCAED4453C6D4715965B9A394482B
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History6.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",AD5CCAED4453C6D4715965B9A394482B"
+msgid "To celebrate the end of the ATLAS construction phase, the Collaboration hosts a party at CERN's magnet testing facility (SM18). This was the largest ATLAS celebration yet, with collaboration members travelling from around the world to mark this milestone."
+msgstr ""
+
+#. Key:	B01903884D752B2092674D887E3634B4
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",B01903884D752B2092674D887E3634B4"
+msgid "Nov 20, 2006"
+msgstr "Nov 20, 2006"
+
+#. Key:	BCB2D3C64A499C6A1F6785A3369A3E14
+#. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Cside.NewTextRenderComponent.Text
+#: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Cside.NewTextRenderComponent.Text
+msgctxt ",BCB2D3C64A499C6A1F6785A3369A3E14"
+msgid "C side"
+msgstr "C side"
+
+#. Key:	C57004913E4D3750166E518F090F5722
+#. SourceLocation:	/Game/ControlRoom/Beamers/Perfsonar.Perfsonar_C:WidgetTree.Title.Text
+#: /Game/ControlRoom/Beamers/Perfsonar.Perfsonar_C:WidgetTree.Title.Text
+msgctxt ",C57004913E4D3750166E518F090F5722"
+msgid "Perfsonar Ingestion"
+msgstr "Perfsonar Ingestion"
+
+#. Key:	C84005BD4D8CF07CF00AE5A75D329D8D
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",C84005BD4D8CF07CF00AE5A75D329D8D"
+msgid "ATLAS COLLABORATION PUBLISHES LETTER OF INTENT"
+msgstr ""
+
+#. Key:	C9A8513748D02CB4C4436AACD65E7AC0
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",C9A8513748D02CB4C4436AACD65E7AC0"
+msgid "ATLAS publishes the first direct evidence of high energy light-by-light scattering, a very rare process in which two photons – particles of light – interact and change direction. The result, published in Nature Physics, confirms one of the oldest predictions of quantum electrodynamics."
+msgstr ""
+
+#. Key:	CA7CA3064FFF1F9EB0ECB0BEF205FC10
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",CA7CA3064FFF1F9EB0ECB0BEF205FC10"
+msgid "Oct 8, 2013"
+msgstr "Oct 8, 2013"
+
+#. Key:	CE3A3DA14855E05334AA1F869C2AA03F
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",CE3A3DA14855E05334AA1F869C2AA03F"
+msgid "July 1, 1997"
+msgstr "July 1, 1997"
+
+#. Key:	D131735045D17B5BAB8EF989B0DAF4B9
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_738.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_738.Text
+msgctxt ",D131735045D17B5BAB8EF989B0DAF4B9"
+msgid "Effects volume"
+msgstr "Effects volume"
+
+#. Key:	D5E7AC904267A0943AF518A35D572B8D
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History4.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",D5E7AC904267A0943AF518A35D572B8D"
+msgid "Team of engineers begin excavating a series of underground caverns in Meyrin, Switzerland. These caverns will be home to the ATLAS Experiment and its supporting infrastructure."
+msgstr ""
+
+#. Key:	D6047E7B4790571C4BA1B7BAB4514EAD
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",D6047E7B4790571C4BA1B7BAB4514EAD"
+msgid "April 1, 2017"
+msgstr "April 1, 2017"
+
+#. Key:	D7CE6E7E964662733AB9DDB34FA1EBF0
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title16.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title16.NewTextRenderComponent.Text
+msgctxt ",D7CE6E7E964662733AB9DDB34FA1EBF0"
+msgid "Data Quality"
+msgstr "Data Quality"
+
+#. Key:	DA1BAE584F9E351F780C089759B4CFE8
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_736.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_736.Text
+msgctxt ",DA1BAE584F9E351F780C089759B4CFE8"
+msgid "Audio"
+msgstr "Audio"
+
+#. Key:	DA9E82A5C8445FCFD3B118BBD335202C
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title22.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title22.NewTextRenderComponent.Text
+msgctxt ",DA9E82A5C8445FCFD3B118BBD335202C"
+msgid "Expert"
+msgstr "Expert"
+
+#. Key:	DC12AFB645118B623FB6428C557CE4CA
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History5.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",DC12AFB645118B623FB6428C557CE4CA"
+msgid "The ATLAS Barrel Toroid, a characteristic component of the detector, then the largest superconducting magnet ever built, was switched on for the first time. It works together with the two Endcap Toroids and a central Solenoid magnet to bend the paths of charged particles produced in collisions at the LHC, enabling important properties to be measured."
+msgstr ""
+
+#. Key:	DF845C814AEA8DE1E8575FA13017D068
+#. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.LAr.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+#: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.LAr.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
+msgctxt ",DF845C814AEA8DE1E8575FA13017D068"
+msgid "Calorimeters"
+msgstr "Calorimeters"
+
+#. Key:	E022B6DE4476D8A98A360F9FADA4C8AE
+#. SourceLocation:	/Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.TextRenderActor_3.NewTextRenderComponent.Text
+#: /Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.TextRenderActor_3.NewTextRenderComponent.Text
+msgctxt ",E022B6DE4476D8A98A360F9FADA4C8AE"
+msgid "ATLAS Experiment"
+msgstr "ATLAS Experiment"
+
+#. Key:	E44C570143195486392B9082A931B4D5
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_739.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_739.Text
+msgctxt ",E44C570143195486392B9082A931B4D5"
+msgid "Guide volume"
+msgstr "Guide volume"
+
+#. Key:	E72859A9884A0D75380617A8AA035237
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title12.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title12.NewTextRenderComponent.Text
+msgctxt ",E72859A9884A0D75380617A8AA035237"
+msgid "Run Control"
+msgstr "Run Control"
+
+#. Key:	EBFD78FE4B3EDCEC9A404EB9798DED19
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History11.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
+msgctxt ",EBFD78FE4B3EDCEC9A404EB9798DED19"
+msgid "ATLAS begins preparations for the Phase II upgrade of the experiment, which will be in place for the High-Luminosity LHC. This upgraded ATLAS experiment will begin data taking in 2026."
+msgstr ""
+
+#. Key:	ECA0061EE24024A8014C868A66BA1219
+#. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title21.NewTextRenderComponent.Text
+#: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title21.NewTextRenderComponent.Text
+msgctxt ",ECA0061EE24024A8014C868A66BA1219"
+msgid "MUON"
+msgstr "MUON"
+
+#. Key:	F3D020F04D5E32F07FDD28B0E2B3C6CF
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_742.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_742.Text
+msgctxt ",F3D020F04D5E32F07FDD28B0E2B3C6CF"
+msgid "Server"
+msgstr "Server"
+
+#. Key:	F7142F774D40EAF7A3112B94ED539509
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",F7142F774D40EAF7A3112B94ED539509"
+msgid "Oct 1, 1992"
+msgstr "Oct 1, 1992"
+
+#. Key:	F8CEED5A4A911C5FFF6D61A620989D33
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.Date_5_F514F2CB48A94CC242A631A0432AE7B6
+msgctxt ",F8CEED5A4A911C5FFF6D61A620989D33"
+msgid "June 3, 2015"
+msgstr "June 3, 2015"
+
+#. Key:	FC6A04E345B91A080A8DE785039BDFDD
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_0.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_0.Text
+msgctxt ",FC6A04E345B91A080A8DE785039BDFDD"
+msgid "Connect"
+msgstr "Connect"
+
+#. Key:	FCAB067A42186C0B76031395D5B4588C
+#. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+#: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.TitleText_7_E7FCBF31421561962C7AC1A723A87288
+msgctxt ",FCAB067A42186C0B76031395D5B4588C"
+msgid "ATLAS BEGINS RECORDING PHYSICS DATA AT 13 TeV"
+msgstr ""
+
+#. Key:	Constants
+#. SourceLocation:	/Game/StarterContent/Props/Materials/M_MaterialSphere_Plain.M_MaterialSphere_Plain:MaterialExpressionConstant_3.MenuCategories(0).MenuCategories
+#: /Game/StarterContent/Props/Materials/M_MaterialSphere_Plain.M_MaterialSphere_Plain:MaterialExpressionConstant_3.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Constants"
+msgid "Constants"
+msgstr "Constants"
+
+#. Key:	Parameters
+#. SourceLocation:	/Game/Detector/material_1.material_1:MaterialExpressionVectorParameter_1.MenuCategories(0).MenuCategories
+#: /Game/Detector/material_1.material_1:MaterialExpressionVectorParameter_1.MenuCategories(0).MenuCategories
+msgctxt "MaterialExpression,Parameters"
+msgid "Parameters"
+msgstr "Parameters"
+
+#. Key:	2860810D4F3EC98EF997408A5E42D929
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_741.Text
+#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_741.Text
+msgctxt "Menu,2860810D4F3EC98EF997408A5E42D929"
+msgid "Language"
+msgstr "Language"
+
