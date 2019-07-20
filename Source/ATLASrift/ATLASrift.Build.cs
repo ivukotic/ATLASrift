@@ -18,6 +18,7 @@ public class ATLASrift : ModuleRules
 
 	public ATLASrift(ReadOnlyTargetRules Target) : base (Target)
 	{
+        PrivatePCHHeaderFile = "ATLASrift.h";
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HTTP", "Json", "Sockets", "Networking", "OnlineSubsystemNull" , "HeadMountedDisplay" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });

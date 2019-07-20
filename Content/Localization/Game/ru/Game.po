@@ -1,17 +1,31 @@
 ﻿# Game Russian translation.
-# Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+# Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-07-05 14:48\n"
-"PO-Revision-Date: 2018-07-05 14:48\n"
+"POT-Creation-Date: 2019-07-20 20:54\n"
+"PO-Revision-Date: 2019-07-20 20:54\n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Key:	013324264D7BB35DEF1FFBB7985383EF
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_5.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_5.Text
+msgctxt ",013324264D7BB35DEF1FFBB7985383EF"
+msgid "Higgs"
+msgstr ""
+
+#. Key:	05BAAD38411FF4D4F22C578C4894242E
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(2 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(2 - Value).DisplayNameMap
+msgctxt ",05BAAD38411FF4D4F22C578C4894242E"
+msgid "French"
+msgstr ""
 
 #. Key:	06804BC9D846F4ACEF446AA60320B71A
 #. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title18.NewTextRenderComponent.Text
@@ -48,11 +62,11 @@ msgctxt ",0D30BCD94EA76E63DB6460A24AE7CFB3"
 msgid "ADC Home"
 msgstr ""
 
-#. Key:	0D70113143A900D098D343B1142B5623
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_1015.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_1015.Text
-msgctxt ",0D70113143A900D098D343B1142B5623"
-msgid "Enable Teleportation"
+#. Key:	0EB7B2954C9743E50B550BA74C910231
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(7 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(7 - Value).DisplayNameMap
+msgctxt ",0EB7B2954C9743E50B550BA74C910231"
+msgid "Italian"
 msgstr ""
 
 #. Key:	16554A7BEC449A1C9891F4B830581349
@@ -62,13 +76,6 @@ msgctxt ",16554A7BEC449A1C9891F4B830581349"
 msgid "DAQ"
 msgstr ""
 
-#. Key:	16EC4DFA417F7305C49F02B8D599EE8C
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_796.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_796.Text
-msgctxt ",16EC4DFA417F7305C49F02B8D599EE8C"
-msgid "Enable Rotation"
-msgstr ""
-
 #. Key:	172F15C049C1B812F3698FA1AE279596
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.TitleText_7_E7FCBF31421561962C7AC1A723A87288
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History12.TitleText_7_E7FCBF31421561962C7AC1A723A87288
@@ -76,11 +83,11 @@ msgctxt ",172F15C049C1B812F3698FA1AE279596"
 msgid "FIRST DIRECT EVIDENCE OF LIGHT-BY-LIGHT SCATTERING AT HIGH ENERGY"
 msgstr ""
 
-#. Key:	19AE1F1E4192B8AAC1FC038B812E7987
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_740.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_740.Text
-msgctxt ",19AE1F1E4192B8AAC1FC038B812E7987"
-msgid "Multiplayer"
+#. Key:	1823558F4191E477ED86C59804A48E02
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_796.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_796.Text
+msgctxt ",1823558F4191E477ED86C59804A48E02"
+msgid "Enable Rotation"
 msgstr ""
 
 #. Key:	1A626DFBD54C46539E9392B6C9C6D4DC
@@ -90,6 +97,13 @@ msgctxt ",1A626DFBD54C46539E9392B6C9C6D4DC"
 msgid "CALO Expert"
 msgstr ""
 
+#. Key:	1BE7AD2A46D19190DAC62BBEF6C83143
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_10.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_10.Text
+msgctxt ",1BE7AD2A46D19190DAC62BBEF6C83143"
+msgid "ASL 5"
+msgstr ""
+
 #. Key:	1C5D2D764B6ADACFACBCDCA1010DC10D
 #. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Tilecal.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
 #: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.Tilecal.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
@@ -97,11 +111,25 @@ msgctxt ",1C5D2D764B6ADACFACBCDCA1010DC10D"
 msgid "Calorimeters"
 msgstr ""
 
-#. Key:	1FB0AD3E4BB8116DA9C4D697B81C2A26
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.CustomLink.ToolTipText
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.CustomLink.ToolTipText
-msgctxt ",1FB0AD3E4BB8116DA9C4D697B81C2A26"
-msgid "e.g. a web page showing your institution."
+#. Key:	1C873345466A3723BECB0C9A29CA3196
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(8 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(8 - Value).DisplayNameMap
+msgctxt ",1C873345466A3723BECB0C9A29CA3196"
+msgid "Chinese"
+msgstr ""
+
+#. Key:	1FC7B3C14B23FC326243CAB058A2F489
+#. SourceLocation:	/Game/HandMenu/ControlRoomMenu/ControlRoomMenu.ControlRoomMenu_C:WidgetTree.pass.Text
+#: /Game/HandMenu/ControlRoomMenu/ControlRoomMenu.ControlRoomMenu_C:WidgetTree.pass.Text
+msgctxt ",1FC7B3C14B23FC326243CAB058A2F489"
+msgid "Your password"
+msgstr ""
+
+#. Key:	20A3B860486E92B7DB7CFF87628B7ABB
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_11.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_11.Text
+msgctxt ",20A3B860486E92B7DB7CFF87628B7ABB"
+msgid "Endcap Torroid"
 msgstr ""
 
 #. Key:	2134B499409CBB32581381AAC35BAE7B
@@ -109,6 +137,13 @@ msgstr ""
 #: /Game/Maps/GlobeLevel.GlobeLevel:PersistentLevel.HistoryofATLAS.NewTextRenderComponent.Text
 msgctxt ",2134B499409CBB32581381AAC35BAE7B"
 msgid "History<br> of<br> ATLAS"
+msgstr ""
+
+#. Key:	232D0CAB4C17DFF630CC3795280E9211
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_4.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_4.Text
+msgctxt ",232D0CAB4C17DFF630CC3795280E9211"
+msgid "SCT"
 msgstr ""
 
 #. Key:	239422024158714FD48A1DA6303A4527
@@ -125,18 +160,18 @@ msgctxt ",2408CFCF410D02F34ACC71957E023DF4"
 msgid "FIRST TECHNICAL DESIGN REPORT RELEASED FOR ATLAS UPGRADE"
 msgstr ""
 
+#. Key:	24EAA650468A885F4389598F78013D89
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_1015.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_1015.Text
+msgctxt ",24EAA650468A885F4389598F78013D89"
+msgid "Enable Teleportation"
+msgstr ""
+
 #. Key:	275E73D049C2D6AD934359BD27EEC00E
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.Date_5_F514F2CB48A94CC242A631A0432AE7B6
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History8.Date_5_F514F2CB48A94CC242A631A0432AE7B6
 msgctxt ",275E73D049C2D6AD934359BD27EEC00E"
 msgid "July 4, 2012"
-msgstr ""
-
-#. Key:	280A340845DDEE8FB2EB8A8E805CC45B
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_307.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_307.Text
-msgctxt ",280A340845DDEE8FB2EB8A8E805CC45B"
-msgid "Full access cert"
 msgstr ""
 
 #. Key:	28BD21E44E354BBED3D45AAE6290D5D4
@@ -153,6 +188,13 @@ msgctxt ",290E2B750A4D7C19B4C820BCCEDF1A77"
 msgid "ADC 2"
 msgstr ""
 
+#. Key:	32D664354E04561743AF8D9E58DC81F8
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_13.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_13.Text
+msgctxt ",32D664354E04561743AF8D9E58DC81F8"
+msgid "Middle"
+msgstr ""
+
 #. Key:	33D34EFB704F0898AC2B34BE51206C5B
 #. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title10.NewTextRenderComponent.Text
 #: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title10.NewTextRenderComponent.Text
@@ -167,11 +209,39 @@ msgctxt ",34C7B66749E845AEF4F4989118FB9875"
 msgid "Pixel"
 msgstr ""
 
+#. Key:	3620C40F44751D88DC8249B041FCE6ED
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_8.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_8.Text
+msgctxt ",3620C40F44751D88DC8249B041FCE6ED"
+msgid "LAR"
+msgstr ""
+
+#. Key:	37A3F1304F377F3378C2FC8CAB011D0C
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_738.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_738.Text
+msgctxt ",37A3F1304F377F3378C2FC8CAB011D0C"
+msgid "Effects volume"
+msgstr ""
+
+#. Key:	37CC0FF14BCD7372140FF5820CC90105
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(6 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(6 - Value).DisplayNameMap
+msgctxt ",37CC0FF14BCD7372140FF5820CC90105"
+msgid "Chech"
+msgstr ""
+
 #. Key:	38B3F07F4A11FC635D97CBBF039CAE37
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History9.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
 msgctxt ",38B3F07F4A11FC635D97CBBF039CAE37"
 msgid "The 2013 Nobel Prize in physics is awarded to Professors François Englert and Peter Higgs \"for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider\". ATLAS and CMS physicists cheered the announcement."
+msgstr ""
+
+#. Key:	3B09C90545A87C702FC6CFA27E1F6551
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_14.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_14.Text
+msgctxt ",3B09C90545A87C702FC6CFA27E1F6551"
+msgid "Outer"
 msgstr ""
 
 #. Key:	3B3C8F0E4A33E72A3C09D2A10A9A97CD
@@ -181,11 +251,25 @@ msgctxt ",3B3C8F0E4A33E72A3C09D2A10A9A97CD"
 msgid "Magnet System"
 msgstr ""
 
+#. Key:	3CE82CC643DBC8B043BB9AB9FBCE3314
+#. SourceLocation:	/Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_0.Text
+#: /Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_0.Text
+msgctxt ",3CE82CC643DBC8B043BB9AB9FBCE3314"
+msgid "Globe"
+msgstr ""
+
 #. Key:	3D59E3F0CC4498E66ADB7FBC04B1881D
 #. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title15.NewTextRenderComponent.Text
 #: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title15.NewTextRenderComponent.Text
 msgctxt ",3D59E3F0CC4498E66ADB7FBC04B1881D"
 msgid "Proj 1/2"
+msgstr ""
+
+#. Key:	3E1060314F4DA74B9E11C7ABEF48E8AD
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_306.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_306.Text
+msgctxt ",3E1060314F4DA74B9E11C7ABEF48E8AD"
+msgid "Accessibility"
 msgstr ""
 
 #. Key:	3F0397A548D2BEE24CCEE5BCDE7FE5EF
@@ -209,6 +293,20 @@ msgctxt ",41E8FD61084256431E2D7F8DBCD6AF57"
 msgid "ID"
 msgstr ""
 
+#. Key:	42290D404140B496BED574855AC69719
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_19.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_19.Text
+msgctxt ",42290D404140B496BED574855AC69719"
+msgid "Radiation Shield"
+msgstr ""
+
+#. Key:	486063F74F9C71348BE181957C42FFC1
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_0.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_0.Text
+msgctxt ",486063F74F9C71348BE181957C42FFC1"
+msgid "Happy Birthday!"
+msgstr ""
+
 #. Key:	4A5F7CB6417660C46C6DCAA9389A0AB2
 #. SourceLocation:	/Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.InnerDet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
 #: /Game/Globe/DetailedGeometries/SmallModelDataTable.SmallModelDataTable.InnerDet.Title_12_FF8DC6CB4513C693EC2CC69DC4C9679B
@@ -216,11 +314,18 @@ msgctxt ",4A5F7CB6417660C46C6DCAA9389A0AB2"
 msgid "Inner Detector"
 msgstr ""
 
-#. Key:	4BA9EEB2BA4507BF1D7F16B239E93576
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_149.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_149.Text
-msgctxt ",4BA9EEB2BA4507BF1D7F16B239E93576"
-msgid "Done"
+#. Key:	4B68350C4197E7949D5D549345612F52
+#. SourceLocation:	/Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_7.Text
+#: /Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_7.Text
+msgctxt ",4B68350C4197E7949D5D549345612F52"
+msgid "Experiment"
+msgstr ""
+
+#. Key:	4D85CDE240870F2D6C949EB32923D513
+#. SourceLocation:	/Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_1.Text
+#: /Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_1.Text
+msgctxt ",4D85CDE240870F2D6C949EB32923D513"
+msgid "Control Room"
 msgstr ""
 
 #. Key:	4D939877FB471381395F5D84245E6C99
@@ -228,6 +333,13 @@ msgstr ""
 #: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title13.NewTextRenderComponent.Text
 msgctxt ",4D939877FB471381395F5D84245E6C99"
 msgid "Expert"
+msgstr ""
+
+#. Key:	501925244DD7503D27DFA49DF59FB88F
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_3.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_3.Text
+msgctxt ",501925244DD7503D27DFA49DF59FB88F"
+msgid "CERN in 4 min"
 msgstr ""
 
 #. Key:	56B4993AC8435EFF34F63EB9C49AD077
@@ -258,6 +370,13 @@ msgctxt ",5CC4BA63403D49550CC0E0B53AC408E4"
 msgid "Processing LHC Data"
 msgstr ""
 
+#. Key:	5D06688343EF2F85945EA3949E2C11C5
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_6.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_6.Text
+msgctxt ",5D06688343EF2F85945EA3949E2C11C5"
+msgid "ASL 1"
+msgstr ""
+
 #. Key:	5E0733514FF890BE108195B6B27BB4EB
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.TitleText_7_E7FCBF31421561962C7AC1A723A87288
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.TitleText_7_E7FCBF31421561962C7AC1A723A87288
@@ -279,6 +398,20 @@ msgctxt ",5F2CCE1541134F7D19D8E885748B8276"
 msgid "-"
 msgstr ""
 
+#. Key:	62E761714047D248D9308CA4E2F3BDA4
+#. SourceLocation:	/Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_7.ToolTipText
+#: /Game/HandMenu/NewHandMenu.NewHandMenu_C:WidgetTree.TextBlock_7.ToolTipText
+msgctxt ",62E761714047D248D9308CA4E2F3BDA4"
+msgid "Visit experment cavern"
+msgstr ""
+
+#. Key:	6469792D4FAE5A2BF179E4A1D75E41CF
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_740.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_740.Text
+msgctxt ",6469792D4FAE5A2BF179E4A1D75E41CF"
+msgid "Multiplayer"
+msgstr ""
+
 #. Key:	657E4ED50549B3B88600A3ACF22920FC
 #. SourceLocation:	/Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title2.NewTextRenderComponent.Text
 #: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title2.NewTextRenderComponent.Text
@@ -286,11 +419,39 @@ msgctxt ",657E4ED50549B3B88600A3ACF22920FC"
 msgid "CALO"
 msgstr ""
 
+#. Key:	6781B7394DB9F20825CD4FBD826AA8CE
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_0.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_0.Text
+msgctxt ",6781B7394DB9F20825CD4FBD826AA8CE"
+msgid "Connect"
+msgstr ""
+
+#. Key:	679810554E13599B81E0D5A9299965D9
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(5 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(5 - Value).DisplayNameMap
+msgctxt ",679810554E13599B81E0D5A9299965D9"
+msgid "Spanish"
+msgstr ""
+
+#. Key:	6F98F6D444BE58D1811326BBC3C459FA
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_736.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_736.Text
+msgctxt ",6F98F6D444BE58D1811326BBC3C459FA"
+msgid "Audio"
+msgstr ""
+
 #. Key:	70EDA96C4425D3A8772FACBFC642717C
 #. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Aside.NewTextRenderComponent.Text
 #: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Aside.NewTextRenderComponent.Text
 msgctxt ",70EDA96C4425D3A8772FACBFC642717C"
 msgid "A side"
+msgstr ""
+
+#. Key:	7360EF204B6EA3A6902B1DA09E7C97E4
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_1.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_1.Text
+msgctxt ",7360EF204B6EA3A6902B1DA09E7C97E4"
+msgid "Pixel"
 msgstr ""
 
 #. Key:	736CA941452A3FB9561AA2BDF24E03C7
@@ -314,6 +475,13 @@ msgctxt ",77E50E3048AEEB3C1134EE9E3219EE85"
 msgid "NOBEL PRIZE FOR THE HIGGS DISCOVERY"
 msgstr ""
 
+#. Key:	7984D2924F9B7682A3F8188B9C0B8D11
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_742.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_742.Text
+msgctxt ",7984D2924F9B7682A3F8188B9C0B8D11"
+msgid "Server"
+msgstr ""
+
 #. Key:	79D8A9524533CA1E4EDDE7BBADC711C3
 #. SourceLocation:	/Game/BPs/Events/EventBP.EventBP_C:EventNumberDisplay_GEN_VARIABLE.Text
 #: /Game/BPs/Events/EventBP.EventBP_C:EventNumberDisplay_GEN_VARIABLE.Text
@@ -335,11 +503,32 @@ msgctxt ",7AF295BC49A31C25BB479F9D98C38627"
 msgid "BIRTH OF THE LHC PROJECT"
 msgstr ""
 
+#. Key:	7C78AF9743A00691037F78B27FC23029
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_15.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_15.Text
+msgctxt ",7C78AF9743A00691037F78B27FC23029"
+msgid "CSC"
+msgstr ""
+
+#. Key:	7E30A11A468E6B71386DACB8A0FBA464
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_12.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_12.Text
+msgctxt ",7E30A11A468E6B71386DACB8A0FBA464"
+msgid "Inner"
+msgstr ""
+
 #. Key:	7F512D3C43604B62BF5E259D0D0F552B
 #. SourceLocation:	/Game/Maps/MySaveData.Default__MySaveData_C.CustomLink
 #: /Game/Maps/MySaveData.Default__MySaveData_C.CustomLink
 msgctxt ",7F512D3C43604B62BF5E259D0D0F552B"
 msgid "http://"
+msgstr ""
+
+#. Key:	7FF87B294CF18A717EFD3FAFC80C1693
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_16.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_16.Text
+msgctxt ",7FF87B294CF18A717EFD3FAFC80C1693"
+msgid "TGC"
 msgstr ""
 
 #. Key:	810BD0814702BAFD53025682CAE75BD5
@@ -356,11 +545,25 @@ msgctxt ",8279F37AEC477658A132D9A61B62B041"
 msgid "Trigger"
 msgstr ""
 
+#. Key:	8363D9F1423D29F51A45BFA286330D77
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_0.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_0.Text
+msgctxt ",8363D9F1423D29F51A45BFA286330D77"
+msgid "Catwalks"
+msgstr ""
+
 #. Key:	8459DDCF40E6819DC80B23BC4470A931
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History7.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
 msgctxt ",8459DDCF40E6819DC80B23BC4470A931"
 msgid "The start of a fantastic era of physics! ATLAS records first collisions at 0.9 TeV."
+msgstr ""
+
+#. Key:	88E7D4254C9720ED289B41B6E63416D8
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_5.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_5.Text
+msgctxt ",88E7D4254C9720ED289B41B6E63416D8"
+msgid "ID services"
 msgstr ""
 
 #. Key:	8982C1974BF0818F6ED5958CAA8C2202
@@ -375,6 +578,34 @@ msgstr ""
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.BodyText_9_69ECEBD44DE1D42CEE48F3901EA95191
 msgctxt ",8C6B19F24ADE53CC919000B811CC6C77"
 msgid "The ATLAS Collaboration proposes the construction of a general-purpose detector at the Large Hadron Collider. The ATLAS Letter of Intent was submitted to the LHC Experiments Committee, which marked the first official use of the name ATLAS. The Letter identified a number of conceptual and technical design options, including a superconducting toroid magnet system."
+msgstr ""
+
+#. Key:	8DBBD019492F602D24DEBC831D9B02FA
+#. SourceLocation:	/Game/HandMenu/ControlRoomMenu/ControlRoomMenu.ControlRoomMenu_C:WidgetTree.TextBlock_1.Text
+#: /Game/HandMenu/ControlRoomMenu/ControlRoomMenu.ControlRoomMenu_C:WidgetTree.TextBlock_1.Text
+msgctxt ",8DBBD019492F602D24DEBC831D9B02FA"
+msgid "Data Processing"
+msgstr ""
+
+#. Key:	913E008349234B84B0AF1A8C063B48F6
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(1 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(1 - Value).DisplayNameMap
+msgctxt ",913E008349234B84B0AF1A8C063B48F6"
+msgid "Montenegrin"
+msgstr ""
+
+#. Key:	925BC07247D258B4A1639DAF9547FA6A
+#. SourceLocation:	/Game/HandMenu/ControlRoomMenu/ControlRoomMenu.ControlRoomMenu_C:WidgetTree.TextBlock_3.Text
+#: /Game/HandMenu/ControlRoomMenu/ControlRoomMenu.ControlRoomMenu_C:WidgetTree.TextBlock_3.Text
+msgctxt ",925BC07247D258B4A1639DAF9547FA6A"
+msgid "Picturing particles"
+msgstr ""
+
+#. Key:	97DC1F624C5D5FE6FD8C0DABD1C3895C
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(4 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(4 - Value).DisplayNameMap
+msgctxt ",97DC1F624C5D5FE6FD8C0DABD1C3895C"
+msgid "German"
 msgstr ""
 
 #. Key:	9DC63A49495DFD4C204951A3CE0B5798
@@ -412,11 +643,18 @@ msgctxt ",A4A594874F84F5EEEC497E80B187B797"
 msgid "ATLAS began recording physics data from 13 TeV proton collisions, which allow for precision studies of the Higgs boson and other Standard Model particles, as well as the search for new particles with higher masses."
 msgstr ""
 
-#. Key:	A73D9BFA49C5BFC67CAEFA91FFC0CEC3
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_306.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_306.Text
-msgctxt ",A73D9BFA49C5BFC67CAEFA91FFC0CEC3"
-msgid "Accessibility"
+#. Key:	ACF874BE494ACC6806E2798890280A1B
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_6.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_6.Text
+msgctxt ",ACF874BE494ACC6806E2798890280A1B"
+msgid "Caverns"
+msgstr ""
+
+#. Key:	ACFAC9EB4C62C364B66EF5BC2F3E18DA
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_18.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_18.Text
+msgctxt ",ACFAC9EB4C62C364B66EF5BC2F3E18DA"
+msgid "Beam Pipe"
 msgstr ""
 
 #. Key:	AD5CCAED4453C6D4715965B9A394482B
@@ -433,11 +671,46 @@ msgctxt ",B01903884D752B2092674D887E3634B4"
 msgid "Nov 20, 2006"
 msgstr ""
 
+#. Key:	B4A0EA07452F5AF966831DA6F1A7E7D6
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_7.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_7.Text
+msgctxt ",B4A0EA07452F5AF966831DA6F1A7E7D6"
+msgid "4Pi Photos"
+msgstr ""
+
+#. Key:	BA6C14D64256AF5BD83ACB88487C0352
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_17.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_17.Text
+msgctxt ",BA6C14D64256AF5BD83ACB88487C0352"
+msgid "MDT"
+msgstr ""
+
+#. Key:	BBCDFF6341E932D57DC6719CE566350E
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_20.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_20.Text
+msgctxt ",BBCDFF6341E932D57DC6719CE566350E"
+msgid "Feet"
+msgstr ""
+
 #. Key:	BCB2D3C64A499C6A1F6785A3369A3E14
 #. SourceLocation:	/Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Cside.NewTextRenderComponent.Text
 #: /Game/Maps/ExperimentLevel.ExperimentLevel:PersistentLevel.Cside.NewTextRenderComponent.Text
 msgctxt ",BCB2D3C64A499C6A1F6785A3369A3E14"
 msgid "C side"
+msgstr ""
+
+#. Key:	C2FD48D24BAEB14F4C01739B2E1F728A
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(3 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(3 - Value).DisplayNameMap
+msgctxt ",C2FD48D24BAEB14F4C01739B2E1F728A"
+msgid "Russian"
+msgstr ""
+
+#. Key:	C4E3C8A8441B1375C16F488778AFB3AC
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_8.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_8.Text
+msgctxt ",C4E3C8A8441B1375C16F488778AFB3AC"
+msgid "ASL 3"
 msgstr ""
 
 #. Key:	C57004913E4D3750166E518F090F5722
@@ -468,6 +741,13 @@ msgctxt ",CA7CA3064FFF1F9EB0ECB0BEF205FC10"
 msgid "Oct 8, 2013"
 msgstr ""
 
+#. Key:	CD30C346458CC9549963E7BDB89E8196
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_9.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_9.Text
+msgctxt ",CD30C346458CC9549963E7BDB89E8196"
+msgid "ASL 4"
+msgstr ""
+
 #. Key:	CE3A3DA14855E05334AA1F869C2AA03F
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.Date_5_F514F2CB48A94CC242A631A0432AE7B6
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History3.Date_5_F514F2CB48A94CC242A631A0432AE7B6
@@ -475,11 +755,25 @@ msgctxt ",CE3A3DA14855E05334AA1F869C2AA03F"
 msgid "July 1, 1997"
 msgstr ""
 
-#. Key:	D131735045D17B5BAB8EF989B0DAF4B9
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_738.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_738.Text
-msgctxt ",D131735045D17B5BAB8EF989B0DAF4B9"
-msgid "Effects volume"
+#. Key:	D118C9704D8C09E90646E59ACCB199D9
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_739.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_739.Text
+msgctxt ",D118C9704D8C09E90646E59ACCB199D9"
+msgid "Guide volume"
+msgstr ""
+
+#. Key:	D556E4B848AFB7482E5A169D514F01B2
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(0 - Value).DisplayNameMap
+#: /Game/HandMenu/SettingsMenu/Languages.Languages.DisplayNameMap(0 - Value).DisplayNameMap
+msgctxt ",D556E4B848AFB7482E5A169D514F01B2"
+msgid "English"
+msgstr ""
+
+#. Key:	D582D1B04FC85BEBE2DB58BCB9DE8A0B
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.CustomLink.ToolTipText
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.CustomLink.ToolTipText
+msgctxt ",D582D1B04FC85BEBE2DB58BCB9DE8A0B"
+msgid "e.g. a web page showing your institution."
 msgstr ""
 
 #. Key:	D5E7AC904267A0943AF518A35D572B8D
@@ -501,13 +795,6 @@ msgstr ""
 #: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title16.NewTextRenderComponent.Text
 msgctxt ",D7CE6E7E964662733AB9DDB34FA1EBF0"
 msgid "Data Quality"
-msgstr ""
-
-#. Key:	DA1BAE584F9E351F780C089759B4CFE8
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_736.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_736.Text
-msgctxt ",DA1BAE584F9E351F780C089759B4CFE8"
-msgid "Audio"
 msgstr ""
 
 #. Key:	DA9E82A5C8445FCFD3B118BBD335202C
@@ -538,11 +825,18 @@ msgctxt ",E022B6DE4476D8A98A360F9FADA4C8AE"
 msgid "ATLAS Experiment"
 msgstr ""
 
-#. Key:	E44C570143195486392B9082A931B4D5
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_739.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_739.Text
-msgctxt ",E44C570143195486392B9082A931B4D5"
-msgid "Guide volume"
+#. Key:	E110E23649A29AC0CC5140B03132573C
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_10.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_10.Text
+msgctxt ",E110E23649A29AC0CC5140B03132573C"
+msgid "Barrel Torroid"
+msgstr ""
+
+#. Key:	E1B9FCD9470434EF589A1B82D3F2358A
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_2.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_2.Text
+msgctxt ",E1B9FCD9470434EF589A1B82D3F2358A"
+msgid "LHC magnets"
 msgstr ""
 
 #. Key:	E72859A9884A0D75380617A8AA035237
@@ -550,6 +844,13 @@ msgstr ""
 #: /Game/Maps/ControlRoomLevel.ControlRoomLevel:PersistentLevel.Title12.NewTextRenderComponent.Text
 msgctxt ",E72859A9884A0D75380617A8AA035237"
 msgid "Run Control"
+msgstr ""
+
+#. Key:	EBB9AD7A4A3CD018FE4AC693DE0DCA8F
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_9.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_9.Text
+msgctxt ",EBB9AD7A4A3CD018FE4AC693DE0DCA8F"
+msgid "Tile"
 msgstr ""
 
 #. Key:	EBFD78FE4B3EDCEC9A404EB9798DED19
@@ -566,13 +867,6 @@ msgctxt ",ECA0061EE24024A8014C868A66BA1219"
 msgid "MUON"
 msgstr ""
 
-#. Key:	F3D020F04D5E32F07FDD28B0E2B3C6CF
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_742.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_742.Text
-msgctxt ",F3D020F04D5E32F07FDD28B0E2B3C6CF"
-msgid "Server"
-msgstr ""
-
 #. Key:	F7142F774D40EAF7A3112B94ED539509
 #. SourceLocation:	/Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.Date_5_F514F2CB48A94CC242A631A0432AE7B6
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History2.Date_5_F514F2CB48A94CC242A631A0432AE7B6
@@ -587,11 +881,18 @@ msgctxt ",F8CEED5A4A911C5FFF6D61A620989D33"
 msgid "June 3, 2015"
 msgstr ""
 
-#. Key:	FC6A04E345B91A080A8DE785039BDFDD
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_0.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_0.Text
-msgctxt ",FC6A04E345B91A080A8DE785039BDFDD"
-msgid "Connect"
+#. Key:	FA8C89E14352B5ABDC938D97989E7D17
+#. SourceLocation:	/Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_3.Text
+#: /Game/HandMenu/ExperimentMenu.ExperimentMenu_C:WidgetTree.TextBlock_3.Text
+msgctxt ",FA8C89E14352B5ABDC938D97989E7D17"
+msgid "TRT"
+msgstr ""
+
+#. Key:	FAE6A8B04A25B796AD2355877C4B7A41
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_307.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_307.Text
+msgctxt ",FAE6A8B04A25B796AD2355877C4B7A41"
+msgid "Institution link"
 msgstr ""
 
 #. Key:	FCAB067A42186C0B76031395D5B4588C
@@ -599,6 +900,13 @@ msgstr ""
 #: /Game/Globe/History/HistoryDataTable.HistoryDataTable.History10.TitleText_7_E7FCBF31421561962C7AC1A723A87288
 msgctxt ",FCAB067A42186C0B76031395D5B4588C"
 msgid "ATLAS BEGINS RECORDING PHYSICS DATA AT 13 TeV"
+msgstr ""
+
+#. Key:	FCFADE7A4963A1DF18651CB0AAF00F90
+#. SourceLocation:	/Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_7.Text
+#: /Game/HandMenu/GlobeMenu/GlobeMenu.GlobeMenu_C:WidgetTree.TextBlock_7.Text
+msgctxt ",FCFADE7A4963A1DF18651CB0AAF00F90"
+msgid "ASL 2"
 msgstr ""
 
 #. Key:	Constants
@@ -615,10 +923,10 @@ msgctxt "MaterialExpression,Parameters"
 msgid "Parameters"
 msgstr ""
 
-#. Key:	2860810D4F3EC98EF997408A5E42D929
-#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_741.Text
-#: /Game/HandMenu/SettingsMenu/SettingsWidget.SettingsWidget_C:WidgetTree.TextBlock_741.Text
-msgctxt "Menu,2860810D4F3EC98EF997408A5E42D929"
+#. Key:	F66BD9754556864BD0A4ABA90BD0FC11
+#. SourceLocation:	/Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_741.Text
+#: /Game/HandMenu/SettingsMenu/SettingsMenu.SettingsMenu_C:WidgetTree.TextBlock_741.Text
+msgctxt "Menu,F66BD9754556864BD0A4ABA90BD0FC11"
 msgid "Language"
 msgstr ""
 
