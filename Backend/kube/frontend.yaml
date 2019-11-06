@@ -1,0 +1,81 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: atlasrift-backend
+  namespace: aaas
+  labels:
+    k8s-app: atlasrift-backend
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 80
+  selector:
+    k8s-app: atlasrift-backend
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: atlasrift-backend
+  namespace: aaas
+  labels:
+    k8s-app: atlasrift-backend
+  annotations:
+    kubernetes.io/ingress.class: slate
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - atlasrift.atlas-ml.org
+    secretName: auto-generated-atlasrift-backend
+  rules:
+  - host: atlasrift.atlas-ml.org
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: atlasrift-backend
+          servicePort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atlasrift-backend  
+  namespace: aaas
+  labels:
+    k8s-app: atlasrift-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: atlasrift-backend
+  template:
+    metadata:
+      labels:
+        k8s-app: atlasrift-backend
+    spec:
+      containers:
+      - name: atlasrift-backend
+        image: ivukotic/atlasrift-backend:latest
+        ports:
+          - containerPort: 80
+        livenessProbe:
+          httpGet:
+            scheme: HTTP
+            path: /healthz
+            port: 80
+          periodSeconds: 60
+          initialDelaySeconds: 60
+          timeoutSeconds: 10
+        volumeMounts:
+        - name: frontend-conf-volume
+          mountPath: "/etc/arconf/"
+      volumes:
+      - name: frontend-conf-volume
+        secret:
+          secretName: atlasrift
+          items:
+          - key: arconf
+            path: config.json
