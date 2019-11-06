@@ -9,7 +9,7 @@
 // Sets default values for this component's properties
 UReporter::UReporter()
 {
-	TargetHost = "http://atlasrift.appspot.com";
+	TargetHost = "https://atlasrift.atlas-ml.org";
 	Http = &FHttpModule::Get();
 	
 	// Commented out as it should be replaced with a regular multiplayer thing.

@@ -19,7 +19,7 @@ AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitia
 	//PrimaryActorTick.bAllowTickOnDedicatedServer = true;
 
 	this->SetActorTickEnabled(true);
-	TargetHost = "http://atlasrift.appspot.com/";
+	TargetHost = "https://atlasrift.atlas-ml.org/";
 	Http = &FHttpModule::Get();
     eventID=0;
 	Phi = 0;
