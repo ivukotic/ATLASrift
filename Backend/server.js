@@ -24,23 +24,7 @@ app.post('/', async (req, res) => {
     console.log('recieved app usage info.');
     let data = req.body;
     console.log(' data:\t', data);
-    data.userid = req.session.user.user_id;
-
-    var options = {
-        uri: config.FRONTEND + '/drequest/create',
-        method: 'POST',
-        json: data,
-    };
-
-    rRequest(options, async (error, response, body) => {
-        if (error) {
-            console.error('error on creating new request in ES:\t', error);
-        }
-        // console.log('response:\t', response);
-        console.log(body);
-        // let req_data = JSON.parse(body);
-        res.render('index', { user: req.session.user });
-    });
+    res.status(200).send('OK');
 });
 
 
