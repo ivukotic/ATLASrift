@@ -12,7 +12,8 @@
 
 DEFINE_LOG_CATEGORY(EventLog);
 
-AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+// AEvent::AEvent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+AEvent::AEvent()
 {
 	//PrimaryActorTick.bCanEverTick = true;
 	//PrimaryActorTick.bStartWithTickEnabled = true;
@@ -104,121 +105,121 @@ void AEvent::GetEvent()
 
 void AEvent::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
 {
-	UE_LOG(EventLog, Display, TEXT("got something"));
-	FString MessageBody = "";
-	// If HTTP fails client-side, this will still be called but with a NULL shared pointer!
-	if (!Response.IsValid())
-	{
-		UE_LOG(EventLog, Error, TEXT("Error on getting event payload."));
-	}
-	else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
-	{
-		MessageBody = Response->GetContentAsString();
-		TSharedPtr<FJsonObject> jEvent;
-		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
-		if (FJsonSerializer::Deserialize(JsonReader, jEvent))
-		{
-            RunNr = jEvent->GetNumberField("runnr");
-			EventNr = jEvent->GetNumberField("eventnr");
-			Description = jEvent->GetStringField("description");
-			UE_LOG(EventLog, Display, TEXT("run: %d event: %d"), RunNr, EventNr);
+	// UE_LOG(EventLog, Display, TEXT("got something"));
+	// FString MessageBody = "";
+	// // If HTTP fails client-side, this will still be called but with a NULL shared pointer!
+	// if (!Response.IsValid())
+	// {
+	// 	UE_LOG(EventLog, Error, TEXT("Error on getting event payload."));
+	// }
+	// else if (EHttpResponseCodes::IsOk(Response->GetResponseCode()))
+	// {
+	// 	MessageBody = Response->GetContentAsString();
+	// 	TSharedPtr<FJsonObject> jEvent;
+	// 	TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(MessageBody);
+	// 	if (FJsonSerializer::Deserialize(JsonReader, jEvent))
+	// 	{
+    //         RunNr = jEvent->GetNumberField("runnr");
+	// 		EventNr = jEvent->GetNumberField("eventnr");
+	// 		Description = jEvent->GetStringField("description");
+	// 		UE_LOG(EventLog, Display, TEXT("run: %d event: %d"), RunNr, EventNr);
 			
 
 
-            TSharedPtr<FJsonObject> jClusters = jEvent->GetObjectField("xAOD::Type::CaloCluster");
+    //         TSharedPtr<FJsonObject> jClusters = jEvent->GetObjectField("xAOD::Type::CaloCluster");
             
-            for (auto currJsonValue = jClusters->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
-            {
-                const FString ClusterTypeName = (*currJsonValue).Key;
-				ClusterTypes.Add(ClusterTypeName);
+    //         for (auto currJsonValue = jClusters->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+    //         {
+    //             const FString ClusterTypeName = (*currJsonValue).Key;
+	// 			ClusterTypes.Add(ClusterTypeName);
                 
-                // Get the array of clusters as a FJsonValue object
-                TSharedPtr< FJsonValue > ClusterArray = (*currJsonValue).Value;
-				TArray<TSharedPtr<FJsonValue>> clusters = ClusterArray->AsArray();
-				UE_LOG(EventLog, Display, TEXT("cluster type: %s clusters: %d "), *ClusterTypeName, clusters.Num() );
-				for (int32 i = 0; i < clusters.Num(); i++)
-				{
-					FJsonObject re = *clusters[i]->AsObject();
-					//EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 500.0f));
-					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), re.GetNumberField("phi"), re.GetNumberField("eta"));
-					ACluster* cl = (ACluster*) GetWorld()->SpawnActor(ACluster::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
-					cl->phi = re.GetNumberField("phi");
-					cl->eta = re.GetNumberField("eta");
-					cl->theta = GetTethaFromEta(cl->eta);
-					cl->energy = re.GetNumberField("energy");
+    //             // Get the array of clusters as a FJsonValue object
+    //             TSharedPtr< FJsonValue > ClusterArray = (*currJsonValue).Value;
+	// 			TArray<TSharedPtr<FJsonValue>> clusters = ClusterArray->AsArray();
+	// 			UE_LOG(EventLog, Display, TEXT("cluster type: %s clusters: %d "), *ClusterTypeName, clusters.Num() );
+	// 			for (int32 i = 0; i < clusters.Num(); i++)
+	// 			{
+	// 				FJsonObject re = *clusters[i]->AsObject();
+	// 				//EventSpawnLoc = GetCartesianFromPolar(new FVector(re.GetNumberField("eta"), re.GetNumberField("phi"), 500.0f));
+	// 				//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), re.GetNumberField("phi"), re.GetNumberField("eta"));
+	// 				ACluster* cl = (ACluster*) GetWorld()->SpawnActor(ACluster::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+	// 				cl->phi = re.GetNumberField("phi");
+	// 				cl->eta = re.GetNumberField("eta");
+	// 				cl->theta = GetTethaFromEta(cl->eta);
+	// 				cl->energy = re.GetNumberField("energy");
 
-				}
-            }
+	// 			}
+    //         }
             
 
-            TSharedPtr<FJsonObject> jJets = jEvent->GetObjectField("xAOD::Type::Jet");
-			for (auto currJsonValue = jJets->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
-			{
-				const FString JetTypeName = (*currJsonValue).Key;
-				JetTypes.Add(JetTypeName);
+    //         TSharedPtr<FJsonObject> jJets = jEvent->GetObjectField("xAOD::Type::Jet");
+	// 		for (auto currJsonValue = jJets->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+	// 		{
+	// 			const FString JetTypeName = (*currJsonValue).Key;
+	// 			JetTypes.Add(JetTypeName);
 
-				// Get the array of jets as a FJsonValue object
-				TSharedPtr< FJsonValue > JetArray = (*currJsonValue).Value;
-				TArray<TSharedPtr<FJsonValue>> jets = JetArray->AsArray();
-				UE_LOG(EventLog, Display, TEXT("jet type: %s jets: %d "), *JetTypeName, jets.Num());
-				for (int32 i = 0; i < jets.Num(); i++)
-				{
-					FJsonObject re = *jets[i]->AsObject();
-					float eta = re.GetNumberField("eta");
-					float phi = re.GetNumberField("phi");
-					EventSpawnLoc = GetCartesianFromPolar(new FVector(eta, phi, 0.0f));
-					EventSpawnRotation = new FRotator(GetTethaFromEta(eta)*57.2957795, 0.0f, phi*57.2957795);
-					//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), phi, eta);
-					AJet* jet = (AJet*)GetWorld()->SpawnActor(AJet::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
-					jet->phi = phi;
-					jet->eta = eta;
-					jet->energy = re.GetNumberField("energy");
-					jet->coneR = re.GetNumberField("coneR");
+	// 			// Get the array of jets as a FJsonValue object
+	// 			TSharedPtr< FJsonValue > JetArray = (*currJsonValue).Value;
+	// 			TArray<TSharedPtr<FJsonValue>> jets = JetArray->AsArray();
+	// 			UE_LOG(EventLog, Display, TEXT("jet type: %s jets: %d "), *JetTypeName, jets.Num());
+	// 			for (int32 i = 0; i < jets.Num(); i++)
+	// 			{
+	// 				FJsonObject re = *jets[i]->AsObject();
+	// 				float eta = re.GetNumberField("eta");
+	// 				float phi = re.GetNumberField("phi");
+	// 				EventSpawnLoc = GetCartesianFromPolar(new FVector(eta, phi, 0.0f));
+	// 				EventSpawnRotation = new FRotator(GetTethaFromEta(eta)*57.2957795, 0.0f, phi*57.2957795);
+	// 				//UE_LOG(EventLog, Display, TEXT("cluster phi: %f eta: %f "), phi, eta);
+	// 				AJet* jet = (AJet*)GetWorld()->SpawnActor(AJet::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+	// 				jet->phi = phi;
+	// 				jet->eta = eta;
+	// 				jet->energy = re.GetNumberField("energy");
+	// 				jet->coneR = re.GetNumberField("coneR");
 					
-				}
-			}
+	// 			}
+	// 		}
 
-            TSharedPtr<FJsonObject> jTracks = jEvent->GetObjectField("xAOD::Type::TrackParticle");
-			for (auto currJsonValue = jTracks->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
-			{
-				const FString TrackTypeName = (*currJsonValue).Key;
-				TrackTypes.Add(TrackTypeName);
+    //         TSharedPtr<FJsonObject> jTracks = jEvent->GetObjectField("xAOD::Type::TrackParticle");
+	// 		for (auto currJsonValue = jTracks->Values.CreateConstIterator(); currJsonValue; ++currJsonValue)
+	// 		{
+	// 			const FString TrackTypeName = (*currJsonValue).Key;
+	// 			TrackTypes.Add(TrackTypeName);
 
-				// Get the array of tracks as a FJsonValue object
-				TSharedPtr< FJsonValue > TrackArray = (*currJsonValue).Value;
-				TArray<TSharedPtr<FJsonValue>> tracks = TrackArray->AsArray();
-				UE_LOG(EventLog, Display, TEXT("track type: %s tracks: %d "), *TrackTypeName, tracks.Num());
-				for (int32 i = 0; i < tracks.Num(); i++)
-				{
-					FJsonObject re = *tracks[i]->AsObject();
-					EventSpawnLoc = new FVector(0.0f, 0.0f, 0.0f);
-					EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
-					ATrack* track = (ATrack*)GetWorld()->SpawnActor(ATrack::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
-					track->dof = re.GetIntegerField("dof");
-					track->chi2 = re.GetNumberField("chi2");
-					TArray<TSharedPtr<FJsonValue>> dps = re.GetArrayField("dparams");
-					track->d0 = dps[0]->AsNumber();
-					track->z0 = dps[1]->AsNumber();
-					track->phi = dps[2]->AsNumber();
-					track->theta = dps[3]->AsNumber();
-					track->qop = dps[4]->AsNumber();
-					TArray<TSharedPtr<FJsonValue>> pos = re.GetArrayField("pos"); 
-					for (int32 v = 0; v < pos.Num(); v++)
-					{
-						TArray<TSharedPtr<FJsonValue>> po = pos[v]->AsArray();
-						track->points.Add(FVector(po[2]->AsNumber()*0.1, po[0]->AsNumber()*0.1, po[1]->AsNumber()*0.1));
-					}
-				}
-			}
+	// 			// Get the array of tracks as a FJsonValue object
+	// 			TSharedPtr< FJsonValue > TrackArray = (*currJsonValue).Value;
+	// 			TArray<TSharedPtr<FJsonValue>> tracks = TrackArray->AsArray();
+	// 			UE_LOG(EventLog, Display, TEXT("track type: %s tracks: %d "), *TrackTypeName, tracks.Num());
+	// 			for (int32 i = 0; i < tracks.Num(); i++)
+	// 			{
+	// 				FJsonObject re = *tracks[i]->AsObject();
+	// 				EventSpawnLoc = new FVector(0.0f, 0.0f, 0.0f);
+	// 				EventSpawnRotation = new FRotator(0.0f, 0.0f, 0.0f);
+	// 				ATrack* track = (ATrack*)GetWorld()->SpawnActor(ATrack::StaticClass(), EventSpawnLoc, EventSpawnRotation, SpawnInfo);
+	// 				track->dof = re.GetIntegerField("dof");
+	// 				track->chi2 = re.GetNumberField("chi2");
+	// 				TArray<TSharedPtr<FJsonValue>> dps = re.GetArrayField("dparams");
+	// 				track->d0 = dps[0]->AsNumber();
+	// 				track->z0 = dps[1]->AsNumber();
+	// 				track->phi = dps[2]->AsNumber();
+	// 				track->theta = dps[3]->AsNumber();
+	// 				track->qop = dps[4]->AsNumber();
+	// 				TArray<TSharedPtr<FJsonValue>> pos = re.GetArrayField("pos"); 
+	// 				for (int32 v = 0; v < pos.Num(); v++)
+	// 				{
+	// 					TArray<TSharedPtr<FJsonValue>> po = pos[v]->AsArray();
+	// 					track->points.Add(FVector(po[2]->AsNumber()*0.1, po[0]->AsNumber()*0.1, po[1]->AsNumber()*0.1));
+	// 				}
+	// 			}
+	// 		}
 
-		}
-	}
-	else
-	{
-		UE_LOG(EventLog, Display, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
-	}
-	onEventDownloaded();
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
+	// 	}
+	// }
+	// else
+	// {
+	// 	UE_LOG(EventLog, Display, TEXT("{\"success\":\"HTTP Error: %d\"}"), Response->GetResponseCode());
+	// }
+	// onEventDownloaded();
+	// //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("oneventdowload called!"));
 
 }
 float AEvent::GetTethaFromEta(float eta)
