@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "CoreMinimal.h"
+#include "Engine/World.h"
 #include "Track.h"
 #include "Http.h"
 #include "GameFramework/Actor.h"
@@ -9,40 +11,6 @@
 #include "Event.generated.h"
 
 DECLARE_LOG_CATEGORY_EXTERN(EventLog, Log, All);
-/**
- * 
- */
-
-
-USTRUCT(BlueprintType)
-struct FEventState
-{
-	GENERATED_USTRUCT_BODY()
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool ShowTracks;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool ShowJets;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool ShowClusters;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool AutoReload;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool ChangeToPreviousEvent;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		bool ChangeToNextEvent;
-
-	FEventState()
-	{
-		ShowTracks = true;
-		ShowJets = true;
-		ShowClusters = true;
-		AutoReload = false;
-		ChangeToPreviousEvent = false;
-		ChangeToNextEvent = false;
-	}
-
-};
 
 
 UCLASS()
@@ -50,7 +18,8 @@ class ATLASRIFT_API AEvent : public AActor
 {
 	GENERATED_BODY()
 
-	AEvent(const FObjectInitializer& ObjectInitializer);
+	// AEvent(const FObjectInitializer& ObjectInitializer);
+	AEvent();
 	FHttpModule* Http;
 
 	UPROPERTY(EditDefaultsOnly, Category = "EventServer")
@@ -125,8 +94,6 @@ public:
 		TArray<FVector> VerticesX;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
 		TArray<FVector> VerticesY;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
-		FEventState EventState;
 
 	USceneComponent* SceneComponent;
 
